@@ -68,7 +68,7 @@ async function seed() {
     try {
         await client.createOrReplace(homepageData)
         console.log('✅ Homepage content created successfully!')
-    } catch (err) {
+    } catch (err: any) {
         console.error('❌ Error seeding data:', err.message)
     }
 }

@@ -57,7 +57,7 @@ async function seedSolutions() {
             .set({ solutions: solutionsData })
             .commit()
         console.log('✅ Solutions content added successfully!')
-    } catch (err) {
+    } catch (err: any) {
         console.error('❌ Error seeding solutions:', err.message)
     }
 }
