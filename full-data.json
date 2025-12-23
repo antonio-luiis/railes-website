@@ -1,0 +1,140 @@
+[
+    {
+        "_id": "homepage",
+        "_type": "homepage",
+        "title": "Home",
+        "hero": {
+            "title": "The Manufacturing Engineering Platform",
+            "highlightedWords": [
+                "Manufacturing",
+                "Engineering",
+                "Platform"
+            ],
+            "description": "Plan, track, and optimize your manufacturing operations with Railes."
+        },
+        "featureBlocks": [
+            {
+                "_key": "fb1",
+                "title": "Production Planning",
+                "description": "Optimize your production schedules and resource allocation.",
+                "backgroundColor": "#1e3a8a"
+            },
+            {
+                "_key": "fb2",
+                "title": "Quality Control",
+                "description": "Ensure product quality with real-time monitoring and alerts.",
+                "backgroundColor": "#1e3a8a"
+            }
+        ],
+        "featuresGrid": [
+            {
+                "_key": "fg1",
+                "title": "Compliance",
+                "subtitle": "and Traceability",
+                "description": "Ensure adherence to regulations and transparent tracking of production processes, safeguarding quality and enabling swift issue resolution.",
+                "highlightedText": "transparent tracking"
+            },
+            {
+                "_key": "fg2",
+                "title": "Quality Management",
+                "subtitle": "and Control",
+                "description": "Prioritizes quality throughout the manufacturing process, facilitating quality standards enforcement, inspections, and real-time quality tracking.",
+                "highlightedText": "quality throughout the manufacturing process"
+            },
+            {
+                "_key": "fg3",
+                "title": "Customization",
+                "subtitle": "and Flexibility",
+                "description": "Customization options, ensuring seamless integration with existing systems and adaptation to diverse manufacturing processes.",
+                "highlightedText": "seamless integration"
+            },
+            {
+                "_key": "fg4",
+                "title": "Advanced Data Analytics",
+                "subtitle": "and Artificial Intelligence",
+                "description": "Leveraging advanced data analytics and AI for learning and well-informed decision-making.",
+                "badge": "⭐ Advanced data analytics and AI"
+            }
+        ],
+        "solutions": {
+            "title": "Your Industry solutions",
+            "industries": [
+                "Pharmaceuticals Manufacturing",
+                "Automotive Manufacturing",
+                "Packaging Manufacturing",
+                "Aerospace & Defense Manufacturing"
+            ],
+            "cards": [
+                {
+                    "_key": "sol1",
+                    "title": "Visibility",
+                    "description": "See everything happening on the shop floor in real time, from work orders, machines, operators, downtimes, and performance. A live control panel for your entire operation.",
+                    "type": "list",
+                    "listItems": [
+                        "Work Orders",
+                        "Operators",
+                        "Work Centers",
+                        "Downtimes"
+                    ]
+                },
+                {
+                    "_key": "sol2",
+                    "title": "Execution",
+                    "description": "Digitize production processes. Clear instructions, error-free data entry, full traceability, and standardized operations, all executed directly by the shop floor teams.",
+                    "type": "image"
+                },
+                {
+                    "_key": "sol3",
+                    "title": "Quality",
+                    "description": "Control and record quality at every step. Inline inspections, nonconformities, and action plans, with complete traceability by lot, operator, and equipment.",
+                    "type": "list",
+                    "listItems": [
+                        "Inspections",
+                        "Action Plans",
+                        "Traceability"
+                    ]
+                },
+                {
+                    "_key": "sol4",
+                    "title": "Improvement",
+                    "description": "Turn data into decisions. Analyze root causes of downtime, compare shifts, identify losses, with automated reports and dashboards that power continuous improvement.",
+                    "type": "list",
+                    "listItems": [
+                        "Suggestions",
+                        "Optimization",
+                        "Prevention"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "_id": "siteSettings",
+        "_type": "siteSettings",
+        "siteTitle": "Railes",
+        "siteDescription": "The Manufacturing Engineering Platform",
+        "navigationItems": [
+            {
+                "_key": "nav1",
+                "label": "Platform",
+                "url": "/platform"
+            },
+            {
+                "_key": "nav2",
+                "label": "Solutions",
+                "url": "/solutions"
+            },
+            {
+                "_key": "nav3",
+                "label": "Resources",
+                "url": "/resources"
+            },
+            {
+                "_key": "nav4",
+                "label": "Pricing",
+                "url": "/pricing"
+            }
+        ],
+        "footerText": "© 2024 Railes. All rights reserved."
+    }
+]

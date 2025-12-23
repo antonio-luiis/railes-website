@@ -1,0 +1,28 @@
+{
+    "_type": "siteSettings",
+    "siteTitle": "RAILES",
+    "siteDescription": "Manufacturing Execution System - See. Control. Optimize.",
+    "navigationItems": [
+        {
+            "label": "Product",
+            "url": "#"
+        },
+        {
+            "label": "Industries",
+            "url": "#"
+        },
+        {
+            "label": "Partners",
+            "url": "#"
+        },
+        {
+            "label": "Resources",
+            "url": "#"
+        },
+        {
+            "label": "About us",
+            "url": "#"
+        }
+    ],
+    "footerText": "© 2024 Railes. All rights reserved."
+}

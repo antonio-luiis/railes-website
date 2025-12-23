@@ -1,0 +1,81 @@
+import { groq } from 'next-sanity'
+
+// Query for Homepage (contains Hero, Feature Blocks, and Features Grid)
+export const homepageQuery = groq`*[_type == "homepage"][0]{
+  hero{
+    title,
+    highlightedWords,
+    description,
+    heroImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    videoUrl
+  },
+  featureBlocks[]{
+    title,
+    description,
+    backgroundColor,
+    mockupImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }
+  },
+  featuresGrid[]{
+    title,
+    subtitle,
+    description,
+    highlightedText,
+    mockupImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    badge,
+    bottomText
+  },
+  solutions{
+    title,
+    industries,
+    cards[]{
+      title,
+      description,
+      type,
+      listItems,
+      image{
+        asset->{
+          _id,
+          url
+        },
+        alt
+      }
+    }
+  }
+}`
+
+// Query for Site Settings
+export const siteSettingsQuery = groq`*[_type == "siteSettings"][0]{
+  _id,
+  siteTitle,
+  siteDescription,
+  logo{
+    asset->{
+      _id,
+      url
+    }
+  },
+  navigationItems[]{
+    label,
+    url
+  },
+  footerText,
+  socialLinks
+}`
