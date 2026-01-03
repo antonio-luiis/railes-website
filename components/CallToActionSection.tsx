@@ -1,7 +1,23 @@
 import { ChevronRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
-export function CallToActionSection() {
+interface CallToActionSectionProps {
+    data?: {
+        badgeText?: string;
+        title?: string;
+        highlightedTitle?: string;
+        titleSuffix?: string;
+        description?: string;
+        primaryButtonText?: string;
+        primaryButtonLink?: string;
+        secondaryButtonText?: string;
+        secondaryButtonLink?: string;
+    }
+}
+
+export function CallToActionSection({ data }: CallToActionSectionProps) {
+    if (!data) return null;
+
     return (
         <section className="py-24 relative overflow-hidden">
             {/* Background with Gradient and Noise/Pattern */}
@@ -17,26 +33,26 @@ export function CallToActionSection() {
                     {/* Tagline / Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-blue-200 text-sm font-medium mb-8">
                         <Sparkles className="w-4 h-4" />
-                        <span>Ready to transform your factory?</span>
+                        <span>{data.badgeText || "Ready to transform your factory?"}</span>
                     </div>
 
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">
-                        Railes MES can enhance efficiency<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">and productivity</span> within your production
+                        {data.title || "Railes MES can enhance efficiency"}<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">{data.highlightedTitle || "and productivity"}</span> {data.titleSuffix || "within your production"}
                     </h2>
 
                     <p className="text-blue-100/80 text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Railes MES allows you to monitor your production in real time, manage processes, optimize operations, and gain the competitive edge you need.
+                        {data.description}
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link href="/demo" className="group w-full sm:w-auto bg-white hover:bg-blue-50 text-blue-900 font-bold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                            <span className="text-lg">Book a demo</span>
+                        <Link href={data.primaryButtonLink || "/demo"} className="group w-full sm:w-auto bg-white hover:bg-blue-50 text-blue-900 font-bold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                            <span className="text-lg">{data.primaryButtonText || "Book a demo"}</span>
                             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
 
-                        <Link href="/contact" className="group w-full sm:w-auto bg-transparent border border-white/20 hover:bg-white/10 text-white font-semibold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all">
-                            <span>Contact Sales</span>
+                        <Link href={data.secondaryButtonLink || "/contact"} className="group w-full sm:w-auto bg-transparent border border-white/20 hover:bg-white/10 text-white font-semibold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all">
+                            <span>{data.secondaryButtonText || "Contact Sales"}</span>
                         </Link>
                     </div>
                 </div>

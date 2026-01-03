@@ -9,6 +9,7 @@ import { ProofResultsSection } from "@/components/ProofResultsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { BlogPreviewSection } from "@/components/BlogPreviewSection";
 import { CallToActionSection } from "@/components/CallToActionSection";
+import { NewsletterSection } from "@/components/NewsletterSection";
 import { client } from "@/sanity/lib/client";
 import { homepageQuery } from "@/sanity/lib/queries";
 
@@ -21,13 +22,14 @@ export default async function Home() {
       <Hero data={homepageData?.hero} />
       <FeatureBlock features={homepageData?.featureBlocks} />
       <FeaturesGrid cards={homepageData?.featuresGrid} />
-      <ComplianceQualitySection />
-      <CustomizationAISection />
-      <IndustrySolutionsSection />
-      <ProofResultsSection />
-      <TestimonialsSection />
+      <ComplianceQualitySection data={homepageData?.complianceSection} />
+      <CustomizationAISection data={homepageData?.customizationSection} />
+      <IndustrySolutionsSection data={homepageData?.industrySection} />
+      <ProofResultsSection data={homepageData?.proofSection} />
+      <TestimonialsSection data={homepageData?.testimonialsSection} />
       <BlogPreviewSection />
-      <CallToActionSection />
+      <CallToActionSection data={homepageData?.ctaSection} />
+      <NewsletterSection data={homepageData?.newsletterSection} />
       <SolutionsSection data={homepageData?.solutions} />
     </div>
   );

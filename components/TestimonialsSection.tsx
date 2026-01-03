@@ -1,28 +1,32 @@
 import { Quote } from 'lucide-react';
 import Image from 'next/image';
+import { urlForImage } from '@/sanity/lib/image';
 
-const testimonials = [
-    {
-        text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
-        name: "Inês Almeida",
-        role: "CEO and Co-founder of Muvu",
-        image: "/images/avatar-ines.png" // Placeholder
-    },
-    {
-        text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
-        name: "Inês Almeida",
-        role: "CEO and Co-founder of Muvu",
-        image: "/images/avatar-ines.png" // Placeholder
-    },
-    {
-        text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
-        name: "Inês Almeida",
-        role: "CEO and Co-founder of Muvu",
-        image: "/images/avatar-ines.png" // Placeholder
+interface TestimonialsSectionProps {
+    data?: {
+        title?: string;
+        description?: string;
+        testimonials?: Array<{
+            text: string;
+            name: string;
+            role: string;
+            image: any;
+        }>;
     }
-];
+}
 
-export function TestimonialsSection() {
+export function TestimonialsSection({ data }: TestimonialsSectionProps) {
+    if (!data) return null;
+
+    const testimonials = data.testimonials || [
+        {
+            text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
+            name: "Inês Almeida",
+            role: "CEO and Co-founder of Muvu",
+            image: "/images/avatar-ines.png" // Placeholder
+        },
+    ];
+
     return (
         <section className="py-24 bg-gray-50 overflow-hidden">
             <div className="container mx-auto px-4">
@@ -30,10 +34,10 @@ export function TestimonialsSection() {
                 {/* Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Words of praise from others
+                        {data.title || "Words of praise from others"}
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Railes MES allows you to monitor your production in real time, manage processes, optimize operations
+                        {data.description}
                     </p>
                 </div>
 
@@ -45,8 +49,6 @@ export function TestimonialsSection() {
 
                     <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 px-4 md:px-0 -mx-4 md:mx-0 scrollbar-hide justify-center">
 
-                        {/* Visual Fake Left Card (faded) for desktop visual match if needed, but doing a loop for now */}
-
                         {testimonials.map((testimonial, index) => (
                             <div
                                 key={index}
@@ -54,19 +56,21 @@ export function TestimonialsSection() {
                             >
                                 <Quote className="w-12 h-12 text-[#1e40af] mb-6 fill-[#1e40af]" />
 
-                                <p className="text-gray-900 font-medium text-lg mb-8 leading-relaxed">
+                                <p className="text-gray-900 font-medium text-lg mb-8 leading-relaxed line-clamp-4">
                                     {testimonial.text}
                                 </p>
 
                                 <div className="mt-auto flex items-center gap-4">
                                     <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-100 shrink-0">
                                         {/* Placeholder for Avatar */}
-                                        <Image
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                            fill
-                                            className="object-cover"
-                                        />
+                                        {testimonial.image && (
+                                            <Image
+                                                src={typeof testimonial.image === 'string' ? testimonial.image : urlForImage(testimonial.image).url()}
+                                                alt={testimonial.name}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        )}
                                     </div>
                                     <div>
                                         <div className="font-bold text-gray-900">{testimonial.name}</div>

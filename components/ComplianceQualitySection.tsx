@@ -1,7 +1,21 @@
 import { ArrowRight, Check, Package, Search, Truck, Settings } from 'lucide-react';
 import Image from 'next/image';
+import { urlForImage } from '@/sanity/lib/image';
 
-export function ComplianceQualitySection() {
+interface ComplianceQualitySectionProps {
+    data?: {
+        complianceTitle?: string;
+        complianceDescription?: string;
+        complianceImage?: any;
+        qualityTitle?: string;
+        qualityDescription?: string;
+        qualityImage?: any;
+    }
+}
+
+export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps) {
+    if (!data) return null;
+
     return (
         <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-4">
@@ -10,22 +24,24 @@ export function ComplianceQualitySection() {
                     <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                         <div className="mb-8 relative z-10">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                                Compliance<br />and Traceability
+                                {data.complianceTitle || "Compliance and Traceability"}
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                Ensure adherence to regulations and <span className="font-semibold text-gray-900">transparent tracking</span> of production processes, safeguarding quality and enabling swift issue resolution.
+                                {data.complianceDescription}
                             </p>
                         </div>
 
-                        {/* Visual: Flowchart Image (Placeholder) */}
+                        {/* Visual: Flowchart Image */}
                         <div className="bg-gray-50 rounded-2xl p-6 mt-auto relative min-h-[260px] flex items-center justify-center">
                             <div className="relative w-full h-full min-h-[200px]">
-                                <Image
-                                    src="/images/compliance-flow.png"
-                                    alt="Compliance and Traceability Flowchart"
-                                    fill
-                                    className="object-contain"
-                                />
+                                {data.complianceImage && (
+                                    <Image
+                                        src={urlForImage(data.complianceImage).url()}
+                                        alt={data.complianceImage.alt || "Compliance Flowchart"}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                )}
                             </div>
                         </div>
 
@@ -38,22 +54,24 @@ export function ComplianceQualitySection() {
                     <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                         <div className="mb-8 relative z-10">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                                Quality Management<br />and Control
+                                {data.qualityTitle || "Quality Management and Control"}
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                Prioritizes <span className="font-semibold text-gray-900">quality throughout the manufacturing process</span>, facilitating quality standards enforcement, inspections, and real-time quality tracking.
+                                {data.qualityDescription}
                             </p>
                         </div>
 
-                        {/* Visual: Dashboard Image (Placeholder) */}
+                        {/* Visual: Dashboard Image */}
                         <div className="mt-auto relative min-h-[200px]">
                             <div className="relative w-full h-[250px]">
-                                <Image
-                                    src="/images/quality-dashboard.png"
-                                    alt="Quality Management Dashboard"
-                                    fill
-                                    className="object-contain"
-                                />
+                                {data.qualityImage && (
+                                    <Image
+                                        src={urlForImage(data.qualityImage).url()}
+                                        alt={data.qualityImage.alt || "Quality Dashboard"}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                )}
                             </div>
                         </div>
 

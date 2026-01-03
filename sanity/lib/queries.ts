@@ -1,12 +1,13 @@
 import { groq } from 'next-sanity'
 
-// Query for Homepage (contains Hero, Feature Blocks, and Features Grid)
-export const homepageQuery = groq`*[_type == "homepage"][0]{
-  hero{
+// Query for Homepage
+export const homepageQuery = groq`*[_type == "homepage"][0] {
+  title,
+  hero {
     title,
     highlightedWords,
     description,
-    heroImage{
+    heroImage {
       asset->{
         _id,
         url
@@ -15,11 +16,11 @@ export const homepageQuery = groq`*[_type == "homepage"][0]{
     },
     videoUrl
   },
-  featureBlocks[]{
+  featureBlocks[] {
     title,
     description,
     backgroundColor,
-    mockupImage{
+    mockupImage {
       asset->{
         _id,
         url
@@ -27,12 +28,12 @@ export const homepageQuery = groq`*[_type == "homepage"][0]{
       alt
     }
   },
-  featuresGrid[]{
+  featuresGrid[] {
     title,
     subtitle,
     description,
     highlightedText,
-    mockupImage{
+    mockupImage {
       asset->{
         _id,
         url
@@ -42,15 +43,125 @@ export const homepageQuery = groq`*[_type == "homepage"][0]{
     badge,
     bottomText
   },
-  solutions{
+  complianceSection {
+    complianceTitle,
+    complianceDescription,
+    complianceImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    qualityTitle,
+    qualityDescription,
+    qualityImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }
+  },
+  customizationSection {
+    customizationTitle,
+    customizationDescription,
+    customizationImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    aiLabel,
+    aiTitle,
+    aiDescription,
+    aiImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }
+  },
+  industrySection {
     title,
     industries,
-    cards[]{
+    mainImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    visibilityTitle,
+    visibilityDescription,
+    executionTitle,
+    executionDescription,
+    executionImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    qualityTitle,
+    qualityDescription,
+    improvementTitle,
+    improvementDescription
+  },
+  proofSection {
+    title,
+    description,
+    roiText,
+    stats[] {
+      value,
+      label
+    }
+  },
+  testimonialsSection {
+    title,
+    description,
+    testimonials[] {
+      text,
+      name,
+      role,
+      image {
+        asset->{
+          _id,
+          url
+        },
+        alt
+      }
+    }
+  },
+  ctaSection {
+    badgeText,
+    title,
+    highlightedTitle,
+    titleSuffix,
+    description,
+    primaryButtonText,
+    primaryButtonLink,
+    secondaryButtonText,
+    secondaryButtonLink
+  },
+  newsletterSection {
+    title,
+    description,
+    placeholder,
+    buttonText,
+    footerText
+  },
+  solutions {
+    title,
+    industries,
+    cards[] {
       title,
       description,
       type,
       listItems,
-      image{
+      image {
         asset->{
           _id,
           url
@@ -62,17 +173,17 @@ export const homepageQuery = groq`*[_type == "homepage"][0]{
 }`
 
 // Query for Site Settings
-export const siteSettingsQuery = groq`*[_type == "siteSettings"][0]{
+export const siteSettingsQuery = groq`*[_type == "siteSettings"][0] {
   _id,
   siteTitle,
   siteDescription,
-  logo{
+  logo {
     asset->{
       _id,
       url
     }
   },
-  navigationItems[]{
+  navigationItems[] {
     label,
     url
   },

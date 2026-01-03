@@ -1,7 +1,27 @@
 import { Check, ChevronRight, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 
-export function ProofResultsSection() {
+interface ProofResultsSectionProps {
+    data?: {
+        title?: string;
+        description?: string;
+        roiText?: string;
+        stats?: Array<{
+            value: string;
+            label: string;
+        }>;
+    }
+}
+
+export function ProofResultsSection({ data }: ProofResultsSectionProps) {
+    if (!data) return null;
+
+    const stats = data.stats || [
+        { value: "45%", label: "uptime" },
+        { value: "40%", label: "increase in\nproduction\nefficiency" },
+        { value: "30%", label: "improvement\nin product\nquality" }
+    ];
+
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4">
@@ -10,11 +30,10 @@ export function ProofResultsSection() {
                     {/* Left Side: Text Content */}
                     <div className="lg:w-1/3 pt-8">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                            Proof<br />
-                            is in the results
+                            {data.title || "Proof is in the results"}
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                            The numbers don't lie. We tackle inefficiency, enhance quality, and deliver solutions tailored to your operations all backed by guaranteed ROI.
+                            {data.description}
                         </p>
                     </div>
 
@@ -32,39 +51,22 @@ export function ProofResultsSection() {
                                     <Check className="w-8 h-8 text-pink-500" strokeWidth={3} />
                                 </div>
                                 <p className="text-gray-600 border-l border-gray-100 pl-0 md:pl-6 md:border-l-2">
-                                    The numbers don't lie. We tackle to your operations all backed,
+                                    {data.roiText || "The numbers don't lie. We tackle to your operations all backed,"}
                                 </p>
                             </div>
 
                             {/* Vertical Stats Columns */}
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-end">
 
-                                {/* Stat 1: 45% (Tallest) */}
-                                <div className="bg-white rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center text-center h-[340px] transform transition-transform hover:-translate-y-2 duration-300">
-                                    <span className="text-4xl font-bold text-blue-900 mb-2">45%</span>
-                                    <span className="text-sm text-blue-600 font-medium mb-4">uptime</span>
-                                    <div className="mt-auto">
-                                        <ChevronUp className="w-8 h-8 text-pink-500" strokeWidth={3} />
+                                {stats.map((stat, idx) => (
+                                    <div key={idx} className={`bg-white rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center text-center transform transition-transform hover:-translate-y-2 duration-300 ${idx === 0 ? 'h-[340px]' : idx === 1 ? 'h-[300px]' : 'h-[260px]'}`}>
+                                        <span className="text-4xl font-bold text-blue-900 mb-2">{stat.value}</span>
+                                        <span className="text-sm text-blue-600 font-medium mb-4 whitespace-pre-line">{stat.label}</span>
+                                        <div className="mt-auto">
+                                            <ChevronUp className="w-8 h-8 text-pink-500" strokeWidth={3} />
+                                        </div>
                                     </div>
-                                </div>
-
-                                {/* Stat 2: 40% (Medium) */}
-                                <div className="bg-white rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center text-center h-[300px] transform transition-transform hover:-translate-y-2 duration-300">
-                                    <span className="text-4xl font-bold text-blue-900 mb-2">40%</span>
-                                    <span className="text-sm text-blue-600 font-medium mb-4">increase in<br />production<br />efficiency</span>
-                                    <div className="mt-auto">
-                                        <ChevronUp className="w-8 h-8 text-pink-500" strokeWidth={3} />
-                                    </div>
-                                </div>
-
-                                {/* Stat 3: 30% (Smallest) */}
-                                <div className="bg-white rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center text-center h-[260px] transform transition-transform hover:-translate-y-2 duration-300">
-                                    <span className="text-4xl font-bold text-blue-900 mb-2">30%</span>
-                                    <span className="text-sm text-blue-600 font-medium mb-4">improvement<br />in product<br />quality</span>
-                                    <div className="mt-auto">
-                                        <ChevronUp className="w-8 h-8 text-pink-500" strokeWidth={3} />
-                                    </div>
-                                </div>
+                                ))}
 
                                 {/* Book Demo Button (Aligned bottom) */}
                                 <div className="h-[220px] flex items-end">
