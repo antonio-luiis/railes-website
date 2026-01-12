@@ -16,7 +16,19 @@ interface CallToActionSectionProps {
 }
 
 export function CallToActionSection({ data }: CallToActionSectionProps) {
-    if (!data) return null;
+    const fallback = {
+        badgeText: "Ready to transform your factory?",
+        title: "Railes MES can enhance efficiency",
+        highlightedTitle: "and productivity",
+        titleSuffix: "within your production",
+        description: "Discover how our solution can boost your operations.",
+        primaryButtonText: "Book a demo",
+        primaryButtonLink: "/demo",
+        secondaryButtonText: "Contact Sales",
+        secondaryButtonLink: "/contact",
+    };
+
+    const content = { ...fallback, ...data };
 
     return (
         <section className="py-24 relative overflow-hidden">
@@ -33,26 +45,26 @@ export function CallToActionSection({ data }: CallToActionSectionProps) {
                     {/* Tagline / Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-blue-200 text-sm font-medium mb-8">
                         <Sparkles className="w-4 h-4" />
-                        <span>{data.badgeText || "Ready to transform your factory?"}</span>
+                        <span>{content.badgeText}</span>
                     </div>
 
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">
-                        {data.title || "Railes MES can enhance efficiency"}<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">{data.highlightedTitle || "and productivity"}</span> {data.titleSuffix || "within your production"}
+                        {content.title}<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">{content.highlightedTitle}</span> {content.titleSuffix}
                     </h2>
 
                     <p className="text-blue-100/80 text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-                        {data.description}
+                        {content.description}
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link href={data.primaryButtonLink || "/demo"} className="group w-full sm:w-auto bg-white hover:bg-blue-50 text-blue-900 font-bold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                            <span className="text-lg">{data.primaryButtonText || "Book a demo"}</span>
+                        <Link href={content.primaryButtonLink || "/demo"} className="group w-full sm:w-auto bg-white hover:bg-blue-50 text-blue-900 font-bold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                            <span className="text-lg">{content.primaryButtonText}</span>
                             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
 
-                        <Link href={data.secondaryButtonLink || "/contact"} className="group w-full sm:w-auto bg-transparent border border-white/20 hover:bg-white/10 text-white font-semibold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all">
-                            <span>{data.secondaryButtonText || "Contact Sales"}</span>
+                        <Link href={content.secondaryButtonLink || "/contact"} className="group w-full sm:w-auto bg-transparent border border-white/20 hover:bg-white/10 text-white font-semibold py-5 px-10 rounded-full flex items-center justify-center gap-3 transition-all">
+                            <span>{content.secondaryButtonText}</span>
                         </Link>
                     </div>
                 </div>

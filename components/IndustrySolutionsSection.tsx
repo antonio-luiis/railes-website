@@ -27,14 +27,27 @@ const visibilityItems = [
 ];
 
 export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps) {
-    if (!data) return null;
+    const fallback = {
+        title: "Your Industry solutions",
+        visibilityTitle: "Visibility",
+        visibilityDescription: "Gain complete visibility into your production floor with real-time tracking of orders, operators, and work centers.",
+        executionTitle: "Execution",
+        executionDescription: "Streamline execution with digital work instructions and automated data collection.",
+        qualityTitle: "Quality",
+        qualityDescription: "Ensure product quality with integrated inspections and non-conformance management.",
+        improvementTitle: "Improvement",
+        improvementDescription: "Drive continuous improvement with data-driven insights and problem-solving tools.",
+        industries: [
+            "Pharmaceuticals Manufacturing",
+            "Automotive Manufacturing",
+            "Packaging Manufacturing",
+            "Aerospace & Defense Manufacturing"
+        ]
+    };
 
-    const industries = data.industries || [
-        "Pharmaceuticals Manufacturing",
-        "Automotive Manufacturing",
-        "Packaging Manufacturing",
-        "Aerospace & Defense Manufacturing"
-    ];
+    const content = { ...fallback, ...data };
+
+    const industries = content.industries || fallback.industries;
 
     return (
         <section className="py-20 bg-gray-50 overflow-hidden">
@@ -42,7 +55,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
 
                 {/* Header and Industry Pills */}
                 <div className="text-center mb-16 relative z-10">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-10">{data.title || "Your Industry solutions"}</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-10">{content.title}</h2>
 
                     <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
                         {/* Render industries as buttons - simplified layout for dynamic list */}
@@ -69,10 +82,10 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         <div className="absolute top-20 right-10 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
 
                         <div className="relative h-full w-full">
-                            {data.mainImage && (
+                            {content.mainImage && (
                                 <Image
-                                    src={urlForImage(data.mainImage).url()}
-                                    alt={data.mainImage.alt || "Industry Professional"}
+                                    src={urlForImage(content.mainImage).url()}
+                                    alt={content.mainImage.alt || "Industry Professional"}
                                     fill
                                     className="object-contain object-left-top"
                                 />
@@ -85,9 +98,9 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
 
                         {/* Visibility Section */}
                         <div className="mb-12">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{data.visibilityTitle || "Visibility"}</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.visibilityTitle}</h3>
                             <p className="text-gray-600 mb-8 max-w-2xl">
-                                {data.visibilityDescription}
+                                {content.visibilityDescription}
                             </p>
 
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -102,18 +115,18 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
 
                         {/* Execution Section */}
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{data.executionTitle || "Execution"}</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.executionTitle}</h3>
                             <p className="text-gray-600 mb-8 max-w-2xl">
-                                {data.executionDescription}
+                                {content.executionDescription}
                             </p>
 
                             {/* Execution Workflow Image */}
                             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
                                 <div className="relative w-full h-[150px]">
-                                    {data.executionImage && (
+                                    {content.executionImage && (
                                         <Image
-                                            src={urlForImage(data.executionImage).url()}
-                                            alt={data.executionImage.alt || "Execution Workflow"}
+                                            src={urlForImage(content.executionImage).url()}
+                                            alt={content.executionImage.alt || "Execution Workflow"}
                                             fill
                                             className="object-contain"
                                         />
@@ -124,9 +137,9 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
 
                         {/* Quality Section */}
                         <div className="mt-12">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{data.qualityTitle || "Quality"}</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.qualityTitle}</h3>
                             <p className="text-gray-600 mb-8 max-w-2xl">
-                                {data.qualityDescription}
+                                {content.qualityDescription}
                             </p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -147,9 +160,9 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
 
                         {/* Improvement Section */}
                         <div className="mt-12">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{data.improvementTitle || "Improvement"}</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.improvementTitle}</h3>
                             <p className="text-gray-600 mb-8 max-w-2xl">
-                                {data.improvementDescription}
+                                {content.improvementDescription}
                             </p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

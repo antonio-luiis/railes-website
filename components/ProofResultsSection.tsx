@@ -14,13 +14,20 @@ interface ProofResultsSectionProps {
 }
 
 export function ProofResultsSection({ data }: ProofResultsSectionProps) {
-    if (!data) return null;
 
-    const stats = data.stats || [
-        { value: "45%", label: "uptime" },
-        { value: "40%", label: "increase in\nproduction\nefficiency" },
-        { value: "30%", label: "improvement\nin product\nquality" }
-    ];
+    const fallback = {
+        title: "Proof is in the results",
+        description: "See how our customers are transforming their manufacturing operations with measurable improvements in efficiency and quality.",
+        roiText: "The numbers don't lie. We tackle to your operations all backed,",
+        stats: [
+            { value: "45%", label: "uptime" },
+            { value: "40%", label: "increase in\nproduction\nefficiency" },
+            { value: "30%", label: "improvement\nin product\nquality" }
+        ]
+    };
+
+    const content = { ...fallback, ...data };
+    const stats = content.stats || fallback.stats;
 
     return (
         <section className="py-20 bg-white">
@@ -30,10 +37,10 @@ export function ProofResultsSection({ data }: ProofResultsSectionProps) {
                     {/* Left Side: Text Content */}
                     <div className="lg:w-1/3 pt-8">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                            {data.title || "Proof is in the results"}
+                            {content.title}
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                            {data.description}
+                            {content.description}
                         </p>
                     </div>
 
@@ -51,7 +58,7 @@ export function ProofResultsSection({ data }: ProofResultsSectionProps) {
                                     <Check className="w-8 h-8 text-pink-500" strokeWidth={3} />
                                 </div>
                                 <p className="text-gray-600 border-l border-gray-100 pl-0 md:pl-6 md:border-l-2">
-                                    {data.roiText || "The numbers don't lie. We tackle to your operations all backed,"}
+                                    {content.roiText}
                                 </p>
                             </div>
 

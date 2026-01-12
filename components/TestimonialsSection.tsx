@@ -16,16 +16,21 @@ interface TestimonialsSectionProps {
 }
 
 export function TestimonialsSection({ data }: TestimonialsSectionProps) {
-    if (!data) return null;
+    const fallback = {
+        title: "Words of praise from others",
+        description: "Hear what industry leaders are saying about their experience with Railes MES.",
+        testimonials: [
+            {
+                text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
+                name: "Inês Almeida",
+                role: "CEO and Co-founder of Muvu",
+                image: "/images/avatar-ines.png" // Placeholder
+            },
+        ]
+    };
 
-    const testimonials = data.testimonials || [
-        {
-            text: "Railes MES allows you to monitor your production in real time, manage processes, optimize operations",
-            name: "Inês Almeida",
-            role: "CEO and Co-founder of Muvu",
-            image: "/images/avatar-ines.png" // Placeholder
-        },
-    ];
+    const content = { ...fallback, ...data };
+    const testimonials = content.testimonials || fallback.testimonials;
 
     return (
         <section className="py-24 bg-gray-50 overflow-hidden">
@@ -34,10 +39,10 @@ export function TestimonialsSection({ data }: TestimonialsSectionProps) {
                 {/* Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        {data.title || "Words of praise from others"}
+                        {content.title}
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        {data.description}
+                        {content.description}
                     </p>
                 </div>
 

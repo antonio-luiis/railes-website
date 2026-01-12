@@ -14,7 +14,14 @@ interface ComplianceQualitySectionProps {
 }
 
 export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps) {
-    if (!data) return null;
+    const fallback = {
+        complianceTitle: "Compliance and Traceability",
+        complianceDescription: "Ensure full traceability and compliance with industry standards through automated data tracking and reporting.",
+        qualityTitle: "Quality Management and Control",
+        qualityDescription: "Maintain high quality standards with real-time monitoring and automated quality control processes."
+    };
+
+    const content = { ...fallback, ...data };
 
     return (
         <section className="py-20 bg-gray-50">
@@ -24,20 +31,20 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                     <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                         <div className="mb-8 relative z-10">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                                {data.complianceTitle || "Compliance and Traceability"}
+                                {content.complianceTitle}
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                {data.complianceDescription}
+                                {content.complianceDescription}
                             </p>
                         </div>
 
                         {/* Visual: Flowchart Image */}
                         <div className="bg-gray-50 rounded-2xl p-6 mt-auto relative min-h-[260px] flex items-center justify-center">
                             <div className="relative w-full h-full min-h-[200px]">
-                                {data.complianceImage && (
+                                {content.complianceImage && (
                                     <Image
-                                        src={urlForImage(data.complianceImage).url()}
-                                        alt={data.complianceImage.alt || "Compliance Flowchart"}
+                                        src={urlForImage(content.complianceImage).url()}
+                                        alt={content.complianceImage.alt || "Compliance Flowchart"}
                                         fill
                                         className="object-contain"
                                     />
@@ -54,20 +61,20 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                     <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                         <div className="mb-8 relative z-10">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                                {data.qualityTitle || "Quality Management and Control"}
+                                {content.qualityTitle}
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                {data.qualityDescription}
+                                {content.qualityDescription}
                             </p>
                         </div>
 
                         {/* Visual: Dashboard Image */}
                         <div className="mt-auto relative min-h-[200px]">
                             <div className="relative w-full h-[250px]">
-                                {data.qualityImage && (
+                                {content.qualityImage && (
                                     <Image
-                                        src={urlForImage(data.qualityImage).url()}
-                                        alt={data.qualityImage.alt || "Quality Dashboard"}
+                                        src={urlForImage(content.qualityImage).url()}
+                                        alt={content.qualityImage.alt || "Quality Dashboard"}
                                         fill
                                         className="object-contain"
                                     />
