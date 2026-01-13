@@ -222,13 +222,15 @@ export function Navbar({ siteSettings }: NavbarProps) {
                             Contact us
                         </Link>
                         <span className="text-white/30 mr-3">|</span>
-                        <Button
-                            variant="ghost"
-                            size="sm"
-                            className="text-white hover:text-white hover:bg-white/10 rounded-full px-4"
-                        >
-                            Book a demo <ChevronDown className="w-4 h-4 ml-1 rotate-[-90deg]" />
-                        </Button>
+                        <Link href="/demo">
+                            <Button
+                                variant="ghost"
+                                size="sm"
+                                className="text-white hover:text-white hover:bg-white/10 rounded-full px-4"
+                            >
+                                Book a demo <ChevronDown className="w-4 h-4 ml-1 rotate-[-90deg]" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 

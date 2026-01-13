@@ -1,0 +1,398 @@
+import Link from 'next/link';
+import { ArrowRight, ChevronRight, Check } from 'lucide-react';
+import Image from 'next/image';
+
+export default function PharmaPage() {
+    return (
+        <main className="min-h-screen bg-white">
+            {/* 
+              BLOCK 1: HERO SECTION
+              White background with 3D elements and dashboard mockup
+            */}
+            <section className="relative pt-32 pb-20 overflow-hidden bg-white">
+
+                {/* Background Blobs/Decorations */}
+                <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                <div className="absolute top-40 left-0 w-[400px] h-[400px] bg-purple-50/50 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div className="container mx-auto px-4 relative z-10 text-center">
+
+                    {/* Breadcrumbs */}
+                    <div className="flex items-center justify-center gap-2 text-sm font-medium text-gray-500 mb-8">
+                        <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+                        <ChevronRight className="w-4 h-4" />
+                        <span className="text-gray-900">Industries</span>
+                        <ChevronRight className="w-4 h-4" />
+                        <span className="text-blue-600">The Pharmaceutical</span>
+                    </div>
+
+                    {/* Headlines */}
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 max-w-4xl mx-auto leading-tight">
+                        Railes MES for Pharmaceuticals<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Manufacturing Excellence</span>
+                    </h1>
+
+                    <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Better compliance, built-in quality processes, and full batch record traceability from start to finish.
+                        Optimize your pharma operations with our module-based solution.
+                    </p>
+
+                    {/* Dashboard Mockup (Visual) */}
+                    <div className="relative max-w-5xl mx-auto">
+                        {/* Main Dashboard Image Placeholder */}
+                        <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden relative z-10 aspect-[16/9] flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
+                            <div className="text-gray-400 font-medium">Dashboard Mockup Area</div>
+                            {/* 
+                                This is where the actual dashboard screenshot will go.
+                                For now, we simulate the structure:
+                                - Goods issue
+                                - Stock info
+                                - Checklists
+                             */}
+                            <div className="absolute inset-4 border-2 border-dashed border-gray-200 rounded-xl flex items-center justify-center">
+                                <span className="text-sm text-gray-400">Dashboard UI Image Placeholder</span>
+                            </div>
+                        </div>
+
+                        {/* Floating Element: Pharma Workflow Card */}
+                        <div className="absolute -bottom-10 -right-4 md:right-10 bg-white p-6 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 max-w-xs z-20 hidden md:block animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+                            <div className="flex items-center gap-3 mb-3">
+                                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                <span className="text-xs font-bold uppercase text-gray-400 tracking-wider">Pharma Workflow</span>
+                            </div>
+                            <div className="flex justify-between items-center mb-2">
+                                <div className="flex flex-col">
+                                    <span className="text-2xl font-bold text-gray-900">98.5%</span>
+                                    <span className="text-xs text-green-500 font-medium">+2.4% vs last batch</span>
+                                </div>
+                            </div>
+                            <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+                                <div className="h-full bg-blue-500 w-[98.5%] rounded-full"></div>
+                            </div>
+                        </div>
+
+                        {/* Decorative 3D Pills (Abstract shapes for now) */}
+                        <div className="absolute -top-10 -left-10 w-24 h-24 bg-purple-100 rounded-full blur-xl opacity-60 animate-pulse"></div>
+                        <div className="absolute bottom-20 -right-20 w-32 h-32 bg-blue-100 rounded-full blur-xl opacity-60 animate-pulse delay-700"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              BLOCK 2: WHY RAILES (4 CARDS GRID)
+              2x2 Grid with checkmarks
+            */}
+            <section className="py-24 bg-white">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
+                        Why Railes MES is the Pharma Partner You Need
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto relative">
+
+                        {/* Decorative Pill Background */}
+                        {/* Decorative Pill Background - User Asset Placeholder */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[120%] pointer-events-none z-0 flex items-center justify-center opacity-60">
+                            {/* 
+                                COMPANION: Please upload the vector image as 'pharma-bg-shape.svg' (or png) to public/images/
+                             */}
+                            <Image
+                                src="/images/pharma-bg-shape.svg"
+                                alt="Decorative Background"
+                                width={800}
+                                height={600}
+                                className="w-full h-auto object-contain rotate-[-45deg]"
+                            />
+                        </div>
+
+
+                        {/* Card 1 */}
+                        <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-gray-100 relative group hover:-translate-y-1 transition-transform duration-300">
+                            <div className="absolute top-8 right-8 text-purple-600 bg-purple-50 p-2 rounded-full">
+                                <Check className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
+                                Pharma-Ready Compliance & Quality Control
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                Built-in requirements for FDA 21 CFR Part 11 and EU GMP Annex 11. Ensure data integrity, electronic signatures, and audit trails out of the box.
+                            </p>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-gray-100 relative group hover:-translate-y-1 transition-transform duration-300">
+                            <div className="absolute top-8 right-8 text-purple-600 bg-purple-50 p-2 rounded-full">
+                                <Check className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
+                                Right-First-Time Workflows
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                Avoid deviations directly by validating data input in real-time. Guide operators with precise, step-by-step instructions.
+                            </p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-gray-100 relative group hover:-translate-y-1 transition-transform duration-300">
+                            <div className="absolute top-8 right-8 text-purple-600 bg-purple-50 p-2 rounded-full">
+                                <Check className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
+                                Composable & Scalable Platform
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                Start fast with standard apps and scale as you grow. Seamlessly integrate with ERPs, LIMS, and existing equipment.
+                            </p>
+                        </div>
+
+                        {/* Card 4 */}
+                        <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-gray-100 relative group hover:-translate-y-1 transition-transform duration-300">
+                            <div className="absolute top-8 right-8 text-purple-600 bg-purple-50 p-2 rounded-full">
+                                <Check className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
+                                Modular Architecture for Pharma Needs
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                Designed purely for pharma complexities. Handle weighing, dispensing, and packaging with dedicated modules without custom code.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              BLOCK 3: COMPARISON TABLE
+              "What sets RAILES MES apart"
+            */}
+            <section className="py-24 bg-blue-50/30">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
+                        What sets RAILES MES apart in pharma manufacturing
+                    </h2>
+
+                    <div className="bg-white rounded-[2rem] shadow-sm border border-gray-100 overflow-hidden max-w-5xl mx-auto">
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left border-collapse">
+                                <thead>
+                                    <tr className="border-b border-gray-100">
+                                        <th className="py-6 px-8 text-blue-900 font-bold text-lg w-1/4">Feature</th>
+                                        <th className="py-6 px-8 text-gray-500 font-bold text-lg w-1/3">Traditional MES</th>
+                                        <th className="py-6 px-8 text-blue-600 font-bold text-lg w-1/3 bg-blue-50/30">Railes MES</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-600">
+                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Deployment Time</td>
+                                        <td className="py-6 px-8">6-18 months</td>
+                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">4-8 weeks<br /><span className="text-sm font-normal text-gray-500">Modular implementation</span></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Customization</td>
+                                        <td className="py-6 px-8">Heavy and costly</td>
+                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Configuration over code<br /><span className="text-sm font-normal text-gray-500">No IT resources needed</span></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Paperless Batch Records</td>
+                                        <td className="py-6 px-8">Partial / Hybrid</td>
+                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">True 100% paperless<br /><span className="text-sm font-normal text-gray-500">fully compliant eBRs</span></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Scalability & Flexibility</td>
+                                        <td className="py-6 px-8">Rigid monolithic</td>
+                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Composable modules<br /><span className="text-sm font-normal text-gray-500">Scale as you need</span></td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">AI & IIoT</td>
+                                        <td className="py-6 px-8">Add-ons / Rare</td>
+                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Native AI-driven insights<br /><span className="text-sm font-normal text-gray-500">Seamless connectivity</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              BLOCK 4: 6 KEY BENEFITS
+              Grid of small cards with numbers
+            */}
+            <section className="py-24 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+                            6 Key Benefits
+                            <br />
+                            <span className="text-blue-500">for Pharma Manufacturers</span>
+                        </h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+                        {/* Benefit 1 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">1</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Ensure Compliance & Quality</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Built-in adherence to FDA 21 CFR Part 11 and EU GMP Annex 11 ensures you meet regulatory standards.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Benefit 2 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-bold text-lg shadow-md">2</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Boost Efficiency & Throughput</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Optimize batch release times and minimize downtime with digital workflows and real-time monitoring.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Benefit 3 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center text-white font-bold text-lg shadow-md">3</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Minimize Risk</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Protect brand reputation and avoid costly quality deviations with fail-safe guided execution.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Benefit 4 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-md">4</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Scale with Confidence</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Deploy standardized processes across multiple sites seamlessly with our cloud-native architecture.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Benefit 5 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">5</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Reduce Costs</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Eliminate paper costs, improve data integrity, and reduce manual errors throughout production.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Benefit 6 */}
+                        <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-white font-bold text-lg shadow-md">6</div>
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Speed to Value</h4>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Rapid modular implementation lets you see ROI in weeks, not years, unlike legacy systems.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              BLOCK 5: TRANSFORM CTA
+              Dark blue rounded container
+            */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="bg-[#1e3a8a] rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
+
+                        {/* Background Splashes */}
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+                        {/* Pink/Purple Blob Decoration */}
+                        <div className="absolute bottom-[-50px] right-[20%] w-[200px] h-[200px] bg-pink-500/30 rounded-full blur-2xl pointer-events-none mix-blend-overlay"></div>
+
+                        <div className="relative z-10 lg:w-1/2 text-white">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                                Transform Your Pharma Operations?
+                            </h2>
+                            <h3 className="text-xl font-semibold mb-8 text-blue-100">
+                                Railes MES transforms pharma manufacturing through:
+                            </h3>
+                            <ul className="space-y-6">
+                                <li className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">1</div>
+                                    <span className="text-blue-50/90 leading-relaxed text-lg">Centralized data in real-time to advanced numerical control capabilities.</span>
+                                </li>
+                                <li className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">2</div>
+                                    <span className="text-blue-50/90 leading-relaxed text-lg">Increase efficiency and reduce waste and downtime.</span>
+                                </li>
+                                <li className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">3</div>
+                                    <span className="text-blue-50/90 leading-relaxed text-lg">Overhaul KPIs (Time to Market & Quality).</span>
+                                </li>
+                                <li className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">4</div>
+                                    <span className="text-blue-50/90 leading-relaxed text-lg">Advanced analytics and actionable insights for rapid optimization.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="relative z-10 lg:w-5/12 flex justify-center lg:justify-end">
+                            {/* 
+                                IMAGE PLACEHOLDER: Person holding tablet
+                                Ideally this should be a transparent PNG of a person.
+                            */}
+                            <div className="relative w-full max-w-md aspect-[4/5] flex items-end justify-center">
+                                {/* Placeholder Outline */}
+                                <div className="w-full h-full bg-gradient-to-b from-white/5 to-white/10 rounded-3xl border-2 border-dashed border-white/20 flex flex-col items-center justify-center p-6 text-center backdrop-blur-sm">
+                                    <div className="text-white/50 mb-2 font-medium">Image Slot</div>
+                                    <div className="text-xs text-blue-200">
+                                        Update <strong>src</strong> with:<br />
+                                        <code>/images/pharma-person.png</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              BLOCK 6: E-BOOK DOWNLOAD
+              White section with download CTA
+            */}
+            <section className="pb-24 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="bg-gray-50 rounded-[2rem] p-10 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto border border-gray-100">
+
+                        <div className="md:w-1/3">
+                            <div className="aspect-[3/4] bg-white shadow-xl rounded-xl -rotate-3 border border-gray-200 flex items-center justify-center">
+                                <span className="text-gray-400 font-medium">E-book Cover</span>
+                            </div>
+                        </div>
+
+                        <div className="md:w-2/3">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Titulo do E-book</h3>
+                            <p className="text-gray-600 mb-8 leading-relaxed">
+                                See why leading pharma giants are switching to Railes MES to embrace Industry 4.0 standards.
+                                Download our free guide to learn more.
+                            </p>
+                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-8 rounded-xl w-full md:w-auto shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all flex items-center justify-center gap-2">
+                                <span>Click here to download</span>
+                                <ArrowRight className="w-5 h-5" />
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    );
+}
