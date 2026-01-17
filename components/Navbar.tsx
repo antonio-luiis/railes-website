@@ -208,15 +208,17 @@ export function Navbar({ siteSettings }: NavbarProps) {
                     <button className="text-gray-600 hover:text-railes-blue">
                         <Search className="w-5 h-5" />
                     </button>
-                    <Link
-                        href="/contact"
-                        className="text-[15px] font-medium text-gray-600 hover:text-railes-blue px-4 py-2 transition-colors"
-                    >
-                        Contact us
+                    <Link href="/contact">
+                        <Button
+                            variant="ghost"
+                            className="text-[15px] font-medium text-gray-600 hover:text-railes-blue hover:bg-blue-50/50 px-5 transition-all"
+                        >
+                            Contact us
+                        </Button>
                     </Link>
                     <Link href="/demo">
                         <Button
-                            className="bg-railes-blue hover:bg-railes-blue/90 text-white rounded-full px-6 py-2 h-11 text-[15px] font-semibold transition-all shadow-sm hover:shadow-md active:scale-[0.98]"
+                            className="bg-railes-blue hover:bg-blue-800 text-white rounded-full px-6 py-2.5 h-auto text-[15px] font-semibold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
                         >
                             Book a demo <ChevronDown className="w-4 h-4 ml-1.5 rotate-[-90deg]" />
                         </Button>
