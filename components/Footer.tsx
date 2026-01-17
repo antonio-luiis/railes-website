@@ -1,7 +1,11 @@
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Github, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+import { siteSettings } from "@/lib/mock-data";
 
 export function Footer() {
+    const logoUrl = siteSettings?.logo?.asset?.url;
+    const siteTitle = siteSettings?.siteTitle || "RAILES";
+
     return (
         <footer className="bg-[#F9FAFB] pt-20 pb-12 font-sans border-t border-gray-100">
             <div className="container mx-auto px-4">
@@ -12,10 +16,13 @@ export function Footer() {
                     <div className="lg:col-span-1 flex flex-col justify-between h-full">
                         <div>
                             <Link href="/" className="inline-block mb-8">
-                                {/* Styled to match the 'RAILES' text logo in the image */}
-                                <span className="text-3xl font-extrabold tracking-widest text-[#1e40af] uppercase font-mono">
-                                    RAILES
-                                </span>
+                                {logoUrl ? (
+                                    <img src={logoUrl} alt={siteTitle} className="h-8 md:h-10" />
+                                ) : (
+                                    <span className="text-3xl font-extrabold tracking-widest text-[#1e40af] uppercase font-mono">
+                                        {siteTitle}
+                                    </span>
+                                )}
                             </Link>
 
                             <div className="flex items-center gap-3 mb-8">

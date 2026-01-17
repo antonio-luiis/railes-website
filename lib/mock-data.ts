@@ -1,6 +1,11 @@
 
 export const siteSettings = {
     siteTitle: "RAILES",
+    logo: {
+        asset: {
+            url: "/railes_logo.svg"
+        }
+    },
     siteDescription: "Manufacturing Execution System - See. Control. Optimize.",
     navigationItems: [
         { label: "Product", url: "#" },
