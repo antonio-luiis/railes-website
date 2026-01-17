@@ -43,7 +43,7 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                             <div className="relative w-full h-full min-h-[200px]">
                                 {content.complianceImage && (
                                     <Image
-                                        src={urlForImage(content.complianceImage).url()}
+                                        src={content.complianceImage.asset?.url || urlForImage(content.complianceImage).url()}
                                         alt={content.complianceImage.alt || "Compliance Flowchart"}
                                         fill
                                         className="object-contain"
@@ -73,7 +73,7 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                             <div className="relative w-full h-[250px]">
                                 {content.qualityImage && (
                                     <Image
-                                        src={urlForImage(content.qualityImage).url()}
+                                        src={content.qualityImage.asset?.url || urlForImage(content.qualityImage).url()}
                                         alt={content.qualityImage.alt || "Quality Dashboard"}
                                         fill
                                         className="object-contain"

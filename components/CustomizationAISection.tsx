@@ -46,7 +46,7 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
                             <div className="relative w-full h-[180px]">
                                 {content.customizationImage && (
                                     <Image
-                                        src={urlForImage(content.customizationImage).url()}
+                                        src={content.customizationImage.asset?.url || urlForImage(content.customizationImage).url()}
                                         alt={content.customizationImage.alt || "Customization Visual"}
                                         fill
                                         className="object-contain"
@@ -80,7 +80,7 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
                                 <div className="relative w-full h-[250px] -mb-10">
                                     {content.aiImage && (
                                         <Image
-                                            src={urlForImage(content.aiImage).url()}
+                                            src={content.aiImage.asset?.url || urlForImage(content.aiImage).url()}
                                             alt={content.aiImage.alt || "AI Interface"}
                                             fill
                                             className="object-contain object-bottom"

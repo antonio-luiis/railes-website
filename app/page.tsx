@@ -10,27 +10,23 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { BlogPreviewSection } from "@/components/BlogPreviewSection";
 import { CallToActionSection } from "@/components/CallToActionSection";
 import { NewsletterSection } from "@/components/NewsletterSection";
-import { client } from "@/sanity/lib/client";
-import { homepageQuery } from "@/sanity/lib/queries";
+import * as mockData from "@/lib/mock-data";
 
-export default async function Home() {
-  // Fetch data from Sanity
-  const homepageData = await client.fetch(homepageQuery);
-
+export default function Home() {
   return (
     <div className="min-h-screen">
-      <Hero data={homepageData?.hero} />
-      <FeatureBlock features={homepageData?.featureBlocks} />
-      <FeaturesGrid cards={homepageData?.featuresGrid} />
-      <ComplianceQualitySection data={homepageData?.complianceSection} />
-      <CustomizationAISection data={homepageData?.customizationSection} />
-      <IndustrySolutionsSection data={homepageData?.industrySection} />
-      <ProofResultsSection data={homepageData?.proofSection} />
-      <TestimonialsSection data={homepageData?.testimonialsSection} />
+      <Hero data={mockData.heroData} />
+      <FeatureBlock features={mockData.featureBlocks} />
+      <FeaturesGrid cards={mockData.featuresGrid} />
+      <ComplianceQualitySection data={mockData.complianceSection} />
+      <CustomizationAISection data={mockData.customizationSection} />
+      <IndustrySolutionsSection data={mockData.industrySection} />
+      <ProofResultsSection data={mockData.proofSection} />
+      <TestimonialsSection data={mockData.testimonialsSection} />
       <BlogPreviewSection />
-      <CallToActionSection data={homepageData?.ctaSection} />
-      <NewsletterSection data={homepageData?.newsletterSection} />
-      <SolutionsSection data={homepageData?.solutions} />
+      <CallToActionSection data={mockData.ctaSection} />
+      <NewsletterSection data={mockData.newsletterSection} />
+      <SolutionsSection data={mockData.solutions} />
     </div>
   );
 }

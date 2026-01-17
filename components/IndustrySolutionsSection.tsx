@@ -84,7 +84,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         <div className="relative h-full w-full">
                             {content.mainImage && (
                                 <Image
-                                    src={urlForImage(content.mainImage).url()}
+                                    src={content.mainImage.asset?.url || urlForImage(content.mainImage).url()}
                                     alt={content.mainImage.alt || "Industry Professional"}
                                     fill
                                     className="object-contain object-left-top"
@@ -125,7 +125,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                                 <div className="relative w-full h-[150px]">
                                     {content.executionImage && (
                                         <Image
-                                            src={urlForImage(content.executionImage).url()}
+                                            src={content.executionImage.asset?.url || urlForImage(content.executionImage).url()}
                                             alt={content.executionImage.alt || "Execution Workflow"}
                                             fill
                                             className="object-contain"

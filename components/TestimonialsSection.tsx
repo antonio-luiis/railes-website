@@ -70,7 +70,7 @@ export function TestimonialsSection({ data }: TestimonialsSectionProps) {
                                         {/* Placeholder for Avatar */}
                                         {testimonial.image && (
                                             <Image
-                                                src={typeof testimonial.image === 'string' ? testimonial.image : urlForImage(testimonial.image).url()}
+                                                src={testimonial.image?.asset?.url || (typeof testimonial.image === 'string' ? testimonial.image : urlForImage(testimonial.image).url())}
                                                 alt={testimonial.name}
                                                 fill
                                                 className="object-cover"
