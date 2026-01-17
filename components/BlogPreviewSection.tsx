@@ -1,33 +1,7 @@
-import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const blogPosts = [
-    {
-        title: "The importance of usability in a MES",
-        excerpt: "Why user experience is critical for manufacturing execution systems and how it impacts productivity.",
-        date: "March 5, 2025",
-        readTime: "5 min read",
-        image: "/images/blog-post-1.png", // Placeholder
-        category: "Usability"
-    },
-    {
-        title: "Optimizing Production with AI",
-        excerpt: "Leveraging machine learning algorithms to predict maintenance needs and reduce downtime.",
-        date: "March 12, 2025",
-        readTime: "8 min read",
-        image: "/images/blog-post-2.png", // Placeholder
-        category: "Technology"
-    },
-    {
-        title: "Future of Manufacturing 2025",
-        excerpt: "Trends and predictions for the industrial sector: Automation, IoT and the human workforce.",
-        date: "March 20, 2025",
-        readTime: "6 min read",
-        image: "/images/blog-post-3.png", // Placeholder
-        category: "Industry 4.0"
-    }
-];
+import { blogPosts } from '@/lib/blog-data';
 
 export function BlogPreviewSection() {
     return (
@@ -53,18 +27,24 @@ export function BlogPreviewSection() {
 
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {blogPosts.map((post, index) => (
-                        <div key={index} className="group cursor-pointer">
+                    {blogPosts.slice(0, 3).map((post, index) => (
+                        <Link href={`/blog/${post.slug}`} key={post.slug} className="group cursor-pointer block h-full">
                             {/* Image Card */}
                             <div className="relative h-[240px] w-full rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 {/* Gradient Overlay for Text contrast if needed, or just hover effect */}
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors z-10" />
 
-                                {/* Image Placeholder */}
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-300">
-                                    {/* We use a colored block if image missing, or actual image */}
+                                {/* Image or Fallback */}
+                                {post.image ? (
+                                    <Image
+                                        src={post.image}
+                                        alt={post.title}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                ) : (
                                     <div className={`w-full h-full bg-gradient-to-br ${index === 0 ? 'from-blue-100 to-indigo-100' : index === 1 ? 'from-purple-100 to-pink-100' : 'from-teal-100 to-emerald-100'}`}></div>
-                                </div>
+                                )}
 
                                 {/* Badge */}
                                 <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-900 z-20">
@@ -97,7 +77,7 @@ export function BlogPreviewSection() {
                                     Read article <ArrowRight className="w-4 h-4" />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
             name: "Alex Rivera",
             role: "Industry Analyst"
         },
-        image: "https://images.unsplash.com/photo-1581093458891-2f30890918b6?auto=format&fit=crop&q=80&w=2070",
+        image: "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?auto=format&fit=crop&q=80&w=2070",
         content: `
             <h2>The Human-Centric Factory</h2>
             <p>While automation continues to advance, the narrative is shifting from "replacing humans" to "augmenting humans". Industry 5.0 focuses on the collaboration between people and smart systems.</p>
