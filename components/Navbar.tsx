@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Logo } from "./Logo";
 
 interface NavbarProps {
     siteSettings?: {
@@ -171,15 +172,8 @@ export function Navbar({ siteSettings }: NavbarProps) {
             onMouseLeave={() => setActiveDropdown(null)}
         >
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative z-50">
-                {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 mr-8">
-                    {logoUrl ? (
-                        <img src={logoUrl} alt={siteTitle} className="h-8" />
-                    ) : (
-                        <span className="text-2xl font-bold tracking-tight text-blue-900">
-                            {siteTitle}
-                        </span>
-                    )}
+                    <Logo className="h-8" color="#1e3a8a" />
                 </Link>
 
                 {/* Desktop Nav */}

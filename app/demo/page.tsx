@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { siteSettings } from "@/lib/mock-data";
+import { Logo } from '@/components/Logo';
 
 export default function DemoPage() {
     return (
@@ -18,11 +19,7 @@ export default function DemoPage() {
                 {/* Logo */}
                 <div className="absolute top-6 left-6 md:left-12 z-50">
                     <Link href="/">
-                        {siteSettings.logo?.asset?.url ? (
-                            <img src={siteSettings.logo.asset.url} alt="RAILES" className="h-8 brightness-0 invert" />
-                        ) : (
-                            <span className="text-2xl font-bold tracking-tight text-white uppercase">RAILES</span>
-                        )}
+                        <Logo className="h-8" color="white" />
                     </Link>
                 </div>
 

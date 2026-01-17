@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Github, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import { siteSettings } from "@/lib/mock-data";
+import { Logo } from "./Logo";
 
 export function Footer() {
     const logoUrl = siteSettings?.logo?.asset?.url;
@@ -12,17 +13,10 @@ export function Footer() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
 
-                    {/* Column 1: Brand & Socials & Copyright */}
                     <div className="lg:col-span-1 flex flex-col justify-between h-full">
                         <div>
                             <Link href="/" className="inline-block mb-8">
-                                {logoUrl ? (
-                                    <img src={logoUrl} alt={siteTitle} className="h-8 md:h-10" />
-                                ) : (
-                                    <span className="text-3xl font-extrabold tracking-widest text-[#1e40af] uppercase font-mono">
-                                        {siteTitle}
-                                    </span>
-                                )}
+                                <Logo className="h-8 md:h-10" color="#1e3a8a" />
                             </Link>
 
                             <div className="flex items-center gap-3 mb-8">
