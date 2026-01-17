@@ -4,8 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { blogPosts } from '@/lib/blog-data';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Railes Blog | Insights on Manufacturing & Technology',
@@ -23,7 +21,6 @@ export default function BlogPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
 
             {/* Header / Hero */}
             <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 bg-gray-50 border-b border-gray-100">
@@ -129,7 +126,6 @@ export default function BlogPage() {
 
             </div>
 
-            <Footer />
         </main>
     );
 }

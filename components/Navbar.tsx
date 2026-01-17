@@ -41,7 +41,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const [activeDropdown, setActiveDropdown] = React.useState<string | null>(null);
 
-    const siteTitle = siteSettings?.siteTitle || "Opstream";
+    const siteTitle = siteSettings?.siteTitle || "RAILES";
     const logoUrl = siteSettings?.logo?.asset?.url;
 
     React.useEffect(() => {

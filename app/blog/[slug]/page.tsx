@@ -5,8 +5,6 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, Calendar, Clock, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { blogPosts } from '@/lib/blog-data';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
 
 interface Props {
     params: Promise<{
@@ -77,7 +75,6 @@ export default async function BlogPostPage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navbar />
 
             {/* Progress Bar (Simulated for now, could be client component) */}
             <div className="fixed top-0 left-0 h-1 bg-blue-600 z-50 w-full origin-left transform scale-x-0 animate-scroll-progress" style={{ animationTimeline: 'scroll()' } as any}></div>
@@ -210,7 +207,6 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 }
