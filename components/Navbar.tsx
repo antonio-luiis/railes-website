@@ -57,135 +57,6 @@ export function Navbar({ siteSettings }: NavbarProps) {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [activeDropdown]);
 
-    // Product Dropdown
-    const renderProductDropdown = () => (
-        <div
-            className="absolute top-full left-0 w-full z-50 pt-2"
-            onMouseEnter={() => setActiveDropdown('Product')}
-            onMouseLeave={() => setActiveDropdown(null)}
-        >
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="bg-white border text-left border-gray-100 shadow-2xl rounded-2xl w-full max-w-6xl mx-auto animate-in fade-in slide-in-from-top-2 duration-200 overflow-hidden">
-                    <div className="grid grid-cols-12 p-8 gap-8">
-                        {/* Features Column (8 cols) */}
-                        <div className="col-span-8 border-r border-gray-100 pr-8">
-                            <h3 className="text-base font-semibold text-gray-900 mb-6 flex items-center gap-2">
-                                Features
-                            </h3>
-                            <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                                <Link href="/product/production-management" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-blue-50 text-blue-600 rounded-md group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                        <Settings className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Production Management</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Control shop floor operations</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-purple-50 text-purple-600 rounded-md group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                        <ClipboardList className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-purple-600 text-sm">Quality Management</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Ensure highest standards</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-green-50 text-green-600 rounded-md group-hover:bg-green-600 group-hover:text-white transition-colors">
-                                        <Code2 className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-green-600 text-sm">Digital Record</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Paperless documentation</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-orange-50 text-orange-600 rounded-md group-hover:bg-orange-600 group-hover:text-white transition-colors">
-                                        <TrendingUp className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-orange-600 text-sm">Monitoring</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Real-time visibility</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-cyan-50 text-cyan-600 rounded-md group-hover:bg-cyan-600 group-hover:text-white transition-colors">
-                                        <Hammer className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-cyan-600 text-sm">Automation & Integration</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Connect systems</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-indigo-50 text-indigo-600 rounded-md group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                                        <Sparkles className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-indigo-600 text-sm">Artificial Intelligence</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Advanced insights</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-pink-50 text-pink-600 rounded-md group-hover:bg-pink-600 group-hover:text-white transition-colors">
-                                        <Box className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-pink-600 text-sm">Digital Twin</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Virtual replication</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-teal-50 text-teal-600 rounded-md group-hover:bg-teal-600 group-hover:text-white transition-colors">
-                                        <Monitor className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-teal-600 text-sm">Edge Computing</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Low latency processing</div>
-                                    </div>
-                                </Link>
-                                <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
-                                    <div className="p-1.5 bg-sky-50 text-sky-600 rounded-md group-hover:bg-sky-600 group-hover:text-white transition-colors">
-                                        <Building2 className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <div className="font-medium text-gray-900 group-hover:text-sky-600 text-sm">Cloud</div>
-                                        <div className="text-xs text-gray-500 mt-0.5">Scalable infrastructure</div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Use Cases Column (4 cols) */}
-                        <div className="col-span-4">
-                            <h3 className="text-base font-semibold text-gray-900 mb-6">Use Cases</h3>
-                            <div className="flex flex-col gap-3">
-                                <Link href="#" className="flex items-center gap-3 p-2 -ml-2 hover:bg-gray-50 rounded-lg group transition-colors">
-                                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                        <Code2 className="w-5 h-5" />
-                                    </div>
-                                    <span className="font-medium text-gray-700 group-hover:text-gray-900 text-sm">
-                                        Framework for digital records: <br />from log books to eBR
-                                    </span>
-                                </Link>
-                            </div>
-                            <div className="mt-8 bg-blue-50 rounded-xl p-5">
-                                <h4 className="font-bold text-blue-900 text-sm mb-2">Ready to explore?</h4>
-                                <p className="text-xs text-blue-700 mb-3">See how Railes adapts to your specific needs.</p>
-                                <Link href="/demo" className="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-                                    Book a Demo <ChevronDown className="w-3 h-3 rotate-[-90deg]" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-
-
-
     return (
         <header
             className={cn(
@@ -222,6 +93,106 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                 {link.label}
                                 {link.hasDropdown && <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === link.label ? "rotate-180" : "")} />}
                             </Link>
+
+                            {/* Product Dropdown */}
+                            {link.label === 'Product' && activeDropdown === 'Product' && (
+                                <div className="absolute top-full left-0 pt-2 w-screen z-50">
+                                    <div className="container mx-auto px-4 md:px-6">
+                                        <div className="bg-white border text-left border-gray-100 shadow-2xl rounded-2xl w-full max-w-6xl mx-auto animate-in fade-in slide-in-from-top-2 duration-200 overflow-hidden">
+                                            <div className="grid grid-cols-12 p-8 gap-8">
+                                                {/* Features Column (8 cols) */}
+                                                <div className="col-span-8 border-r border-gray-100 pr-8">
+                                                    <h3 className="text-base font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                                                        Features
+                                                    </h3>
+                                                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+                                                        <Link href="/product/production-management" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-blue-50 text-blue-600 rounded-md group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                                <Settings className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Production Management</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Control shop floor operations</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-purple-50 text-purple-600 rounded-md group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                                                <ClipboardList className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-purple-600 text-sm">Quality Management</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Ensure highest standards</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-green-50 text-green-600 rounded-md group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                                                <Code2 className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-green-600 text-sm">Digital Record</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Paperless documentation</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-orange-50 text-orange-600 rounded-md group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                                                                <TrendingUp className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-orange-600 text-sm">Monitoring</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Real-time visibility</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-cyan-50 text-cyan-600 rounded-md group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                                                                <Hammer className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-cyan-600 text-sm">Automation & Integration</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Connect systems</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-indigo-50 text-indigo-600 rounded-md group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                                                <Sparkles className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-indigo-600 text-sm">Artificial Intelligence</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Advanced insights</div>
+                                                            </div>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                {/* Use Cases Column (4 cols) */}
+                                                <div className="col-span-4">
+                                                    <h3 className="text-base font-semibold text-gray-900 mb-6">
+                                                        Use Cases
+                                                    </h3>
+                                                    <div className="space-y-3">
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-gray-100 text-gray-600 rounded-md group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                                <Building2 className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Manufacturing</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Optimize production lines</div>
+                                                            </div>
+                                                        </Link>
+                                                        <Link href="#" className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors">
+                                                            <div className="p-1.5 bg-gray-100 text-gray-600 rounded-md group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                                <Users className="w-4 h-4" />
+                                                            </div>
+                                                            <div>
+                                                                <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Workforce Management</div>
+                                                                <div className="text-xs text-gray-500 mt-0.5">Track team performance</div>
+                                                            </div>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
 
                             {/* Specific Dropdown for Industries */}
                             {link.label === 'Industries' && activeDropdown === 'Industries' && (
@@ -336,8 +307,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                 </button>
             </div>
 
-            {/* Mega Menu Dropdown Section */}
-            {activeDropdown === 'Product' && renderProductDropdown()}
+
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
