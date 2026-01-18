@@ -17,7 +17,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Hero data={mockData.heroData} />
       <FeatureBlock features={mockData.featureBlocks} />
-      <FeaturesGrid cards={mockData.featuresGrid} />
+      {/* <FeaturesGrid cards={mockData.featuresGrid} /> */}
       <ComplianceQualitySection data={mockData.complianceSection} />
       <CustomizationAISection data={mockData.customizationSection} />
       <IndustrySolutionsSection data={mockData.industrySection} />

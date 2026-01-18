@@ -78,14 +78,18 @@ export const complianceSection = {
     complianceTitle: "Compliance and Traceability",
     complianceDescription: "Ensure full traceability and compliance with industry standards through automated data tracking and reporting.",
     complianceImage: {
-        asset: { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2070" },
+        asset: { url: "/images/Compliance_Traceability_Railes.png" },
         alt: "Compliance"
     },
     qualityTitle: "Quality Management and Control",
     qualityDescription: "Maintain high quality standards with real-time monitoring and automated quality control processes.",
     qualityImage: {
-        asset: { url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000&q=80" },
+        asset: { url: "/images/Quality_Management_Control_Railes.png" },
         alt: "Quality"
+    },
+    qualityImageOverlay: {
+        asset: { url: "/images/Captura de ecrã 2026-01-17, às 22.17.54.png" },
+        alt: "Quality Metrics"
     }
 };
 
@@ -93,7 +97,7 @@ export const customizationSection = {
     customizationTitle: "Customization and Flexibility",
     customizationDescription: "Tailor the platform to your specific needs with flexible configuration options and modular architecture.",
     customizationImage: {
-        asset: { url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=2070" },
+        asset: { url: "/images/Customization_Flexibility_Railes.png" },
         alt: "Customization"
     },
     aiLabel: "Advanced data analytics and AI",
@@ -112,7 +116,11 @@ export const industrySection = {
         "Automotive Manufacturing",
         "Packaging Manufacturing",
         "Aerospace & Defense Manufacturing"
-    ]
+    ],
+    mainImage: {
+        asset: { url: "/images/Extra_1.png" },
+        alt: "Industry Professional"
+    },
 };
 
 export const proofSection = {

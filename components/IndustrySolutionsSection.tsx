@@ -63,8 +63,8 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                             {industries.map((ind, idx) => (
                                 <button key={idx} className="bg-white px-8 py-4 rounded-full shadow-sm text-gray-700 hover:shadow-md transition-shadow flex items-center gap-3 text-lg font-medium">
                                     {ind}
-                                    <div className="bg-gray-100 rounded-full p-1">
-                                        <ChevronRight className="w-4 h-4 text-gray-500" />
+                                    <div className="bg-gradient-to-r from-blue-500 to-pink-500 rounded-full p-1">
+                                        <ChevronRight className="w-4 h-4 text-white" />
                                     </div>
                                 </button>
                             ))}
@@ -73,10 +73,10 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                 </div>
 
                 {/* Main Content Area */}
-                <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-start relative z-10">
+                <div className="flex flex-col gap-0 items-center relative z-10">
 
-                    {/* Left Side: Person Image */}
-                    <div className="relative hidden lg:block h-[600px] w-full">
+                    {/* Top: Person Image */}
+                    <div className="relative w-full h-[550px] -mb-32 z-0 pointer-events-none">
                         {/* Background Blobs (Decoration) */}
                         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                         <div className="absolute top-20 right-10 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -87,14 +87,14 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                                     src={content.mainImage.asset?.url || urlForImage(content.mainImage).url()}
                                     alt={content.mainImage.alt || "Industry Professional"}
                                     fill
-                                    className="object-contain object-left-top"
+                                    className="object-contain object-left-bottom"
                                 />
                             )}
                         </div>
                     </div>
 
-                    {/* Right Side: Content Card */}
-                    <div className="bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-gray-100">
+                    {/* Bottom: Content Card (Full Width) */}
+                    <div className="w-full bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-gray-100 relative z-10">
 
                         {/* Visibility Section */}
                         <div className="mb-12">
@@ -103,13 +103,25 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                                 {content.visibilityDescription}
                             </p>
 
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                {visibilityItems.map((item, idx) => (
-                                    <div key={idx} className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100 hover:border-blue-200 transition-colors cursor-pointer group">
-                                        <item.icon className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" />
-                                        <span className="text-sm font-bold text-blue-900">{item.label}</span>
-                                    </div>
-                                ))}
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                                {visibilityItems.map((item, idx) => {
+                                    // Custom colors matching the mockup (Pink, Blue, Purple, Red)
+                                    // Text is dark (gray-900), Icon is colored, Background is light pastel
+                                    const styles = [
+                                        { bg: "bg-pink-50", icon: "text-pink-600" }, // Work Orders
+                                        { bg: "bg-blue-50", icon: "text-blue-600" }, // Operators
+                                        { bg: "bg-purple-50", icon: "text-purple-600" }, // Work Centers
+                                        { bg: "bg-red-50", icon: "text-red-500" }, // Downtimes
+                                    ];
+                                    const style = styles[idx % styles.length];
+
+                                    return (
+                                        <div key={idx} className={`flex items-center gap-4 ${style.bg} p-6 rounded-2xl hover:shadow-md transition-all cursor-pointer group`}>
+                                            <item.icon className={`w-5 h-5 ${style.icon} group-hover:scale-110 transition-transform`} />
+                                            <span className="text-sm font-bold text-gray-900 leading-tight">{item.label}</span>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
 

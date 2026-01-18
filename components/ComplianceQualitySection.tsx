@@ -39,12 +39,19 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                         </div>
 
                         {/* Visual: Flowchart Image */}
-                        <div className="bg-gray-50 rounded-2xl p-6 mt-auto relative min-h-[260px] flex items-center justify-center">
+                        <div className="bg-white rounded-2xl mt-auto relative min-h-[260px] flex items-center justify-center">
                             <div className="relative w-full h-full min-h-[200px]">
-                                {content.complianceImage && (
+                                {content.complianceImage ? (
                                     <Image
                                         src={content.complianceImage.asset?.url || urlForImage(content.complianceImage).url()}
                                         alt={content.complianceImage.alt || "Compliance Flowchart"}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                ) : (
+                                    <Image
+                                        src="/images/Compliance_Traceability_Railes.png"
+                                        alt="Compliance and Traceability Flowchart"
                                         fill
                                         className="object-contain"
                                     />
@@ -58,7 +65,7 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                     </div>
 
                     {/* Card 2: Quality Management and Control */}
-                    <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative">
                         <div className="mb-8 relative z-10">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
                                 {content.qualityTitle}
@@ -68,18 +75,34 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                             </p>
                         </div>
 
-                        {/* Visual: Dashboard Image */}
-                        <div className="mt-auto relative min-h-[200px]">
-                            <div className="relative w-full h-[250px]">
-                                {content.qualityImage && (
+                        {/* Visual: Dashboard Images */}
+                        <div className="mt-auto relative h-[320px] w-full">
+                            {/* Main Image (Blue/Pink Card) - Bottom Left */}
+                            {/* @ts-ignore */}
+                            {content.qualityImageOverlay && (
+                                <div className="absolute left-8 bottom-12 w-[55%] h-[220px] z-10 transition-transform hover:scale-105 duration-300 flex items-center justify-center">
                                     <Image
-                                        src={content.qualityImage.asset?.url || urlForImage(content.qualityImage).url()}
-                                        alt={content.qualityImage.alt || "Quality Dashboard"}
+                                        // @ts-ignore
+                                        src={content.qualityImageOverlay.asset?.url || urlForImage(content.qualityImageOverlay).url()}
+                                        // @ts-ignore
+                                        alt={content.qualityImageOverlay.alt || "Quality Dashboard"}
                                         fill
                                         className="object-contain"
                                     />
-                                )}
-                            </div>
+                                </div>
+                            )}
+
+                            {/* Production Rate Image - Right Side (No Card) */}
+                            {content.qualityImage && (
+                                <div className="absolute -right-8 -bottom-12 w-[35%] h-[400px] z-20">
+                                    <Image
+                                        src={content.qualityImage.asset?.url || urlForImage(content.qualityImage).url()}
+                                        alt={content.qualityImage.alt || "Quality Metrics"}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            )}
                         </div>
 
                     </div>

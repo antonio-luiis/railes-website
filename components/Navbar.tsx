@@ -34,6 +34,7 @@ const navItems = [
     { label: "Product", url: "#", hasDropdown: true },
     { label: "Industries", url: "#", hasDropdown: true },
     { label: "Partners", url: "/partners" },
+    { label: "ROI Calculator", url: "/roi-calculator" },
     { label: "Resources", url: "#", hasDropdown: true },
     { label: "About us", url: "#" },
 ];
