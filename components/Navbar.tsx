@@ -341,18 +341,112 @@ export function Navbar({ siteSettings }: NavbarProps) {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t p-4 h-screen overflow-y-auto">
-                    <div className="flex flex-col gap-4">
+                <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-xl z-50 max-h-[calc(100vh-80px)] overflow-y-auto">
+                    <div className="p-4 space-y-2">
                         {navItems.map((link) => (
-                            <Link
-                                key={link.label}
-                                href={link.url}
-                                className="text-lg font-medium text-gray-900 py-2 border-b border-gray-100"
-                            >
-                                {link.label}
-                            </Link>
+                            <div key={link.label}>
+                                {link.hasDropdown ? (
+                                    <div>
+                                        <button
+                                            onClick={() => setActiveDropdown(activeDropdown === link.label ? null : link.label)}
+                                            className="w-full flex items-center justify-between text-lg font-medium text-gray-900 py-3 border-b border-gray-100"
+                                        >
+                                            {link.label}
+                                            <ChevronDown className={`w-5 h-5 transition-transform ${activeDropdown === link.label ? 'rotate-180' : ''}`} />
+                                        </button>
+
+                                        {/* Product Dropdown */}
+                                        {link.label === 'Product' && activeDropdown === 'Product' && (
+                                            <div className="pl-4 py-2 space-y-2 bg-gray-50">
+                                                <div className="text-sm font-semibold text-gray-500 mb-2">Features</div>
+                                                <Link href="/product/production-management" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Settings className="w-4 h-4 text-blue-600" />
+                                                    Production Management
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <ClipboardList className="w-4 h-4 text-purple-600" />
+                                                    Quality Management
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Code2 className="w-4 h-4 text-green-600" />
+                                                    Digital Record
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <TrendingUp className="w-4 h-4 text-orange-600" />
+                                                    Monitoring
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Hammer className="w-4 h-4 text-cyan-600" />
+                                                    Automation & Integration
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Sparkles className="w-4 h-4 text-indigo-600" />
+                                                    Artificial Intelligence
+                                                </Link>
+                                            </div>
+                                        )}
+
+                                        {/* Industries Dropdown */}
+                                        {link.label === 'Industries' && activeDropdown === 'Industries' && (
+                                            <div className="pl-4 py-2 space-y-2 bg-gray-50">
+                                                <Link href="/industries/automotive" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <CarFront className="w-4 h-4 text-blue-600" />
+                                                    Automotive
+                                                </Link>
+                                                <Link href="/industries/aerospace-and-defense" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Plane className="w-4 h-4 text-blue-600" />
+                                                    Aerospace & Defense
+                                                </Link>
+                                                <Link href="/industries/packaging" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Package className="w-4 h-4 text-blue-600" />
+                                                    Packaging
+                                                </Link>
+                                                <Link href="/industries/pharmaceuticals" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <FlaskConical className="w-4 h-4 text-blue-600" />
+                                                    Pharmaceuticals
+                                                </Link>
+                                                <Link href="/industries/discrete-manufacturing" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Factory className="w-4 h-4 text-blue-600" />
+                                                    Discrete Manufacturing
+                                                </Link>
+                                            </div>
+                                        )}
+
+                                        {/* Resources Dropdown */}
+                                        {link.label === 'Resources' && activeDropdown === 'Resources' && (
+                                            <div className="pl-4 py-2 space-y-2 bg-gray-50">
+                                                <Link href="/blog" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Megaphone className="w-4 h-4 text-blue-600" />
+                                                    Blog
+                                                </Link>
+                                                <Link href="/roi-calculator" className="flex items-center gap-2 py-2 text-gray-700">
+                                                    <Calculator className="w-4 h-4 text-blue-600" />
+                                                    ROI Calculator
+                                                </Link>
+                                            </div>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <Link
+                                        href={link.url}
+                                        className="block text-lg font-medium text-gray-900 py-3 border-b border-gray-100"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                )}
+                            </div>
                         ))}
-                        <Button className="w-full mt-4">Contact Sales</Button>
+
+                        {/* Mobile CTAs */}
+                        <div className="pt-4 space-y-3">
+                            <Link href="/contact" className="block">
+                                <Button variant="outline" className="w-full">Contact us</Button>
+                            </Link>
+                            <Link href="/demo" className="block">
+                                <Button className="w-full bg-railes-blue hover:bg-blue-800">Book a Demo</Button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )}
