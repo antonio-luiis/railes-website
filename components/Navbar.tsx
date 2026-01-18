@@ -96,7 +96,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
 
                             {/* Product Dropdown */}
                             {link.label === 'Product' && activeDropdown === 'Product' && (
-                                <div className="absolute top-full left-0 pt-2 w-screen z-50">
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-screen max-w-7xl z-50">
                                     <div className="container mx-auto px-4 md:px-6">
                                         <div className="bg-white border text-left border-gray-100 shadow-2xl rounded-2xl w-full max-w-6xl mx-auto animate-in fade-in slide-in-from-top-2 duration-200 overflow-hidden">
                                             <div className="grid grid-cols-12 p-8 gap-8">
