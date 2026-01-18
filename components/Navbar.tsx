@@ -60,7 +60,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
     // Product Dropdown
     const renderProductDropdown = () => (
         <div
-            className="absolute top-full left-0 w-full z-50 -mt-2"
+            className="absolute top-full left-0 w-full z-50 pt-2"
             onMouseEnter={() => setActiveDropdown('Product')}
             onMouseLeave={() => setActiveDropdown(null)}
         >
