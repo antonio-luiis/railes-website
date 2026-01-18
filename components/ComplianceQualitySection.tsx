@@ -10,6 +10,7 @@ interface ComplianceQualitySectionProps {
         qualityTitle?: string;
         qualityDescription?: string;
         qualityImage?: any;
+        qualityImageOverlay?: any;
     }
 }
 
@@ -78,13 +79,10 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                         {/* Visual: Dashboard Images */}
                         <div className="mt-auto relative h-[320px] w-full">
                             {/* Main Image (Blue/Pink Card) - Bottom Left */}
-                            {/* @ts-ignore */}
                             {content.qualityImageOverlay && (
                                 <div className="absolute left-8 bottom-12 w-[55%] h-[220px] z-10 transition-transform hover:scale-105 duration-300 flex items-center justify-center">
                                     <Image
-                                        // @ts-ignore
                                         src={content.qualityImageOverlay.asset?.url || urlForImage(content.qualityImageOverlay).url()}
-                                        // @ts-ignore
                                         alt={content.qualityImageOverlay.alt || "Quality Dashboard"}
                                         fill
                                         className="object-contain"

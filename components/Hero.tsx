@@ -1,6 +1,5 @@
 import { LogoMarquee } from "./LogoMarquee";
 import { urlForImage } from "@/sanity/lib/image";
-import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 interface HeroProps {
     data?: {

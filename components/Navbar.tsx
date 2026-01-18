@@ -34,7 +34,6 @@ const navItems = [
     { label: "Product", url: "#", hasDropdown: true },
     { label: "Industries", url: "#", hasDropdown: true },
     { label: "Partners", url: "/partners" },
-    { label: "ROI Calculator", url: "/roi-calculator" },
     { label: "Resources", url: "#", hasDropdown: true },
     { label: "About us", url: "#" },
 ];
@@ -287,7 +286,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Blog</div>
                                                 </div>
                                             </Link>
-                                            <Link href="#" className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors">
+                                            <Link href="/roi-calculator" className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors">
                                                 <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                                                     <Calculator className="w-4 h-4" />
                                                 </div>
