@@ -68,7 +68,7 @@ export const featuresGrid = [
         _id: "4",
         title: "Advanced Data Analytics",
         subtitle: "and Artificial Intelligence",
-        description: "Leveraging advanced data analytics and AI for learning and well-informed decision-making.",
+        description: "Advanced data analytics and AI for real-time insights to optimize planning and well-informed decision-making.",
         badge: "⭐ Advanced data analytics and AI",
         order: 4,
     }
@@ -76,35 +76,35 @@ export const featuresGrid = [
 
 export const complianceSection = {
     complianceTitle: "Compliance and Traceability",
-    complianceDescription: "Ensure full traceability and compliance with industry standards through automated data tracking and reporting.",
+    complianceDescription: "Ensure adherence to regulations and transparent tracking of production processes, safeguarding quality and enabling swift issue resolution.",
     complianceImage: {
         asset: { url: "/images/Compliance_Traceability_Railes.png" },
         alt: "Compliance"
     },
     qualityTitle: "Quality Management and Control",
-    qualityDescription: "Maintain high quality standards with real-time monitoring and automated quality control processes.",
+    qualityDescription: "Prioritizes quality throughout the manufacturing process, facilitating quality standards enforcement, inspections, and real-time quality tracking.",
     qualityImage: {
         asset: { url: "/images/Quality_Management_Control_Railes.png" },
         alt: "Quality"
     },
     qualityImageOverlay: {
-        asset: { url: "/images/Captura de ecrã 2026-01-17, às 22.17.54.png" },
+        asset: { url: "/images/Grafico_5.1.png" },
         alt: "Quality Metrics"
     }
 };
 
 export const customizationSection = {
     customizationTitle: "Customization and Flexibility",
-    customizationDescription: "Tailor the platform to your specific needs with flexible configuration options and modular architecture.",
+    customizationDescription: "Customization options, ensuring seamless integration with existing systems and adaptation to diverse manufacturing processes.",
     customizationImage: {
         asset: { url: "/images/Customization_Flexibility_Railes.png" },
         alt: "Customization"
     },
     aiLabel: "Advanced data analytics and AI",
     aiTitle: "Advanced Data Analytics and Artificial Intelligence",
-    aiDescription: "Leverage the power of AI to gain deep insights into your production data and predict future trends.",
+    aiDescription: "Advanced data analytics and AI for real-time insights to optimize planning and well-informed decision-making.",
     aiImage: {
-        asset: { url: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=2095" },
+        asset: { url: "/images/Grafico_AI.png" },
         alt: "AI"
     }
 };
@@ -120,6 +120,10 @@ export const industrySection = {
     mainImage: {
         asset: { url: "/images/Extra_1.png" },
         alt: "Industry Professional"
+    },
+    executionImage: {
+        asset: { url: "/images/Grafico_9.png" }, // Altera para o nome real do ficheiro
+        alt: "Execution Workflow"
     },
 };
 

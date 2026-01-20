@@ -17,7 +17,7 @@ interface CustomizationAISectionProps {
 export function CustomizationAISection({ data }: CustomizationAISectionProps) {
     const fallback = {
         customizationTitle: "Customization and Flexibility",
-        customizationDescription: "Tailor the platform to your specific needs with flexible configuration options and modular architecture.",
+        customizationDescription: "Customization options, ensuring seamless integration with existing systems and adaptation to diverse manufacturing processes.",
         aiLabel: "Advanced data analytics and AI",
         aiTitle: "Advanced Data Analytics and Artificial Intelligence",
         aiDescription: "Leverage the power of AI to gain deep insights into your production data and predict future trends."
@@ -31,7 +31,7 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
                 <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-end">
 
                     {/* Card 1: Customization and Flexibility */}
-                    <div className="bg-gray-100/50 rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                         <div className="mb-8 relative z-10 max-w-md">
                             <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
                                 {content.customizationTitle}
@@ -65,7 +65,7 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
                         </div>
 
                         {/* Card 2: Advanced Data Analytics and AI */}
-                        <div className="bg-gray-100/50 rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
+                        <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
                             <div className="mb-8 relative z-10">
                                 <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
                                     {content.aiTitle}

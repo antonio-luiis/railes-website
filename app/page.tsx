@@ -10,6 +10,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { BlogPreviewSection } from "@/components/BlogPreviewSection";
 import { CallToActionSection } from "@/components/CallToActionSection";
 import { NewsletterSection } from "@/components/NewsletterSection";
+import { ProvenResults } from "@/components/ProvenResults";
 import * as mockData from "@/lib/mock-data";
 
 export default function Home() {
@@ -17,16 +18,18 @@ export default function Home() {
     <div className="min-h-screen">
       <Hero data={mockData.heroData} />
       <FeatureBlock features={mockData.featureBlocks} />
-      {/* <FeaturesGrid cards={mockData.featuresGrid} /> */}
+      {/*  <FeaturesGrid cards={mockData.featuresGrid} /> */}
       <ComplianceQualitySection data={mockData.complianceSection} />
       <CustomizationAISection data={mockData.customizationSection} />
       <IndustrySolutionsSection data={mockData.industrySection} />
-      <ProofResultsSection data={mockData.proofSection} />
+      {/* <ProofResultsSection data={mockData.proofSection} /> */}
+      <ProvenResults />
       <TestimonialsSection data={mockData.testimonialsSection} />
       <BlogPreviewSection />
-      <CallToActionSection data={mockData.ctaSection} />
       <NewsletterSection data={mockData.newsletterSection} />
-      <SolutionsSection data={mockData.solutions} />
+      <CallToActionSection data={mockData.ctaSection} />
+
+      {/* <SolutionsSection data={mockData.solutions} /> */}
     </div>
   );
 }
