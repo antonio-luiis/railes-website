@@ -1,90 +1,91 @@
 import React from 'react';
 import { Eye, BarChart3, List, Clock, Calendar, Component, ArrowRight, CornerRightDown } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductionManagementPage() {
     return (
         <main className="min-h-screen bg-[#F9FAFB]">
 
             {/* 
-        HERO SECTION 
-        Clean white background with star graphic
-      */}
-            <section className="relative bg-white pt-32 pb-20 overflow-hidden">
-                {/* Star Graphic Background Element */}
-                <div className="absolute top-0 left-0 w-[40rem] h-[40rem] -translate-x-1/2 -translate-y-1/2 opacity-20 pointer-events-none">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-indigo-200 fill-current animate-spin-slow">
-                        <path d="M100 0 L112 88 L200 100 L112 112 L100 200 L88 112 L0 100 L88 88 Z" />
-                    </svg>
-                </div>
-                <div className="absolute top-20 left-10 w-64 h-64 text-purple-200/40 -z-10 animate-spin-reverse-slower duration-[30s]">
-                    <svg viewBox="0 0 100 100" fill="currentColor">
-                        <path d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
-                    </svg>
-                </div>
-
+              HERO SECTION 
+              Design: Centered Text -> Chart/Dashboard Graphic
+            */}
+            <section className="relative bg-white pt-32 pb-20 md:pb-32 overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="max-w-3xl">
-                        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-tight mb-6">
-                            Production <br />
-                            <span className="text-blue-600">Management</span>
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                            Production Management
                         </h1>
 
-                        <p className="text-xl font-semibold text-slate-800 mb-4">
+                        <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
                             Real-time control and full visibility over your shop floor.
                         </p>
 
-                        <p className="text-lg text-slate-500 max-w-xl leading-relaxed mb-12">
+                        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-16">
                             Optimize production operations, eliminate inefficiencies, and ensure your teams have everything they need to deliver on time, every time.
                         </p>
-                    </div>
 
-                    {/* Key Benefits Arrow Indicator */}
-                    <div className="absolute bottom-10 right-10 md:right-20 hidden md:flex flex-col items-center gap-2 text-blue-600 animate-bounce">
-                        <span className="font-handwriting text-2xl font-bold -rotate-12">Key benefits</span>
-                        <CornerRightDown className="w-8 h-8" />
-                    </div>
-                </div>
-            </section>
-
-            {/* 
-        TOP BENEFITS SECTION
-        3-Column Layout
-      */}
-            <section className="bg-white pb-24 pt-8">
-                <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-3 gap-12 p-8 bg-white rounded-3xl shadow-sm border border-slate-100 relative">
-                        {/* Benefit 1 */}
-                        <div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-3">Real-Time Tracking</h3>
-                            <p className="text-slate-500 leading-relaxed text-sm">
-                                Monitor every production order and work center as it happens.
-                            </p>
+                        {/* Production Chart Image */}
+                        <div className="relative mx-auto max-w-6xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/Production_Management.png"
+                                alt="Production by Date Chart"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
 
-                        {/* Benefit 2 */}
-                        <div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-3">More Uptime, Less Waste</h3>
-                            <p className="text-slate-500 leading-relaxed text-sm">
-                                Identify bottlenecks and inefficiencies before they impact your deadlines.
-                            </p>
-                        </div>
-
-                        {/* Benefit 3 */}
-                        <div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-3">Built for Manufacturing Teams</h3>
-                            <p className="text-slate-500 leading-relaxed text-sm">
-                                Simple, intuitive tools designed to help operators, supervisors, and planners work better.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </section>
 
             {/* 
-        ZIG-ZAG FEATURE LIST
-        Alternating Layout
-      */}
+              KEY BENEFITS SECTION
+              Design: White card floating on gray background
+            */}
+            <section className="bg-[#F9FAFB] pb-24 pt-10 md:-mt-20 relative z-20 px-4">
+                <div className="container mx-auto">
+                    <div className="bg-white rounded-[2.5rem] p-8 md:p-16 shadow-xl border border-slate-50 max-w-6xl mx-auto">
+
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-bold text-blue-700">
+                                Key benefits
+                            </h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-12 text-center md:text-left">
+                            {/* Benefit 1 */}
+                            <div className="space-y-4">
+                                <h3 className="text-2xl font-bold text-slate-900">Real-Time<br />Tracking</h3>
+                                <p className="text-slate-500 leading-relaxed">
+                                    Monitor every production order and work center as it happens.
+                                </p>
+                            </div>
+
+                            {/* Benefit 2 */}
+                            <div className="space-y-4">
+                                <h3 className="text-2xl font-bold text-slate-900">More Uptime,<br />Less Waste</h3>
+                                <p className="text-slate-500 leading-relaxed">
+                                    Identify bottlenecks and inefficiencies before they impact your deadlines.
+                                </p>
+                            </div>
+
+                            {/* Benefit 3 */}
+                            <div className="space-y-4">
+                                <h3 className="text-2xl font-bold text-slate-900">Built for<br />Manufacturing Teams</h3>
+                                <p className="text-slate-500 leading-relaxed">
+                                    Simple, intuitive tools designed to help operators, supervisors, and planners work better.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 
+              ZIG-ZAG FEATURE LIST
+            */}
             <section className="py-24 bg-[#F9FAFB]">
                 <div className="container mx-auto px-4">
 
@@ -180,24 +181,12 @@ export default function ProductionManagementPage() {
 
             {/* 
                 SECTION: WHY CHOOSE RAILES
-                Blue Block with Image
-            */}
-            {/* 
-                SECTION: WHY CHOOSE RAILES
                 Blue Card Block with Image
             */}
             <section className="py-12 md:py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="bg-blue-800 text-white rounded-[3rem] p-8 md:p-20 relative overflow-hidden shadow-2xl">
-                        {/* Background decorative elements */}
-                        <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 right-0 w-full h-full opacity-10">
-                                <path d="M50 0 L100 50 L50 100 L0 50 Z" fill="currentColor" />
-                            </svg>
-                        </div>
-
                         <div className="flex flex-col lg:flex-row items-center gap-16 relative z-10">
-
                             <div className="lg:w-1/2">
                                 <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
                                     Why choose RAILES for <br />Production Management?
@@ -205,7 +194,6 @@ export default function ProductionManagementPage() {
                                 <h3 className="text-xl md:text-2xl font-bold mb-6 text-blue-200">
                                     Because it connects your shop floor to your decision-making in real time.
                                 </h3>
-
                                 <ul className="space-y-4 text-blue-100 font-medium text-lg">
                                     <li>Modular and customizable</li>
                                     <li>Easy to integrate with ERP and automation systems</li>
@@ -214,19 +202,15 @@ export default function ProductionManagementPage() {
                                     <li>AI-Powered Insights</li>
                                 </ul>
                             </div>
-
                             <div className="lg:w-1/2 relative w-full">
-                                {/* Image Placeholder - Professional with Tablet */}
                                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-700/50 bg-blue-900 w-full">
                                     <div className="absolute inset-0 flex items-center justify-center bg-blue-800">
                                         <span className="text-blue-400 font-medium">Professional with Tablet Image</span>
                                     </div>
-                                    {/* Decorative overlay */}
                                     <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-pink-500/20 rounded-full blur-3xl"></div>
                                     <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl"></div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -235,10 +219,6 @@ export default function ProductionManagementPage() {
             {/* 
                 SECTION: INDUSTRY SOLUTIONS
                 Asymmetric Grid (Bento/Staggered)
-            */}
-            {/* 
-                SECTION: INDUSTRY SOLUTIONS
-                Asymmetric Grid (Bento/Staggered) - Ultra Compact Version
             */}
             <section className="py-24 bg-slate-50 overflow-hidden">
                 <div className="container mx-auto px-4 text-center">

@@ -153,7 +153,7 @@ export const testimonialsSection = {
 };
 
 export const ctaSection = {
-    title: "Ready to optimize your production?",
+    title: "Explore how Railes MES can enhance efficiency and productivity within your production",
     buttonText: "Schedule a Demo",
     buttonUrl: "/demo"
 };

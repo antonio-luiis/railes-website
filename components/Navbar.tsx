@@ -35,7 +35,7 @@ const navItems = [
     { label: "Industries", url: "#", hasDropdown: true },
     { label: "Partners", url: "/partners" },
     { label: "Resources", url: "#", hasDropdown: true },
-    { label: "About us", url: "#" },
+    { label: "About us", url: "#", hasDropdown: true },
 ];
 
 export function Navbar({ siteSettings }: NavbarProps) {
@@ -215,6 +215,45 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                                 <div>
                                                     <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">ROI Calculator</div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Specific Dropdown for About us (Simple Dropdown) */}
+                            {link.label === 'About us' && activeDropdown === 'About us' && (
+                                <div
+                                    className="absolute top-full left-0 pt-2 w-60 z-50"
+                                    onMouseEnter={() => handleMouseEnter('About us')}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <div className="bg-white border border-gray-100 shadow-xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-1 duration-200">
+                                        <div className="p-2 flex flex-col gap-1">
+                                            <Link
+                                                href="#"
+                                                className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors"
+                                                onClick={() => setActiveDropdown(null)}
+                                            >
+                                                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                    <Building2 className="w-4 h-4" />
+                                                </div>
+                                                <div>
+                                                    <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Our Company</div>
+                                                </div>
+                                            </Link>
+                                            <Link
+                                                href="/careers"
+                                                className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors"
+                                                onClick={() => setActiveDropdown(null)}
+                                            >
+                                                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                                    <Users className="w-4 h-4" />
+                                                </div>
+                                                <div>
+                                                    <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Careers</div>
+                                                    <div className="text-xs text-blue-600 font-medium">We are hiring!</div>
                                                 </div>
                                             </Link>
                                         </div>
@@ -525,6 +564,20 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 <Link href="/roi-calculator" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Calculator className="w-4 h-4 text-blue-600" />
                                                     ROI Calculator
+                                                </Link>
+                                            </div>
+                                        )}
+
+                                        {/* About us Dropdown */}
+                                        {link.label === 'About us' && activeDropdown === 'About us' && (
+                                            <div className="pl-4 py-2 space-y-2 bg-gray-50">
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                    <Building2 className="w-4 h-4 text-blue-600" />
+                                                    Our Company
+                                                </Link>
+                                                <Link href="/careers" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                    <Users className="w-4 h-4 text-blue-600" />
+                                                    Careers
                                                 </Link>
                                             </div>
                                         )}

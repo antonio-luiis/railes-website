@@ -19,7 +19,7 @@ export default function PartnersPage() {
         <main className="min-h-screen bg-white">
 
             {/* 1. HERO SECTION */}
-            <section className="relative pt-32 pb-24 overflow-hidden bg-[#1e3a8a]">
+            <section className="relative pt-32 pb-24 overflow-hidden bg-[linear-gradient(-60deg,#004eab,#038efd)] z-0">
                 {/* Abstract Background Elements */}
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>

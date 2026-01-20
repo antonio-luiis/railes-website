@@ -19,8 +19,8 @@ export function CallToActionSection({ data }: CallToActionSectionProps) {
     const fallback = {
         badgeText: "Ready to transform your factory?",
         title: "Railes MES can enhance efficiency",
-        highlightedTitle: "and productivity",
-        titleSuffix: "within your production",
+        highlightedTitle: "",
+        titleSuffix: "",
         description: "Discover how our solution can boost your operations.",
         primaryButtonText: "Book a demo",
         primaryButtonLink: "/demo",
@@ -33,7 +33,7 @@ export function CallToActionSection({ data }: CallToActionSectionProps) {
     return (
         <section className="py-24 relative overflow-hidden">
             {/* Background with Gradient and Noise/Pattern */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#1e40af] z-0"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(-60deg,#004eab,#038efd)] z-0"></div>
 
             {/* Abstract Decorative Shapes */}
             <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20 -translate-x-1/2 -translate-y-1/2 animate-blob"></div>
