@@ -355,7 +355,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                         </h3>
                                         <div className="flex flex-col gap-4">
                                             <Link
-                                                href="#"
+                                                href="/product/artificial-intelligence"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
                                             >
@@ -521,7 +521,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <Hammer className="w-4 h-4 text-cyan-600" />
                                                     Automation & Integration
                                                 </Link>
-                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                <Link href="/product/artificial-intelligence" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Sparkles className="w-4 h-4 text-indigo-600" />
                                                     Artificial Intelligence
                                                 </Link>

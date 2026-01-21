@@ -2,6 +2,8 @@ import React from 'react';
 import { Eye, BarChart3, List, Clock, Calendar, Component, ArrowRight, CornerRightDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { CallToActionSection } from '@/components/CallToActionSection';
+import { IndustryPills } from '@/components/IndustryPills';
 
 export default function ProductionManagementPage() {
     return (
@@ -180,128 +182,78 @@ export default function ProductionManagementPage() {
             </section>
 
             {/* 
-                SECTION: WHY CHOOSE RAILES
-                Blue Card Block with Image
+                SECTION: TRANSFORM CTA
+                Dark blue rounded container
             */}
-            <section className="py-12 md:py-24 bg-white">
+            <section className="py-20 bg-white overflow-visible">
                 <div className="container mx-auto px-4">
-                    <div className="bg-blue-800 text-white rounded-[3rem] p-8 md:p-20 relative overflow-hidden shadow-2xl">
-                        <div className="flex flex-col lg:flex-row items-center gap-16 relative z-10">
-                            <div className="lg:w-1/2">
-                                <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-                                    Why choose RAILES for <br />Production Management?
+                    <div className="relative">
+                        {/* Blue Card Content */}
+                        {/* Blue Card Content */}
+                        <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
+                            {/* Background Splashes */}
+                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+                            <div className="relative z-10 md:w-2/3 text-white">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                                    Ready to scale your production?
                                 </h2>
-                                <h3 className="text-xl md:text-2xl font-bold mb-6 text-blue-200">
-                                    Because it connects your shop floor to your decision-making in real time.
+                                <h3 className="text-xl font-semibold mb-6">
+                                    Railes MES empowers you to:
                                 </h3>
-                                <ul className="space-y-4 text-blue-100 font-medium text-lg">
-                                    <li>Modular and customizable</li>
-                                    <li>Easy to integrate with ERP and automation systems</li>
-                                    <li>Designed for industries where precision and timing matter</li>
-                                    <li>Scalable Across Plants and Lines</li>
-                                    <li>AI-Powered Insights</li>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished product.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Reduce downtime and waste by up to 30% with real-time monitoring.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Streamline compliance with automated documentation and reporting.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamlessly with ERP, PLM, and machine data systems.</span>
+                                    </li>
                                 </ul>
                             </div>
-                            <div className="lg:w-1/2 relative w-full">
-                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-700/50 bg-blue-900 w-full">
-                                    <div className="absolute inset-0 flex items-center justify-center bg-blue-800">
-                                        <span className="text-blue-400 font-medium">Professional with Tablet Image</span>
-                                    </div>
-                                    <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-pink-500/20 rounded-full blur-3xl"></div>
-                                    <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl"></div>
-                                </div>
-                            </div>
+                        </div>
+
+                        {/* Overlapping Image - Positioned Absolute Bottom Right */}
+                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[-10%] w-[350px] lg:w-[450px] z-20">
+                            <Image
+                                src="/images/Extra1.png"
+                                alt="Production Dashboard"
+                                width={600}
+                                height={400}
+                                className="object-contain drop-shadow-2xl"
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 
-                SECTION: INDUSTRY SOLUTIONS
-                Asymmetric Grid (Bento/Staggered)
-            */}
-            <section className="py-24 bg-slate-50 overflow-hidden">
-                <div className="container mx-auto px-4 text-center">
-
-                    <div className="max-w-3xl mx-auto">
-                        <div className="mb-12">
-                            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                                Your Industry solutions
-                            </h2>
-                            <p className="text-slate-500 text-lg">
-                                Railes MES allows you to monitor your production in real time.
-                            </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
-
-                            {/* Column 1 */}
-                            <div className="space-y-4">
-                                {/* Pharmaceuticals (Tall) */}
-                                <Link href="/industries/pharmaceuticals" className="group block bg-white p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden aspect-[4/5] flex flex-col items-center justify-center">
-                                    <div className="absolute inset-0 bg-gradient-to-b from-pink-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <div className="relative z-10">
-                                        <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" /><path d="m8.5 8.5 7 7" /></svg>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">Pharmaceuticals<br />Manufacturing</h3>
-                                    </div>
-                                </Link>
-
-                                {/* Packaging (Square/Short) */}
-                                <div className="group bg-white p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden aspect-square flex flex-col items-center justify-center cursor-pointer">
-                                    <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <div className="relative z-10">
-                                        <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-500 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /><path d="m3.3 7 8.7 5 8.7-5" /><path d="M12 22V12" /></svg>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">Packaging<br />Manufacturing</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Column 2 (Offset/Staggered) */}
-                            <div className="space-y-4 md:mt-8">
-                                {/* Automotive (Square/Short) */}
-                                <div className="group bg-white p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden aspect-square flex flex-col items-center justify-center cursor-pointer">
-                                    <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <div className="relative z-10">
-                                        <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">Automotive<br />Manufacturing</h3>
-                                    </div>
-                                </div>
-
-                                {/* Aerospace (Tall) */}
-                                <Link href="/industries/aerospace-and-defense" className="group block bg-white p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden aspect-[4/5] flex flex-col items-center justify-center">
-                                    <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <div className="relative z-10">
-                                        <div className="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-500 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h5" /><path d="M13 12h9" /><path d="M4 17V7l7 5 5-9 2 2-5 9 5 2v-4l2 2v6l-2-2v-4l-5 2-5 9-2-2Z" /></svg>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">Aerospace & Defense<br />Manufacturing</h3>
-                                    </div>
-                                </Link>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            {/* INDUSTRY SOLUTIONS */}
+            <IndustryPills />
 
             {/* FOOTER CTA */}
-            <section className="py-24 bg-blue-600 text-white text-center">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6">Start Optimizing Your Shop Floor Today</h2>
-                    <div className="flex justify-center gap-4">
-                        <Link href="/demo" className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-colors">
-                            Get a Live Demo
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <CallToActionSection
+                data={{
+                    badgeText: "Ready to optimize your production?",
+                    title: "Start Optimizing Your Shop Floor",
+                    highlightedTitle: "Today",
+                    titleSuffix: "",
+                    description: "Discover how Railes MES can transform your production management with real-time visibility and control.",
+                    primaryButtonText: "Get a Live Demo",
+                    primaryButtonLink: "/demo",
+                    secondaryButtonText: "Contact Sales",
+                    secondaryButtonLink: "/contact"
+                }}
+            />
 
         </main>
     );

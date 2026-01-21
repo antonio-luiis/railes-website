@@ -27,7 +27,7 @@ export default function BlogPage() {
                 <div className="container mx-auto max-w-6xl">
                     <div className="max-w-2xl">
                         <span className="text-blue-600 font-bold tracking-wide uppercase text-sm mb-3 block">
-                            Railes Insights
+                            RAILES MES Insights
                         </span>
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
                             Thinking about the future of manufacturing.

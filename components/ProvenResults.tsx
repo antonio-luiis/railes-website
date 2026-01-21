@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 
 export function ProvenResults() {
     return (
@@ -72,14 +74,12 @@ export function ProvenResults() {
 
                         {/* CTA Button - Aligned to bottom right */}
                         <div className="w-full lg:w-1/5 flex justify-end lg:justify-end pb-2">
-                            <Link
-                                href="/demo"
-                                className="inline-flex items-center gap-2 bg-[#1A368F] hover:bg-blue-800 text-white px-8 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap"
-                            >
-                                Book a demo
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
+                            <Link href="/demo">
+                                <Button
+                                    className="bg-railes-blue hover:bg-blue-800 text-white rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5 whitespace-nowrap"
+                                >
+                                    Book a demo <ChevronRight className="w-5 h-5 ml-2" />
+                                </Button>
                             </Link>
                         </div>
                     </div>
@@ -95,15 +95,15 @@ function GradientCheck() {
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M20 6L9 17L4 12"
-                    stroke="url(#gradient-check-fix)"
+                    stroke="url(#gradient-check-railes)"
                     strokeWidth="4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />
                 <defs>
-                    <linearGradient id="gradient-check-fix" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#3B82F6" />
-                        <stop offset="1" stopColor="#EC4899" />
+                    <linearGradient id="gradient-check-railes" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#004eab" />
+                        <stop offset="1" stopColor="#038efd" />
                     </linearGradient>
                 </defs>
             </svg>

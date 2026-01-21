@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { ArrowRight, ChevronRight, Check } from 'lucide-react';
 import Image from 'next/image';
+import { IndustryPills } from '@/components/IndustryPills';
+import { CallToActionSection } from '@/components/CallToActionSection';
 
 export default function PharmaPage() {
     return (
@@ -166,47 +168,62 @@ export default function PharmaPage() {
               BLOCK 3: COMPARISON TABLE
               "What sets RAILES MES apart"
             */}
-            <section className="py-24 bg-blue-50/30">
+            <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
                         What sets RAILES MES apart in pharma manufacturing
                     </h2>
 
-                    <div className="bg-white rounded-[2rem] shadow-sm border border-gray-100 overflow-hidden max-w-5xl mx-auto">
+                    <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse">
                                 <thead>
-                                    <tr className="border-b border-gray-100">
-                                        <th className="py-6 px-8 text-blue-900 font-bold text-lg w-1/4">Feature</th>
-                                        <th className="py-6 px-8 text-gray-500 font-bold text-lg w-1/3">Traditional MES</th>
-                                        <th className="py-6 px-8 text-blue-600 font-bold text-lg w-1/3 bg-blue-50/30">Railes MES</th>
+                                    <tr className="bg-gradient-to-r from-[#1e40af] via-[#3b82f6] to-[#ec4899]">
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/4 border-r border-white/10">Feature</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Traditional MES</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3">Railes MES</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-600">
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Deployment Time</td>
                                         <td className="py-6 px-8">6-18 months</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">4-8 weeks<br /><span className="text-sm font-normal text-gray-500">Modular implementation</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">3-6 months</div>
+                                            <div className="text-sm text-gray-500">(modular implementation)</div>
+                                        </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Customization</td>
                                         <td className="py-6 px-8">Heavy and costly</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Configuration over code<br /><span className="text-sm font-normal text-gray-500">No IT resources needed</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Configurable via no-code tools,</div>
+                                            <div className="text-sm text-gray-500">minimal custom development</div>
+                                        </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Paperless Batch Records</td>
-                                        <td className="py-6 px-8">Partial / Hybrid</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">True 100% paperless<br /><span className="text-sm font-normal text-gray-500">fully compliant eBRs</span></td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Paperless<br />Batch Records</td>
+                                        <td className="py-6 px-8">Retrofit EBR</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Native EBR functionality</div>
+                                            <div className="text-sm text-gray-500">with exception review</div>
+                                        </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Scalability & Flexibility</td>
-                                        <td className="py-6 px-8">Rigid monolithic</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Composable modules<br /><span className="text-sm font-normal text-gray-500">Scale as you need</span></td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Scalability<br />& Flexibility</td>
+                                        <td className="py-6 px-8">Rigid monoliths</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Composable modules, easy</div>
+                                            <div className="text-sm text-gray-500">new-product adaptation</div>
+                                        </td>
                                     </tr>
                                     <tr className="hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">AI & IIoT</td>
-                                        <td className="py-6 px-8">Add-ons / Rare</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Native AI-driven insights<br /><span className="text-sm font-normal text-gray-500">Seamless connectivity</span></td>
+                                        <td className="py-6 px-8">Not standard</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Built-in AI analytics, machine</div>
+                                            <div className="text-sm text-gray-500">connectivity</div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -233,7 +250,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 1 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">1</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">1</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Ensure Compliance & Quality</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -244,7 +261,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 2 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-bold text-lg shadow-md">2</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">2</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Boost Efficiency & Throughput</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -255,7 +272,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 3 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center text-white font-bold text-lg shadow-md">3</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">3</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Minimize Risk</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -266,7 +283,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 4 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-md">4</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">4</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Scale with Confidence</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -277,7 +294,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 5 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">5</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">5</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Reduce Costs</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -288,7 +305,7 @@ export default function PharmaPage() {
 
                         {/* Benefit 6 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-white font-bold text-lg shadow-md">6</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">6</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Speed to Value</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -305,63 +322,59 @@ export default function PharmaPage() {
               BLOCK 5: TRANSFORM CTA
               Dark blue rounded container
             */}
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-white overflow-visible">
                 <div className="container mx-auto px-4">
-                    <div className="bg-[#1e3a8a] rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div className="relative">
+                        {/* Blue Card Content */}
+                        <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
+                            {/* Background Splashes */}
+                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-                        {/* Background Splashes */}
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-                        {/* Pink/Purple Blob Decoration */}
-                        <div className="absolute bottom-[-50px] right-[20%] w-[200px] h-[200px] bg-pink-500/30 rounded-full blur-2xl pointer-events-none mix-blend-overlay"></div>
-
-                        <div className="relative z-10 lg:w-1/2 text-white">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                Transform Your Pharma Operations?
-                            </h2>
-                            <h3 className="text-xl font-semibold mb-8 text-blue-100">
-                                Railes MES transforms pharma manufacturing through:
-                            </h3>
-                            <ul className="space-y-6">
-                                <li className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">1</div>
-                                    <span className="text-blue-50/90 leading-relaxed text-lg">Centralized data in real-time to advanced numerical control capabilities.</span>
-                                </li>
-                                <li className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">2</div>
-                                    <span className="text-blue-50/90 leading-relaxed text-lg">Increase efficiency and reduce waste and downtime.</span>
-                                </li>
-                                <li className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">3</div>
-                                    <span className="text-blue-50/90 leading-relaxed text-lg">Overhaul KPIs (Time to Market & Quality).</span>
-                                </li>
-                                <li className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">4</div>
-                                    <span className="text-blue-50/90 leading-relaxed text-lg">Advanced analytics and actionable insights for rapid optimization.</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="relative z-10 lg:w-5/12 flex justify-center lg:justify-end">
-                            {/* 
-                                IMAGE PLACEHOLDER: Person holding tablet
-                                Ideally this should be a transparent PNG of a person.
-                            */}
-                            <div className="relative w-full max-w-md aspect-[4/5] flex items-end justify-center">
-                                {/* Placeholder Outline */}
-                                <div className="w-full h-full bg-gradient-to-b from-white/5 to-white/10 rounded-3xl border-2 border-dashed border-white/20 flex flex-col items-center justify-center p-6 text-center backdrop-blur-sm">
-                                    <div className="text-white/50 mb-2 font-medium">Image Slot</div>
-                                    <div className="text-xs text-blue-200">
-                                        Update <strong>src</strong> with:<br />
-                                        <code>/images/pharma-person.png</code>
-                                    </div>
-                                </div>
+                            <div className="relative z-10 md:w-2/3 text-white">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                                    Transform Your Pharma Operations?
+                                </h2>
+                                <h3 className="text-xl font-semibold mb-6">
+                                    Railes MES transforms pharma manufacturing through:
+                                </h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Centralized data in real-time to advanced numerical control capabilities.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Increase efficiency and reduce waste and downtime.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Overhaul KPIs (Time to Market & Quality).</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Advanced analytics and actionable insights for rapid optimization.</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
+                        {/* Overlapping Image - Positioned Absolute Bottom Right */}
+                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
+                            <Image
+                                src="/images/Person_Pharma.png"
+                                alt="Production Dashboard"
+                                width={600}
+                                height={400}
+                                className="object-contain drop-shadow-2xl"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
+
+            {/* INDUSTRY SOLUTIONS */}
+            <IndustryPills />
 
             {/* 
               BLOCK 6: E-BOOK DOWNLOAD
@@ -392,6 +405,21 @@ export default function PharmaPage() {
                     </div>
                 </div>
             </section>
+
+            {/* FOOTER CTA */}
+            <CallToActionSection
+                data={{
+                    badgeText: "Ready for Pharma 4.0?",
+                    title: "Achieve Manufacturing Excellence",
+                    highlightedTitle: "Now",
+                    titleSuffix: "",
+                    description: "Join leading pharmaceutical companies using Railes MES to ensure compliance, quality, and efficiency.",
+                    primaryButtonText: "Request a Demo",
+                    primaryButtonLink: "/demo",
+                    secondaryButtonText: "Contact Sales",
+                    secondaryButtonLink: "/contact"
+                }}
+            />
 
         </main>
     );

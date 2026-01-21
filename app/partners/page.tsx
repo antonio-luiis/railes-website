@@ -5,7 +5,7 @@ import Link from "next/link";
 import {
     Users, Network, Award, Target,
     ArrowRight, CheckCircle2, Building2,
-    Handshake, GraduationCap, Globe
+    Handshake, GraduationCap, Globe, ChevronDown
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -39,8 +39,10 @@ export default function PartnersPage() {
                     </p>
 
                     <div className="flex justify-center gap-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-300">
-                        <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
-                            Become a Partner
+                        <Button
+                            className="bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
+                        >
+                            Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
                         </Button>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ export default function PartnersPage() {
                                 className={cn(
                                     "px-8 py-3 rounded-xl text-sm font-bold transition-all duration-200 flex items-center gap-2.5",
                                     activeTab === 'affiliate'
-                                        ? "bg-blue-600 text-white shadow-md"
+                                        ? "bg-[#1e3a8a] text-white shadow-md"
                                         : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
                                 )}
                             >
@@ -70,7 +72,7 @@ export default function PartnersPage() {
                                 className={cn(
                                     "px-8 py-3 rounded-xl text-sm font-bold transition-all duration-200 flex items-center gap-2.5",
                                     activeTab === 'technology'
-                                        ? "bg-blue-600 text-white shadow-md"
+                                        ? "bg-[#1e3a8a] text-white shadow-md"
                                         : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
                                 )}
                             >
@@ -269,7 +271,7 @@ export default function PartnersPage() {
             {/* 3. CTA SECTION */}
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4 text-center">
-                    <div className="bg-[#1e3a8a] rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden max-w-5xl mx-auto">
+                    <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden max-w-5xl mx-auto">
                         {/* Background Splashes */}
                         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-500/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -280,10 +282,14 @@ export default function PartnersPage() {
                                 Whether you're looking to refer business or implement solutions, there's a place for you in our ecosystem.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
-                                <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 h-14 px-8 text-base">
-                                    Become a Partner
+                                <Button
+                                    className="w-full sm:w-[280px] bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
+                                >
+                                    Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
                                 </Button>
-                                <Button size="lg" variant="outline" className="border-blue-400 text-white hover:bg-blue-800 hover:text-white bg-transparent h-14 px-8 text-base">
+                                <Button
+                                    className="w-full sm:w-[280px] bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white rounded-full px-8 py-6 h-auto text-lg font-bold transition-all hover:-translate-y-0.5"
+                                >
                                     Contact Partner Team
                                 </Button>
                             </div>
