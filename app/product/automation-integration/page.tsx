@@ -20,20 +20,20 @@ export default function AutomationIntegrationPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Connect your entire manufacturing ecosystem seamlessly.
+                            Streamline production and connect every system in your operation.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Integrate ERP, PLM, machines, and IoT devices. Automate workflows and eliminate manual data silos for a truly connected factory.
+                            Automate repetitive tasks, synchronize data across platforms, and enable your machines, software, and people to work together seamlessly , all within RAILES MES.
                         </p>
 
                         {/* Automation & Integration Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/Automation_Integration.png"
+                                src="/images/Automation.png"
                                 alt="Automation and Integration Architecture"
                                 fill
-                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
+                                className="object-cover"
                             />
                         </div>
 
@@ -62,10 +62,10 @@ export default function AutomationIntegrationPage() {
                                     <Link2 className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Unified<br />Ecosystem
+                                    Seamless<br />Connectivity
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Break down data silos by connecting MES with ERP, PLM, QMS, and other enterprise systems.
+                                    Integrate ERP, PLCs, sensors, and other factory systems into one unified platform.
                                 </p>
                             </div>
 
@@ -75,10 +75,10 @@ export default function AutomationIntegrationPage() {
                                     <Zap className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Zero<br />Manual Entry
+                                    Faster<br />Processes
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Automate data flows between systems to eliminate errors and save hours of manual work.
+                                    Automate workflows to reduce manual intervention and speed up production.
                                 </p>
                             </div>
 
@@ -88,10 +88,10 @@ export default function AutomationIntegrationPage() {
                                     <Cpu className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    IIoT<br />Ready
+                                    Accurate<br />Real-Time Data
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Collect real-time data from machines, sensors, and PLCs using open standards like OPC UA and MQTT.
+                                    Ensure every system is working with the same, up-to-the-minute information.
                                 </p>
                             </div>
 
@@ -109,7 +109,7 @@ export default function AutomationIntegrationPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            Built to Connect, Designed to Scale
+                            Automate and Connect with RAILES MES
                         </h2>
                     </div>
 
@@ -121,9 +121,10 @@ export default function AutomationIntegrationPage() {
                                 <Database className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">ERP Integration</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Machine Integration
+                                </h3>
                                 <p className="text-slate-500">
-                                    Sync production orders, inventory, and finished goods with SAP, Oracle, Microsoft Dynamics, or any ERP system via REST APIs.
+                                    Connect directly to production equipment, PLCs, and IoT devices to capture real-time data and trigger automated actions.
                                 </p>
                             </div>
                         </div>
@@ -134,9 +135,10 @@ export default function AutomationIntegrationPage() {
                                 <GitBranch className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">PLM & PDM</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">System-to-System Integration
+                                </h3>
                                 <p className="text-slate-500">
-                                    Pull BOMs, work instructions, and engineering drawings directly from your Product Lifecycle Management system.
+                                    Link RAILES MES with ERP, WMS, QMS, and other enterprise systems to eliminate data silos and manual data entry.
                                 </p>
                             </div>
                         </div>
@@ -147,9 +149,10 @@ export default function AutomationIntegrationPage() {
                                 <Cpu className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Machine Connectivity</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Automated Workflows
+                                </h3>
                                 <p className="text-slate-500">
-                                    Connect to PLCs, CNCs, and industrial equipment using OPC UA, MQTT, Modbus, or custom protocols for real-time data capture.
+                                    Configure rule-based triggers for production tasks, quality checks, or material movements, no coding required.
                                 </p>
                             </div>
                         </div>
@@ -160,9 +163,10 @@ export default function AutomationIntegrationPage() {
                                 <Workflow className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Workflow Automation</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Data Synchronization
+                                </h3>
                                 <p className="text-slate-500">
-                                    Automate repetitive tasks like order creation, material requests, and quality notifications with configurable business rules.
+                                    Keep information consistent across all integrated systems, from inventory levels to order status.
                                 </p>
                             </div>
                         </div>
@@ -173,9 +177,10 @@ export default function AutomationIntegrationPage() {
                                 <Link2 className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">API-First Architecture</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Event-Driven Actions
+                                </h3>
                                 <p className="text-slate-500">
-                                    Build custom integrations with our comprehensive REST API. Full documentation and SDKs available for developers.
+                                    Trigger alerts, reports, or downstream processes instantly when a machine state or data condition changes.
                                 </p>
                             </div>
                         </div>
@@ -186,9 +191,10 @@ export default function AutomationIntegrationPage() {
                                 <Zap className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Pre-Built Connectors</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Scalable Architecture
+                                </h3>
                                 <p className="text-slate-500">
-                                    Leverage ready-made integrations for popular systems like SAP, Salesforce, Power BI, and more to accelerate deployment.
+                                    Start small and expand, from connecting a single line to integrating an entire multi-site operation.
                                 </p>
                             </div>
                         </div>
@@ -211,27 +217,31 @@ export default function AutomationIntegrationPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to connect your factory?
+                                    Why RAILES for Automation & Integration?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    Because a truly connected factory is integrated. RAILES MES makes automation intelligent by bridging your shop floor and business systems in real time.
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Eliminate manual data entry and reduce errors by 90%.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">No more manual data re-entry between systems.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve end-to-end visibility from order to delivery.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Eliminate delays with event-driven automation.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Deploy integrations in weeks, not months.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Easy for operators, powerful for engineers and IT teams.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Scale with confidence using open standards.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Compatible with industry-standard protocols and APIs.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Built to grow with your manufacturing operation.</span>
                                     </li>
                                 </ul>
                             </div>

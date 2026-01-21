@@ -20,11 +20,11 @@ export default function DigitalRecordPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Go paperless with fully compliant Electronic Batch Records (eBR).
+                            Paperless, secure, and fully traceable production documentation.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Eliminate manual paperwork, ensure data integrity, and accelerate batch release times with a digital system designed for regulated industries.
+                            With RAILES MES, every production step, inspection, and material movement is automatically recorded in a secure, digital format. No more paper binders, missing signatures, or manual data entry errors.
                         </p>
 
                         {/* Digital Record Image */}
@@ -33,7 +33,6 @@ export default function DigitalRecordPage() {
                                 src="/images/Digital Record.png"
                                 alt="Digital Batch Record Interface"
                                 fill
-                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
                             />
                         </div>
 
@@ -62,10 +61,10 @@ export default function DigitalRecordPage() {
                                     <FileDigit className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    100%<br />Paperless
+                                    Full<br />Compliance
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Replace stacks of paper with intuitive digital forms and workflows accessible from any device.
+                                    Meet industry regulations like FDA 21 CFR Part 11, ISO, GMP, and other standards with tamper-proof digital records.
                                 </p>
                             </div>
 
@@ -75,10 +74,10 @@ export default function DigitalRecordPage() {
                                     <Search className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Review<br />by Exception
+                                    End-to-End<br />Traceability
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Focus only on critical deviations. Auto-validate standard entries to slash review times by 80%.
+                                    Instantly access the full history of a product, from raw material intake to final release.
                                 </p>
                             </div>
 
@@ -88,10 +87,10 @@ export default function DigitalRecordPage() {
                                     <ShieldCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Data<br />Integrity
+                                    Faster Audits &<br />Investigations
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Full ALCOA+ compliance with automated audit trails, timestamps, and user attributions.
+                                    Retrieve and review complete production records in minutes, not hours or days.
                                 </p>
                             </div>
 
@@ -109,7 +108,7 @@ export default function DigitalRecordPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            A Complete Digital History
+                            Take Control of Your Documentation with RAILES MES
                         </h2>
                     </div>
 
@@ -123,7 +122,7 @@ export default function DigitalRecordPage() {
                             <div>
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Electronic Batch Records (eBR)</h3>
                                 <p className="text-slate-500">
-                                    Guide operators through every process step with digital instructions. Enforce sequence and key data entry points automatically.
+                                    Digitally capture and store every batch detail,  ingredients, parameters, operator actions, inspections, and approvals  in a single, accessible file.
                                 </p>
                             </div>
                         </div>
@@ -211,27 +210,31 @@ export default function DigitalRecordPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to go paperless?
+                                    Why Choose RAILES for Digital Records?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES helps you:
+                                    Because it transforms your documentation from a compliance burden into a strategic advantage.
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Save thousands of hours in manual data entry.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Paperless, automated, and error-proof.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Eliminate FDA/ISO compliance risks.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Designed for regulated and high-traceability industries.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Search through years of history in seconds.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Easy retrieval and sharing of records across teams and locations.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Faster batch release and time to market.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Integrates seamlessly with ERP, quality, and regulatory systems.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Scalable to multiple plants and global operations.</span>
                                     </li>
                                 </ul>
                             </div>

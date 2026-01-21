@@ -27,12 +27,12 @@ export default function PackagingPage() {
                         <h1 className="text-5xl md:text-7xl font-bold text-blue-900 mb-8 leading-[1.1] tracking-tight">
                             Railes MES for Packaging:<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                                Efficiency & Quality
+                                Traceability & Flexibility
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Achieve full compliance, manage complex assembly lines, and ensure digital traceability from material to finished package.
+                            Railes MES empowers packaging manufacturers to control, monitor, and optimize every step of production, from raw material intake to final product dispatch. Whether you're producing flexible packaging, labels, boxes, or folding cartons, Railes MES ensures efficiency, traceability, and maximum production performance.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -50,7 +50,7 @@ export default function PackagingPage() {
                     {/* 2. The Image */}
                     <div className="relative w-full max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 aspect-[21/9]">
                         <Image
-                            src="/images/Aerospace.png"
+                            src="/images/Packaging.png"
                             alt="Packaging Manufacturing"
                             fill
                             priority
@@ -68,7 +68,7 @@ export default function PackagingPage() {
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        Why Packaging Leaders Choose Railes MES
+                        Why Railes MES for Packaging Manufacturers
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
@@ -82,10 +82,10 @@ export default function PackagingPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Integrated Quality Control
+                                Advanced Traceability
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Ensure zero defects with inline quality checks and automated validation processes.
+                                Full material and product traceability, from raw materials to finished packaging. Railes MES guarantees product compliance, customer confidence, and simplified audits.
                             </p>
                         </div>
 
@@ -95,10 +95,10 @@ export default function PackagingPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                High-Speed Line Management
+                                Waste & Scrap Reduction
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Optimize throughput on high-speed packaging lines with real-time monitoring and OEE tracking.
+                                Monitor production scrap in real-time, minimize material waste, and optimize setup processes that are crucial for cost-sensitive packaging operations.
                             </p>
                         </div>
 
@@ -108,10 +108,10 @@ export default function PackagingPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Traceability & Serialisation
+                                Recipe & Work instructions
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Track every package from raw material to pallet. Manage serialization for compliance and logistics.
+                                Ensure accurate, repeatable production with centralized management of recipes, work instructions, and production parameters, supporting quick changeovers and short-run flexibility
                             </p>
                         </div>
 
@@ -121,10 +121,10 @@ export default function PackagingPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Supply Chain Integration
+                                Quality & Compliance Control
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Connect seamlessly with ERP and WMS systems for synchronized operations and inventory visibility.
+                                Enforce quality checks, forms, collect inspection data, and maintain digital records for ISO or customer-specific requirements.
                             </p>
                         </div>
 
@@ -138,7 +138,7 @@ export default function PackagingPage() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        The Railes Advantage in Packaging
+                        Railes MES vs Legacy MES in Packaging
                     </h2>
 
                     <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
@@ -147,41 +147,51 @@ export default function PackagingPage() {
                                 <thead>
                                     <tr className="bg-gradient-to-r from-[#1e40af] via-[#3b82f6] to-[#ec4899]">
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/4 border-r border-white/10">Feature</th>
-                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Traditional Systems</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Legacy MES</th>
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/3">Railes MES</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-600">
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Deployment Speed</td>
-                                        <td className="py-6 px-8">Months/Years</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">OEE Monitoring</td>
+                                        <td className="py-6 px-8">Limited or manual</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Weeks</div>
-                                            <div className="text-sm text-gray-500">Modular & Cloud-native</div>
+                                            <div className="font-semibold text-gray-900">Real-time, automated OEE, scrap, and performance monitoring</div>
                                         </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">User Experience</td>
-                                        <td className="py-6 px-8">Complex Legacy UI</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Product Traceability</td>
+                                        <td className="py-6 px-8">Fragmented or paper-based</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Modern & Intuitive</div>
-                                            <div className="text-sm text-gray-500">Designed for operators</div>
+                                            <div className="font-semibold text-gray-900">End-to-end material and product traceability</div>
                                         </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Connectivity</td>
-                                        <td className="py-6 px-8">Siloed Data</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Changeover Management</td>
+                                        <td className="py-6 px-8">Manual, prone to errors</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Integrated Ecosystem</div>
-                                            <div className="text-sm text-gray-500">ERP, PLM, Machine IOT</div>
+                                            <div className="font-semibold text-gray-900">Digital job and recipe management for fast, error-free setups</div>
                                         </td>
                                     </tr>
                                     <tr className="hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Flexibility</td>
-                                        <td className="py-6 px-8">Rigid Processes</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Waste Control</td>
+                                        <td className="py-6 px-8">Reactive</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Agile Workflows</div>
-                                            <div className="text-sm text-gray-500">Easily adaptable</div>
+                                            <div className="font-semibold text-gray-900">Real-time scrap tracking and waste minimization</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Integration</td>
+                                        <td className="py-6 px-8">Siloed systems</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Seamless ERP, machine, and shop-floor system integration</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Industry Adaptability</td>
+                                        <td className="py-6 px-8">Generic</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Packaging-specific workflows for flexible production   </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -210,9 +220,10 @@ export default function PackagingPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">1</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Increase OEE</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Short Runs & Frequent Changeovers
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Maximize equipment uptime and performance with real-time monitoring and analytics.
+                                    Railes MES simplifies recipe management and ensures smooth, efficient transitions between work orders.
                                 </p>
                             </div>
                         </div>
@@ -221,9 +232,10 @@ export default function PackagingPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">2</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Reduce Waste</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Stringent Quality Requirements
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Minimize material waste and rework through precise control and error proofing.
+                                    Guarantee product consistency and comply with regulatory standards through digital quality controls.
                                 </p>
                             </div>
                         </div>
@@ -243,9 +255,10 @@ export default function PackagingPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">4</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Real-time Visibility</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Minimize Scrap & Downtime
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Empower decision-making with live data from every corner of your packaging line.
+                                    Real-time monitoring and alerts empower your team to reduce material waste and machine stoppages.
                                 </p>
                             </div>
                         </div>
@@ -254,9 +267,10 @@ export default function PackagingPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">5</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Paperless Operations</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Full Product Traceability
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Digitize workflows, instructions, and records for a cleaner, more efficient floor.
+                                    Know exactly where every raw material, component, and finished product came from and went.
                                 </p>
                             </div>
                         </div>
@@ -265,9 +279,9 @@ export default function PackagingPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">6</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Scalable Solution</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Data-Driven Decisions</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Grow your operations seamlessly. Railes MES adapts to your changing needs.
+                                    Access production KPIs, machine status, and performance analytics at your fingertips.
                                 </p>
                             </div>
                         </div>
@@ -290,27 +304,35 @@ export default function PackagingPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to optimize your packaging?
+                                    Transform Your Packaging Production
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    With Railes MES, packaging manufacturers achieve:
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve total traceability and compliance.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Real-time performance monitoring.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Maximize line efficiency and reduce downtime.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Digital traceability and compliance.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Eliminate paper and manual errors.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Faster changeovers with recipe control.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Integrate your entire shop floor ecosystem.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Reduced scrap and material waste.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Seamless connection to ERP and shop-floor systems.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Data-driven insights to continuously improve efficiency.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -319,7 +341,7 @@ export default function PackagingPage() {
                         {/* Overlapping Image - Positioned Absolute Bottom Right */}
                         <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
                             <Image
-                                src="/images/Aerospace.png"
+                                src="/images/.png"
                                 alt="Packaging Production Dashboard"
                                 width={600}
                                 height={400}

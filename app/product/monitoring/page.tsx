@@ -20,11 +20,11 @@ export default function MonitoringPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Real-time visibility into every corner of your factory.
+                            Gain full visibility and control over your production operations in real time, capturing data and empowering smarter decisions.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Track performance, detect anomalies, and make data-driven decisions with live dashboards and intelligent alerts.
+                            From streamlined production launches to seamless scaling, this keeps your operations efficient and adaptable.
                         </p>
 
                         {/* Monitoring Image */}
@@ -33,7 +33,6 @@ export default function MonitoringPage() {
                                 src="/images/Monitoring.png"
                                 alt="Real-time Monitoring Dashboard"
                                 fill
-                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
                             />
                         </div>
 
@@ -62,10 +61,10 @@ export default function MonitoringPage() {
                                     <Activity className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Live<br />Performance
+                                    Live Insights from<br />Start to Finish:
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Monitor OEE, cycle times, and throughput in real-time across all lines and work centers.
+                                    Manage production runs through direct integration with shop floor equipment, capturing essential process data automatically.
                                 </p>
                             </div>
 
@@ -75,10 +74,10 @@ export default function MonitoringPage() {
                                     <AlertCircle className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Instant<br />Alerts
+                                    Order-Centric<br />Tracking
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Get notified immediately when issues arise, so you can respond before they escalate.
+                                    Link data, quality checks, inventory changes, and operational details, all back to each production order.
                                 </p>
                             </div>
 
@@ -88,10 +87,10 @@ export default function MonitoringPage() {
                                     <TrendingUp className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Predictive<br />Insights
+                                    Future-Ready<br />Scalability
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Leverage AI to forecast bottlenecks and optimize production schedules proactively.
+                                    Start with monitoring today; easily expand into full MES capabilities as your operational needs grow.
                                 </p>
                             </div>
 
@@ -109,7 +108,7 @@ export default function MonitoringPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            See Everything, Miss Nothing
+                            Deliver Smart Production with RAILES MES
                         </h2>
                     </div>
 
@@ -121,9 +120,10 @@ export default function MonitoringPage() {
                                 <Eye className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Real-Time Dashboards</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Seamless Production Starts and Tracking
+                                </h3>
                                 <p className="text-slate-500">
-                                    Visualize production metrics, quality trends, and machine status on customizable dashboards accessible from anywhere.
+                                    Operators can initiate and monitor production runs directly, with MES handling communication with factory equipment in real time.
                                 </p>
                             </div>
                         </div>
@@ -134,9 +134,10 @@ export default function MonitoringPage() {
                                 <BarChart3 className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">OEE Tracking</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Order-driven data centrality
+                                </h3>
                                 <p className="text-slate-500">
-                                    Automatically calculate Overall Equipment Effectiveness (OEE) and drill down into availability, performance, and quality losses.
+                                    Key information, spanning production performance, inventory usage, quality inspection data, remains consolidated under each production order.
                                 </p>
                             </div>
                         </div>
@@ -147,9 +148,10 @@ export default function MonitoringPage() {
                                 <AlertCircle className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Downtime Analysis</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Scale at your pace
+                                </h3>
                                 <p className="text-slate-500">
-                                    Categorize and analyze every stoppage event. Identify root causes and prioritize improvement initiatives.
+                                    Begin with production monitoring solutions; when ready, scale to a comprehensive MES platform without losing your existing infrastructure.
                                 </p>
                             </div>
                         </div>
@@ -160,38 +162,15 @@ export default function MonitoringPage() {
                                 <Zap className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Smart Alerts</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Strategic It IT-OT Aligment
+                                </h3>
                                 <p className="text-slate-500">
-                                    Configure threshold-based or AI-driven alerts for quality deviations, machine failures, or production delays.
+                                    Bridge Information Technology (IT) and Operational Technology (OT) layers thoughtfully, building toward Industry 4.0 and smart manufacturing practices.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 5: Historical Trends (Left) */}
-                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <TrendingUp className="w-8 h-8" />
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Historical Trends</h3>
-                                <p className="text-slate-500">
-                                    Compare performance over days, weeks, or months. Spot patterns and measure the impact of continuous improvement efforts.
-                                </p>
-                            </div>
-                        </div>
 
-                        {/* Feature 6: Mobile Access (Right) */}
-                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow mb-20">
-                            <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
-                                <Activity className="w-8 h-8" />
-                            </div>
-                            <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Mobile Access</h3>
-                                <p className="text-slate-500">
-                                    Stay connected to your shop floor from anywhere with responsive dashboards optimized for tablets and smartphones.
-                                </p>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -211,27 +190,27 @@ export default function MonitoringPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to see your factory in real-time?
+                                    Why Choose RAILES for Monitoring your Manufacturing?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    Because Railes transforms monitoring from a routine requirement into a strategic advantage:
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Increase OEE by 15-25% with actionable insights.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Starts simple, expands thoughtfully, no upfront complexity.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce unplanned downtime with predictive alerts.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Deep integration with shopfloor systems with data flowing automatically.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Make faster decisions with live data at your fingertips.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Ensures every production detail aligns with its order context.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Empower teams with mobile dashboards anywhere, anytime.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Built for smart manufacturing evolution. From monitoring to full MES.</span>
                                     </li>
                                 </ul>
                             </div>

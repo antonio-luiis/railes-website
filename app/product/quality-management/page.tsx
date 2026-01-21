@@ -21,20 +21,19 @@ export default function QualityManagementPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Ensure perfection in every product with integrated quality control.
+                            Ensure product quality at every step of your operations.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Automate inspections, manage non-conformances, and maintain audit-readiness with a unified Quality Management System (QMS) built into your MES.
+                            Detect issues early, standardize inspections, and build a culture of continuous improvement, without slowing down production.
                         </p>
 
                         {/* Quality Management Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/Quality_Management_Control_Railes.png"
+                                src="/images/Quality.png"
                                 alt="Quality Management Dashboard"
                                 fill
-                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
                             />
                         </div>
 
@@ -64,10 +63,10 @@ export default function QualityManagementPage() {
                                     <ClipboardCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Automated<br />Inspections
+                                    Built-In <br />Quality
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Embed quality checks directly into work instructions to ensure nothing is missed.
+                                    Catch and correct defects in real time, before they move downstream.
                                 </p>
                             </div>
 
@@ -77,10 +76,10 @@ export default function QualityManagementPage() {
                                     <ShieldCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Zero<br />Defects
+                                    Paperless & <br />Standardized
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Catch issues at the source with inline validation and mistake-proofing (Poka-Yoke).
+                                    Eliminate variability with digital inspections, forms, and audits.
                                 </p>
                             </div>
 
@@ -90,10 +89,10 @@ export default function QualityManagementPage() {
                                     <FileCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Audit<br />Readiness
+                                    Continuous<br />Improvement
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Always be ready for ISO, FDA, or AS9100 audits with complete digital traceability.
+                                    Turn shop floor data into actionable insights to prevent future issues.
                                 </p>
                             </div>
 
@@ -111,7 +110,7 @@ export default function QualityManagementPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            Master Quality with RAILES MES
+                            Deliver High Quality with RAILES MES
                         </h2>
                     </div>
 
@@ -125,7 +124,7 @@ export default function QualityManagementPage() {
                             <div>
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Inline Quality Checks</h3>
                                 <p className="text-slate-500">
-                                    Enforce mandatory quality steps within production workflows. Operators cannot proceed without validating measurements or checklists.
+                                    Embed inspections directly into the production process. Trigger checks based on product, process, or shift changes.
                                 </p>
                             </div>
                         </div>
@@ -136,9 +135,10 @@ export default function QualityManagementPage() {
                                 <BarChart3 className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">SPC & Trends</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Non-Conformance Management
+                                </h3>
                                 <p className="text-slate-500">
-                                    Monitor process stability with real-time Statistical Process Control (SPC) charts. Detect drifts before they become defects.
+                                    Automatically flag deviations and guide operators through resolution steps. Track trends and recurring issues over time.
                                 </p>
                             </div>
                         </div>
@@ -149,9 +149,10 @@ export default function QualityManagementPage() {
                                 <AlertTriangle className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Non-Conformance Management</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Digital SOPs & Workflows
+                                </h3>
                                 <p className="text-slate-500">
-                                    Streamline NCR initiation, root cause analysis, and disposition. Manage CAPA (Corrective and Preventive Actions) efficiently.
+                                    Standardize procedures with interactive digital work instructions and checklists. Keep teams aligned across lines and shifts.
                                 </p>
                             </div>
                         </div>
@@ -162,9 +163,10 @@ export default function QualityManagementPage() {
                                 <Component className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Digital Calibration</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Audit-Ready Records
+                                </h3>
                                 <p className="text-slate-500">
-                                    Track tool calibration schedules and prevent the use of uncalibrated or expired equipment on the shop floor.
+                                    Maintain a complete digital trail of inspections, actions taken, and operator signatures, ready for internal or external audits.
                                 </p>
                             </div>
                         </div>
@@ -175,9 +177,10 @@ export default function QualityManagementPage() {
                                 <ShieldCheck className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Supplier Quality</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Live Quality Dashboards
+                                </h3>
                                 <p className="text-slate-500">
-                                    Inspect incoming materials and track supplier performance. Ensure only conforming parts enter your production line.
+                                    Monitor key quality KPIs like defect rates, first-pass yield, and inspection results in real time.
                                 </p>
                             </div>
                         </div>
@@ -188,9 +191,10 @@ export default function QualityManagementPage() {
                                 <FileCheck className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">eHR & Compliance</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Root Cause Analysis Tools
+                                </h3>
                                 <p className="text-slate-500">
-                                    Automatically compile Electronic History Records (eHR) / Device History Records (DHR) for full regulatory compliance.
+                                    Investigate quality incidents using structured tools like 5 Whys, Ishikawa, or Pareto analysis. Capture findings directly in the system.
                                 </p>
                             </div>
                         </div>
@@ -213,27 +217,31 @@ export default function QualityManagementPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to elevate your quality?
+                                    Why Choose RAILES for Quality Management?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    RAILES brings quality into every operation, in real time.
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce scrap and rework costs by up to 50%.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">No more paper forms or siloed spreadsheets.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Ensure 100% compliance with industry standards.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Embedded directly into your production workflows.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Respond to quality issues faster with real-time data.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Easy for operators, powerful for quality teams.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Eliminate paper-based quality records forever.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Designed for regulated industries.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Scalable across teams, lines, and sites.</span>
                                     </li>
                                 </ul>
                             </div>

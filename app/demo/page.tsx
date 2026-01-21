@@ -16,12 +16,7 @@ export default function DemoPage() {
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-                {/* Logo */}
-                <div className="absolute top-6 left-6 md:left-12 z-50">
-                    <Link href="/">
-                        <Logo className="h-8" color="white" />
-                    </Link>
-                </div>
+
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -186,7 +181,7 @@ export default function DemoPage() {
             {/* 
               BLOCK 4: BENEFITS LIST SECTION (ORIGINAL)
               Gray container with centered text list
-            */}
+            
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -225,11 +220,12 @@ export default function DemoPage() {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* 
               BLOCK 4.5: BENEFITS GRID (EXPLORER ALTERNATIVE)
               Card grid with gradient icons
-            */}
+            
             <section className="py-20 bg-gray-50/50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
@@ -247,7 +243,6 @@ export default function DemoPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-                        {/* Card 1 */}
                         <div className="bg-white p-8 rounded-[32px] hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col items-start gap-4 group">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white mb-2 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
                                 <Network className="w-6 h-6" />
@@ -258,7 +253,6 @@ export default function DemoPage() {
                             </p>
                         </div>
 
-                        {/* Card 2 */}
                         <div className="bg-white p-8 rounded-[32px] hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col items-start gap-4 group">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white mb-2 shadow-lg shadow-blue-600/20 group-hover:scale-110 transition-transform">
                                 <Activity className="w-6 h-6" />
@@ -269,7 +263,6 @@ export default function DemoPage() {
                             </p>
                         </div>
 
-                        {/* Card 3 */}
                         <div className="bg-white p-8 rounded-[32px] hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col items-start gap-4 group">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white mb-2 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
                                 <Zap className="w-6 h-6" />
@@ -280,7 +273,6 @@ export default function DemoPage() {
                             </p>
                         </div>
 
-                        {/* Card 4 (Centered on LG) */}
                         <div className="bg-white p-8 rounded-[32px] hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col items-start gap-4 group lg:ml-auto">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white mb-2 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
                                 <ShieldCheck className="w-6 h-6" />
@@ -291,7 +283,6 @@ export default function DemoPage() {
                             </p>
                         </div>
 
-                        {/* Card 5 (Centered on LG) */}
                         <div className="bg-white p-8 rounded-[32px] hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col items-start gap-4 group lg:mr-auto">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-white mb-2 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
                                 <Globe className="w-6 h-6" />
@@ -305,18 +296,21 @@ export default function DemoPage() {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* 
               BLOCK 4.6: HIGH-CONVERSION BENEFITS (V3 - PREMIUM)
               Stats-driven, gradient backgrounds, strong visual hierarchy
-            */}
+            
             <section className="relative py-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
                 {/* Decorative elements */}
+            {/*
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-pink-200/20 to-blue-200/20 rounded-full blur-3xl"></div>
 
                 <div className="container mx-auto px-4 relative z-10">
                     {/* Header */}
+            {/*
                     <div className="text-center mb-20">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold mb-6 shadow-lg">
                             <Sparkles className="w-4 h-4" />
@@ -332,6 +326,7 @@ export default function DemoPage() {
                     </div>
 
                     {/* Stats Row */}
+            {/*
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-5xl mx-auto">
                         <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/50 text-center hover:shadow-lg transition-shadow">
                             <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">25%</div>
@@ -352,9 +347,11 @@ export default function DemoPage() {
                     </div>
 
                     {/* Main Benefits Grid */}
+            {/*
                     <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
 
                         {/* Benefit 1 */}
+            {/*
                         <div className="group relative bg-white p-8 rounded-3xl border border-gray-200/50 hover:border-blue-300 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
                             <div className="relative">
@@ -373,6 +370,7 @@ export default function DemoPage() {
                         </div>
 
                         {/* Benefit 2 */}
+            {/*
                         <div className="group relative bg-white p-8 rounded-3xl border border-gray-200/50 hover:border-purple-300 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
                             <div className="relative">
@@ -391,6 +389,7 @@ export default function DemoPage() {
                         </div>
 
                         {/* Benefit 3 */}
+            {/*
                         <div className="group relative bg-white p-8 rounded-3xl border border-gray-200/50 hover:border-indigo-300 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
                             <div className="relative">
@@ -409,6 +408,7 @@ export default function DemoPage() {
                         </div>
 
                         {/* Benefit 4 */}
+            {/*
                         <div className="group relative bg-white p-8 rounded-3xl border border-gray-200/50 hover:border-cyan-300 transition-all duration-300 hover:shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
                             <div className="relative">
@@ -429,6 +429,7 @@ export default function DemoPage() {
                     </div>
 
                     {/* Bottom CTA */}
+            {/*
                     <div className="text-center">
                         <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl shadow-blue-600/30">
                             <Globe className="w-12 h-12 text-white/90" />
@@ -445,6 +446,7 @@ export default function DemoPage() {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* 
               BLOCK 5: BOTTOM CTA SECTION

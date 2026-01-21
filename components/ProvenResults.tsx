@@ -11,10 +11,10 @@ export function ProvenResults() {
                     {/* Header Content */}
                     <div className="mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">
-                            Proven Results
+                            The Proof is in the Results
                         </h2>
                         <p className="text-gray-500 text-lg max-w-2xl leading-relaxed">
-                            The  don't lie.<br />
+
                             We tackle inefficiency, enhance quality, and deliver solutions tailored<br className="hidden md:block" />
                             to your operations all backed by guaranteed ROI.
                         </p>

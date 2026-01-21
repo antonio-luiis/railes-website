@@ -69,16 +69,16 @@ export default function ROICalculatorPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-20">
+            <div className="bg-white text-gray-900 py-20">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-6">
-                            <Calculator className="w-8 h-8" />
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl mb-6">
+                            <Calculator className="w-8 h-8 text-white" />
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
                             ROI Calculator
                         </h1>
-                        <p className="text-xl text-white/90 max-w-2xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                             Discover how much you can save by optimizing your manufacturing operations with Railes
                         </p>
                     </div>
@@ -305,14 +305,14 @@ export default function ROICalculatorPage() {
                         </div>
 
                         {/* Implementation Cost */}
-                        <div className="bg-gray-50 rounded-3xl p-6 border-2 border-gray-200">
+                        {/* <div className="bg-gray-50 rounded-3xl p-6 border-2 border-gray-200">
                             <div className="flex items-center justify-between">
                                 <span className="text-gray-600 font-semibold">Estimated Implementation Cost</span>
                                 <span className="text-xl font-bold text-gray-900">
                                     €{results.implementationCost.toLocaleString()}
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* CTA */}
                         <div className="bg-white rounded-3xl p-8 shadow-xl text-center">

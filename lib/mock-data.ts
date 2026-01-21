@@ -160,7 +160,7 @@ export const ctaSection = {
 
 export const newsletterSection = {
     title: "Stay updated",
-    description: "Subscribe to our newsletter for the latest insights in manufacturing."
+    description: "Join our community of industry enthusiasts by subscribing our newsletter."
 };
 
 export const solutions = {

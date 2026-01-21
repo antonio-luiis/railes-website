@@ -32,7 +32,7 @@ export default function AerospacePage() {
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Achieve AS9100 compliance, manage complex discrete assemblies, and ensure full digital thread traceability from design to flight.
+                            Aerospace and defense manufacturing demands absolute precision, full traceability, and strict regulatory compliance. Railes MES is engineered to meet these challenges, providing real-time control, digital traceability, and paperless production for complex, high-value operations.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -68,7 +68,7 @@ export default function AerospacePage() {
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        Why Aerospace Leaders Choose Railes MES
+                        Why Aerospace & Defense Manufacturers Choose Railes MES
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
@@ -82,10 +82,10 @@ export default function AerospacePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Native AS9100 & ISO 9001 Compliance
+                                Full Part & Process Traceability
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Built to enforce strict quality standards. Automate FAI (First Article Inspection) and ensure audit-readiness at all times.
+                                From raw material lot tracking to final assembly and inspection, Railes MES ensures complete genealogy, supporting FAA, EASA, and defense requirements with digital records
                             </p>
                         </div>
 
@@ -95,10 +95,10 @@ export default function AerospacePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Complex Discrete Assembly
+                                Paperless Manufacturing & Digital Work Instructions
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Manage thousands of parts and operations with ease. Support for both OEM production and MRO (Maintenance, Repair, Overhaul) workflows.
+                                Eliminate paper-based processes with electronic work instructions, quality checklists, and in-process validations, improving accuracy and compliance.
                             </p>
                         </div>
 
@@ -108,10 +108,10 @@ export default function AerospacePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Digital Thread & Full Genealogy
+                                Complex Assembly & Quality Controls
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Trace every serialized component from raw material to final assembly. Maintain a complete electronic history record (EHR).
+                                Railes MES manages complex assemblies, enforces process sequences, and collects quality data at every step, minimizing errors and costly rework.
                             </p>
                         </div>
 
@@ -121,10 +121,10 @@ export default function AerospacePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Integrated Supply Chain
+                                Regulatory Compliance Built-Ins
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Collaborate seamlessly with suppliers. Manage genealogy across multi-tier supply chains to prevent counterfeit parts.
+                                Digital traceability, controlled processes, and detailed audit trails simplify compliance with aerospace and defense standards like AS9100 and AQAP.
                             </p>
                         </div>
 
@@ -143,7 +143,7 @@ export default function AerospacePage() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        The Railes Advantage in Aerospace
+                        Railes MES vs Traditional Aerospace & Defense MES
                     </h2>
 
                     <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
@@ -158,35 +158,45 @@ export default function AerospacePage() {
                                 </thead>
                                 <tbody className="text-gray-600">
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">AS9100 Compliance</td>
-                                        <td className="py-6 px-8">Costly Add-ons / Paper</td>
-                                        <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Native & Automated</div>
-                                            <div className="text-sm text-gray-500">Built-in validation checks</div>
-                                        </td>
-                                    </tr>
-                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Traceability</td>
-                                        <td className="py-6 px-8">Siloed Data</td>
+                                        <td className="py-6 px-8">Partial, fragmented</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Digital Thread</div>
-                                            <div className="text-sm text-gray-500">End-to-end genealogy</div>
+                                            <div className="font-semibold text-gray-900">Full, automated part & process genealogy</div>
                                         </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Complex Assembly</td>
-                                        <td className="py-6 px-8">Tribal Knowledge</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Paperless Manufacturing</td>
+                                        <td className="py-6 px-8">Limited or manual</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Guided Workflows</div>
-                                            <div className="text-sm text-gray-500">Interactive work instructions</div>
+                                            <div className="font-semibold text-gray-900">Digital work instructions, checklists, and sign-offs</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Real-Time Visibility</td>
+                                        <td className="py-6 px-8">After-the-fact reporting</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Live dashboards, alerts, and production tracking</div>
                                         </td>
                                     </tr>
                                     <tr className="hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Change Management</td>
-                                        <td className="py-6 px-8">Slow & Disconnected</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Compliance Management</td>
+                                        <td className="py-6 px-8">Manual, prone to errors</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Integrated ECO/ECR</div>
-                                            <div className="text-sm text-gray-500">Instant shop floor updates</div>
+                                            <div className="font-semibold text-gray-900">Digital records aligned with AS9100 and AQAP standards</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Complex Assembly Control</td>
+                                        <td className="py-6 px-8">Limited</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Enforced sequences, quality gates, component traceability</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50/50 transition-colors">
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Integration Flexibility</td>
+                                        <td className="py-6 px-8">Rigid, siloed</td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">API-first, easily integrates with ERP, PLM, and shop floor</div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -216,9 +226,10 @@ export default function AerospacePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">1</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Zero Deviations</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">High Mix, Low Volume Production
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Prevent errors before they happen with inline quality checks and mandatory validations.
+                                    Manage highly engineered products with complex bill of materials and strict process control.
                                 </p>
                             </div>
                         </div>
@@ -238,9 +249,10 @@ export default function AerospacePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">3</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Total Visibility</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Traceability & Compliance
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Gain real-time insights into every work order, machine status, and operator action.
+                                    Ensure regulatory and customer requirements are met with complete digital records.
                                 </p>
                             </div>
                         </div>
@@ -249,9 +261,10 @@ export default function AerospacePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">4</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Cost Control</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Minimized Rework & Scrap
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Capture actual labor and material costs per serialized unit for accurate profitability analysis.
+                                    Enforce assembly sequences, digital inspections, and real-time validations to reduce errors.
                                 </p>
                             </div>
                         </div>
@@ -260,9 +273,10 @@ export default function AerospacePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">5</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Paperless Shop Floor</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Increased Productivity & Process Control
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Eliminate mountains of paperwork and the risk of lost records with fully digital eBRs.
+                                    Connect systems, people, and processes for efficient, high-quality production.
                                 </p>
                             </div>
                         </div>
@@ -271,9 +285,10 @@ export default function AerospacePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">6</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Audit Readiness</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Support for Global Operations
+                                </h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Pass audits with confidence. all data is timestamped, signed, and easily retrievable.
+                                    Railes MES scales across multi-site operations, supporting global aerospace and defense programs.
                                 </p>
                             </div>
                         </div>
@@ -304,24 +319,32 @@ export default function AerospacePage() {
                                     Ready to scale your aerospace production?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    With Railes MES, manufacturers can:
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished part.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Achieve paperless, error-proof production.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce scrap and rework by up to 30% with guided workflows.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Ensure full product and process traceability.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Pass AS9100 and ISO audits with zero findings.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Enforce strict quality and regulatory compliance.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamless with PLM, ERP, and machine data.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Connect design, production, and quality systems seamlessly.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Gain real-time visibility and actionable insights.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Support scalable, global operations.</span>
                                     </li>
                                 </ul>
                             </div>

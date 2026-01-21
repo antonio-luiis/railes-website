@@ -31,7 +31,7 @@ export default function ProductionManagementPage() {
                         {/* Production Chart Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/oee.png"
+                                src="/images/Production_Management.png"
                                 alt="Production by Date Chart"
                                 fill
                                 className="object-cover"
@@ -215,27 +215,31 @@ export default function ProductionManagementPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to scale your production?
+                                    Why Choose RAILES for Production Management?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
-                                    Railes MES empowers you to:
+                                    Because it connects your shop floor to your decision-making in real time:
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished product.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Modular and customizable.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce downtime and waste by up to 30% with real-time monitoring.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Easy to integrate with ERP and automation systems.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Streamline compliance with automated documentation and reporting.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Designed for industries where precision and timing matter.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamlessly with ERP, PLM, and machine data systems.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Scalable Across Plants and Lines.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">AI-Powered Insights.</span>
                                     </li>
                                 </ul>
                             </div>

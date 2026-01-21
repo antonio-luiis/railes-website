@@ -24,9 +24,9 @@ export default function Home() {
       <IndustrySolutionsSection data={mockData.industrySection} />
       {/* <ProofResultsSection data={mockData.proofSection} /> */}
       <ProvenResults />
-      <TestimonialsSection data={mockData.testimonialsSection} />
-      <BlogPreviewSection />
+      {/* <TestimonialsSection data={mockData.testimonialsSection} /> */}
       <NewsletterSection data={mockData.newsletterSection} />
+      <BlogPreviewSection />
       <CallToActionSection data={mockData.ctaSection} />
 
       {/* <SolutionsSection data={mockData.solutions} /> */}

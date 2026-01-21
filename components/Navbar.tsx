@@ -33,9 +33,9 @@ interface NavbarProps {
 const navItems = [
     { label: "Product", url: "#", hasDropdown: true },
     { label: "Industries", url: "#", hasDropdown: true },
-    { label: "Partners", url: "/partners" },
+    { label: "Partner", url: "/partners" },
     { label: "Resources", url: "#", hasDropdown: true },
-    { label: "About us", url: "#", hasDropdown: true },
+    // { label: "About us", url: "#", hasDropdown: true },
 ];
 
 export function Navbar({ siteSettings }: NavbarProps) {
@@ -167,7 +167,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Pharmaceuticals</div>
                                                 </div>
                                             </Link>
-                                            <Link
+                                            {/* <Link
                                                 href="/industries/discrete-manufacturing"
                                                 className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
@@ -178,7 +178,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 <div>
                                                     <div className="font-medium text-gray-900 group-hover:text-blue-600 text-sm">Discrete Manufacturing</div>
                                                 </div>
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </div>
@@ -447,12 +447,12 @@ export function Navbar({ siteSettings }: NavbarProps) {
 
                 {/* Right Actions */}
                 <div className="hidden lg:flex items-center gap-4 ml-auto">
-                    <button className="text-sm font-medium text-gray-600 hover:text-railes-blue flex items-center gap-1">
+                    {/* <button className="text-sm font-medium text-gray-600 hover:text-railes-blue flex items-center gap-1">
                         EN <ChevronDown className="w-4 h-4" />
                     </button>
                     <button className="text-gray-600 hover:text-railes-blue">
                         <Search className="w-5 h-5" />
-                    </button>
+                    </button> */}
                     <Link href="/contact">
                         <Button
                             variant="ghost"
@@ -547,10 +547,10 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <FlaskConical className="w-4 h-4 text-blue-600" />
                                                     Pharmaceuticals
                                                 </Link>
-                                                <Link href="/industries/discrete-manufacturing" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                {/* <Link href="/industries/discrete-manufacturing" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Factory className="w-4 h-4 text-blue-600" />
                                                     Discrete Manufacturing
-                                                </Link>
+                                                </Link> */}
                                             </div>
                                         )}
 
