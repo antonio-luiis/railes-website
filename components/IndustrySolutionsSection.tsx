@@ -30,13 +30,13 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
     const fallback = {
         title: "Your Industry solutions",
         visibilityTitle: "Visibility",
-        visibilityDescription: "Gain complete visibility into your production floor with real-time tracking of orders, operators, and work centers.",
+        visibilityDescription: "See everything happening on the shop floor in real time , from work orders, machines, operators, downtimes, and performance. A live control panel for your entire operation.",
         executionTitle: "Execution",
-        executionDescription: "Streamline execution with digital work instructions and automated data collection.",
+        executionDescription: "Digitize production processes. Clear instructions, error-free data entry, full traceability, and standardized operations, all executed directly by the shop floor teams.",
         qualityTitle: "Quality",
-        qualityDescription: "Ensure product quality with integrated inspections and non-conformance management.",
+        qualityDescription: "Control and record quality at every step. Inline inspections, nonconformities, and action plans, with complete traceability by lot, operator, and equipment.",
         improvementTitle: "Improvement",
-        improvementDescription: "Drive continuous improvement with data-driven insights and problem-solving tools.",
+        improvementDescription: "Turn data into decisions. Analyze root causes of downtime, compare shifts, identify losses , with automated reports and dashboards that power continuous improvement.",
         industries: [
             "Pharmaceuticals Manufacturing",
             "Automotive Manufacturing",

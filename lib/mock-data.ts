@@ -14,7 +14,7 @@ export const siteSettings = {
         { label: "Resources", url: "#" },
         { label: "About us", url: "#" }
     ],
-    footerText: "© 2025 Muvu technologies. All Rights Reserved."
+    footerText: "© 2026 Railes. All Rights Reserved."
 };
 
 export const heroData = {
@@ -128,7 +128,7 @@ export const industrySection = {
 };
 
 export const proofSection = {
-    title: "Proven Results",
+    title: "Proven Teste",
     stats: [
         { label: "Efficiency Increase", value: "25%" },
         { label: "Error Reduction", value: "40%" },

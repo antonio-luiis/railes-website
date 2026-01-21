@@ -1,40 +1,39 @@
 import React from 'react';
-import { Eye, BarChart3, List, Clock, Calendar, Component, ArrowRight, CornerRightDown } from 'lucide-react';
+import { Activity, TrendingUp, AlertCircle, BarChart3, Eye, Zap, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CallToActionSection } from '@/components/CallToActionSection';
 import { ProductFeatures } from '@/components/ProductFeatures';
 
-export default function ProductionManagementPage() {
+export default function MonitoringPage() {
     return (
         <main className="min-h-screen bg-[#F9FAFB]">
 
             {/* 
               HERO SECTION 
-              Design: Centered Text -> Chart/Dashboard Graphic
             */}
             <section className="relative bg-white pt-32 pb-20 md:pb-32 overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                            Production Management
+                            Monitoring
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Real-time control and full visibility over your shop floor.
+                            Real-time visibility into every corner of your factory.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Optimize production operations, eliminate inefficiencies, and ensure your teams have everything they need to deliver on time, every time.
+                            Track performance, detect anomalies, and make data-driven decisions with live dashboards and intelligent alerts.
                         </p>
 
-                        {/* Production Chart Image */}
+                        {/* Monitoring Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/oee.png"
-                                alt="Production by Date Chart"
+                                src="/images/Monitoring.png"
+                                alt="Real-time Monitoring Dashboard"
                                 fill
-                                className="object-cover"
+                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
                             />
                         </div>
 
@@ -44,7 +43,6 @@ export default function ProductionManagementPage() {
 
             {/* 
               KEY BENEFITS SECTION
-              Design: White card floating on gray background (V1 container + V4 content)
             */}
             <section className="bg-[#F9FAFB] pb-24 pt-10 md:-mt-20 relative z-20 px-4">
                 <div className="container mx-auto">
@@ -61,39 +59,39 @@ export default function ProductionManagementPage() {
                             {/* Benefit 1 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <Clock className="w-8 h-8" />
+                                    <Activity className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Real-Time<br />Tracking
+                                    Live<br />Performance
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Monitor every production order and work center as it happens.
+                                    Monitor OEE, cycle times, and throughput in real-time across all lines and work centers.
                                 </p>
                             </div>
 
                             {/* Benefit 2 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <BarChart3 className="w-8 h-8" />
+                                    <AlertCircle className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    More Uptime,<br />Less Waste
+                                    Instant<br />Alerts
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Identify bottlenecks and inefficiencies before they impact your deadlines.
+                                    Get notified immediately when issues arise, so you can respond before they escalate.
                                 </p>
                             </div>
 
                             {/* Benefit 3 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <Component className="w-8 h-8" />
+                                    <TrendingUp className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Built for<br />Manufacturing Teams
+                                    Predictive<br />Insights
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Simple, intuitive tools designed to help operators, supervisors, and planners work better.
+                                    Leverage AI to forecast bottlenecks and optimize production schedules proactively.
                                 </p>
                             </div>
 
@@ -111,86 +109,86 @@ export default function ProductionManagementPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            Take Control of Your Production with RAILES MES
+                            See Everything, Miss Nothing
                         </h2>
                     </div>
 
                     <div className="space-y-12 max-w-5xl mx-auto">
 
-                        {/* Feature 1: Visual order tracking (Left) */}
+                        {/* Feature 1: Real-Time Dashboards (Left) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
                                 <Eye className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Visual order tracking</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Real-Time Dashboards</h3>
                                 <p className="text-slate-500">
-                                    Follow production orders in real time, from start to finish, including setup, execution, and completion.
+                                    Visualize production metrics, quality trends, and machine status on customizable dashboards accessible from anywhere.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 2: Performance dashboards (Right) */}
+                        {/* Feature 2: OEE Tracking (Right) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
                                 <BarChart3 className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Performance dashboards</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">OEE Tracking</h3>
                                 <p className="text-slate-500">
-                                    Track KPIs like OEE, cycle time, scrap rate, and productivity with live dashboards.
+                                    Automatically calculate Overall Equipment Effectiveness (OEE) and drill down into availability, performance, and quality losses.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 3: Work Instructions (Left) */}
+                        {/* Feature 3: Downtime Analysis (Left) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <List className="w-8 h-8" />
+                                <AlertCircle className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Work Instructions</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Downtime Analysis</h3>
                                 <p className="text-slate-500">
-                                    Provide operators with clear, visual, and up-to-date instructions. Adjusted to the product, process, or workstation. Reduce training time and avoid errors, even in complex or variable production environments.
+                                    Categorize and analyze every stoppage event. Identify root causes and prioritize improvement initiatives.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 4: Downtime and delay management (Right) */}
+                        {/* Feature 4: Production Alerts (Right) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
-                                <Clock className="w-8 h-8" />
+                                <Zap className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Downtime and delay management</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Smart Alerts</h3>
                                 <p className="text-slate-500">
-                                    Automatically log and categorize stoppages. Empower teams to act quickly with root-cause analysis tools.
+                                    Configure threshold-based or AI-driven alerts for quality deviations, machine failures, or production delays.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 5: Dynamic scheduling (Left) */}
+                        {/* Feature 5: Historical Trends (Left) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <Calendar className="w-8 h-8" />
+                                <TrendingUp className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Dynamic scheduling</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Historical Trends</h3>
                                 <p className="text-slate-500">
-                                    Adjust production plans on the fly based on machine availability, inventory levels, or unexpected events.
+                                    Compare performance over days, weeks, or months. Spot patterns and measure the impact of continuous improvement efforts.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 6: Traceability & Compliance (Right) */}
+                        {/* Feature 6: Mobile Access (Right) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow mb-20">
                             <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
-                                <Component className="w-8 h-8" />
+                                <Activity className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Traceability & Compliance</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Mobile Access</h3>
                                 <p className="text-slate-500">
-                                    Keep full traceability of batches, operators, parameters, and work history for audits and continuous improvement.
+                                    Stay connected to your shop floor from anywhere with responsive dashboards optimized for tablets and smartphones.
                                 </p>
                             </div>
                         </div>
@@ -201,12 +199,10 @@ export default function ProductionManagementPage() {
 
             {/* 
                 SECTION: TRANSFORM CTA
-                Dark blue rounded container
             */}
             <section className="py-20 bg-white overflow-visible">
                 <div className="container mx-auto px-4">
                     <div className="relative">
-                        {/* Blue Card Content */}
                         {/* Blue Card Content */}
                         <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
                             {/* Background Splashes */}
@@ -215,7 +211,7 @@ export default function ProductionManagementPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to scale your production?
+                                    Ready to see your factory in real-time?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
                                     Railes MES empowers you to:
@@ -223,19 +219,19 @@ export default function ProductionManagementPage() {
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished product.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Increase OEE by 15-25% with actionable insights.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce downtime and waste by up to 30% with real-time monitoring.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Reduce unplanned downtime with predictive alerts.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Streamline compliance with automated documentation and reporting.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Make faster decisions with live data at your fingertips.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamlessly with ERP, PLM, and machine data systems.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Empower teams with mobile dashboards anywhere, anytime.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -245,7 +241,7 @@ export default function ProductionManagementPage() {
                         <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[-10%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/Extra1.png"
-                                alt="Production Dashboard"
+                                alt="Monitoring Dashboard"
                                 width={600}
                                 height={400}
                                 className="object-contain drop-shadow-2xl"
@@ -256,16 +252,16 @@ export default function ProductionManagementPage() {
             </section>
 
             {/* PRODUCT FEATURES */}
-            <ProductFeatures excludeHref="/product/production-management" />
+            <ProductFeatures excludeHref="/product/monitoring" />
 
             {/* FOOTER CTA */}
             <CallToActionSection
                 data={{
-                    badgeText: "Ready to optimize your production?",
-                    title: "Start Optimizing Your Shop Floor",
+                    badgeText: "Ready for Real-Time Visibility?",
+                    title: "Start Monitoring Your Shop Floor",
                     highlightedTitle: "Today",
                     titleSuffix: "",
-                    description: "Discover how Railes MES can transform your production management with real-time visibility and control.",
+                    description: "Join leading manufacturers using Railes MES to track, analyze, and optimize production in real-time.",
                     primaryButtonText: "Get a Live Demo",
                     primaryButtonLink: "/demo",
                     secondaryButtonText: "Contact Sales",

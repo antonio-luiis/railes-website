@@ -60,9 +60,7 @@ export function ComplianceQualitySection({ data }: ComplianceQualitySectionProps
                             </div>
                         </div>
 
-                        <div className="mt-6 flex items-center text-sm font-semibold text-gray-900 cursor-pointer hover:text-blue-700 transition-colors">
-                            See the overall Equipment Effectiveness
-                        </div>
+
                     </div>
 
                     {/* Card 2: Quality Management and Control */}

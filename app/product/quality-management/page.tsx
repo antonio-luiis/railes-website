@@ -1,11 +1,11 @@
 import React from 'react';
-import { Eye, BarChart3, List, Clock, Calendar, Component, ArrowRight, CornerRightDown } from 'lucide-react';
+import { ShieldCheck, BarChart3, ClipboardCheck, AlertTriangle, FileCheck, Component, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CallToActionSection } from '@/components/CallToActionSection';
 import { ProductFeatures } from '@/components/ProductFeatures';
 
-export default function ProductionManagementPage() {
+export default function QualityManagementPage() {
     return (
         <main className="min-h-screen bg-[#F9FAFB]">
 
@@ -17,24 +17,24 @@ export default function ProductionManagementPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                            Production Management
+                            Quality Management
                         </h1>
 
                         <p className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
-                            Real-time control and full visibility over your shop floor.
+                            Ensure perfection in every product with integrated quality control.
                         </p>
 
                         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-8">
-                            Optimize production operations, eliminate inefficiencies, and ensure your teams have everything they need to deliver on time, every time.
+                            Automate inspections, manage non-conformances, and maintain audit-readiness with a unified Quality Management System (QMS) built into your MES.
                         </p>
 
-                        {/* Production Chart Image */}
+                        {/* Quality Management Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/oee.png"
-                                alt="Production by Date Chart"
+                                src="/images/Quality_Management_Control_Railes.png"
+                                alt="Quality Management Dashboard"
                                 fill
-                                className="object-cover"
+                                className="object-cover rounded-[2rem] shadow-2xl border border-gray-100"
                             />
                         </div>
 
@@ -44,7 +44,7 @@ export default function ProductionManagementPage() {
 
             {/* 
               KEY BENEFITS SECTION
-              Design: White card floating on gray background (V1 container + V4 content)
+              Design: White card floating on gray background
             */}
             <section className="bg-[#F9FAFB] pb-24 pt-10 md:-mt-20 relative z-20 px-4">
                 <div className="container mx-auto">
@@ -61,39 +61,39 @@ export default function ProductionManagementPage() {
                             {/* Benefit 1 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <Clock className="w-8 h-8" />
+                                    <ClipboardCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Real-Time<br />Tracking
+                                    Automated<br />Inspections
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Monitor every production order and work center as it happens.
+                                    Embed quality checks directly into work instructions to ensure nothing is missed.
                                 </p>
                             </div>
 
                             {/* Benefit 2 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <BarChart3 className="w-8 h-8" />
+                                    <ShieldCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    More Uptime,<br />Less Waste
+                                    Zero<br />Defects
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Identify bottlenecks and inefficiencies before they impact your deadlines.
+                                    Catch issues at the source with inline validation and mistake-proofing (Poka-Yoke).
                                 </p>
                             </div>
 
                             {/* Benefit 3 */}
                             <div className="text-center">
                                 <div className="inline-flex p-4 bg-blue-50 rounded-2xl mb-6 text-blue-600">
-                                    <Component className="w-8 h-8" />
+                                    <FileCheck className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">
-                                    Built for<br />Manufacturing Teams
+                                    Audit<br />Readiness
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed">
-                                    Simple, intuitive tools designed to help operators, supervisors, and planners work better.
+                                    Always be ready for ISO, FDA, or AS9100 audits with complete digital traceability.
                                 </p>
                             </div>
 
@@ -111,86 +111,86 @@ export default function ProductionManagementPage() {
 
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
-                            Take Control of Your Production with RAILES MES
+                            Master Quality with RAILES MES
                         </h2>
                     </div>
 
                     <div className="space-y-12 max-w-5xl mx-auto">
 
-                        {/* Feature 1: Visual order tracking (Left) */}
+                        {/* Feature 1: Inline Quality Checks (Left) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <Eye className="w-8 h-8" />
+                                <ClipboardCheck className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Visual order tracking</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Inline Quality Checks</h3>
                                 <p className="text-slate-500">
-                                    Follow production orders in real time, from start to finish, including setup, execution, and completion.
+                                    Enforce mandatory quality steps within production workflows. Operators cannot proceed without validating measurements or checklists.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 2: Performance dashboards (Right) */}
+                        {/* Feature 2: SPC & Trends (Right) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
                                 <BarChart3 className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Performance dashboards</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">SPC & Trends</h3>
                                 <p className="text-slate-500">
-                                    Track KPIs like OEE, cycle time, scrap rate, and productivity with live dashboards.
+                                    Monitor process stability with real-time Statistical Process Control (SPC) charts. Detect drifts before they become defects.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 3: Work Instructions (Left) */}
+                        {/* Feature 3: Non-Conformance Management (Left) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <List className="w-8 h-8" />
+                                <AlertTriangle className="w-8 h-8" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Work Instructions</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Non-Conformance Management</h3>
                                 <p className="text-slate-500">
-                                    Provide operators with clear, visual, and up-to-date instructions. Adjusted to the product, process, or workstation. Reduce training time and avoid errors, even in complex or variable production environments.
+                                    Streamline NCR initiation, root cause analysis, and disposition. Manage CAPA (Corrective and Preventive Actions) efficiently.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Feature 4: Downtime and delay management (Right) */}
+                        {/* Feature 4: Digital Calibration (Right) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
-                                <Clock className="w-8 h-8" />
-                            </div>
-                            <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Downtime and delay management</h3>
-                                <p className="text-slate-500">
-                                    Automatically log and categorize stoppages. Empower teams to act quickly with root-cause analysis tools.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Feature 5: Dynamic scheduling (Left) */}
-                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
-                                <Calendar className="w-8 h-8" />
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Dynamic scheduling</h3>
-                                <p className="text-slate-500">
-                                    Adjust production plans on the fly based on machine availability, inventory levels, or unexpected events.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Feature 6: Traceability & Compliance (Right) */}
-                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow mb-20">
                             <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
                                 <Component className="w-8 h-8" />
                             </div>
                             <div className="md:text-right md:order-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Traceability & Compliance</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Digital Calibration</h3>
                                 <p className="text-slate-500">
-                                    Keep full traceability of batches, operators, parameters, and work history for audits and continuous improvement.
+                                    Track tool calibration schedules and prevent the use of uncalibrated or expired equipment on the shop floor.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 5: Supplier Quality (Left) */}
+                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:mr-auto md:w-[85%] hover:shadow-md transition-shadow">
+                            <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">
+                                <ShieldCheck className="w-8 h-8" />
+                            </div>
+                            <div>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Supplier Quality</h3>
+                                <p className="text-slate-500">
+                                    Inspect incoming materials and track supplier performance. Ensure only conforming parts enter your production line.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 6: eHR & Compliance (Right) */}
+                        <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-8 md:ml-auto md:w-[85%] hover:shadow-md transition-shadow mb-20">
+                            <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center shrink-0 text-indigo-600 md:order-2">
+                                <FileCheck className="w-8 h-8" />
+                            </div>
+                            <div className="md:text-right md:order-1">
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">eHR & Compliance</h3>
+                                <p className="text-slate-500">
+                                    Automatically compile Electronic History Records (eHR) / Device History Records (DHR) for full regulatory compliance.
                                 </p>
                             </div>
                         </div>
@@ -201,12 +201,10 @@ export default function ProductionManagementPage() {
 
             {/* 
                 SECTION: TRANSFORM CTA
-                Dark blue rounded container
             */}
             <section className="py-20 bg-white overflow-visible">
                 <div className="container mx-auto px-4">
                     <div className="relative">
-                        {/* Blue Card Content */}
                         {/* Blue Card Content */}
                         <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
                             {/* Background Splashes */}
@@ -215,7 +213,7 @@ export default function ProductionManagementPage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to scale your production?
+                                    Ready to elevate your quality?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
                                     Railes MES empowers you to:
@@ -223,19 +221,19 @@ export default function ProductionManagementPage() {
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished product.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Reduce scrap and rework costs by up to 50%.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Reduce downtime and waste by up to 30% with real-time monitoring.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Ensure 100% compliance with industry standards.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Streamline compliance with automated documentation and reporting.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Respond to quality issues faster with real-time data.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamlessly with ERP, PLM, and machine data systems.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Eliminate paper-based quality records forever.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -245,7 +243,7 @@ export default function ProductionManagementPage() {
                         <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[-10%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/Extra1.png"
-                                alt="Production Dashboard"
+                                alt="Quality Dashboard"
                                 width={600}
                                 height={400}
                                 className="object-contain drop-shadow-2xl"
@@ -256,16 +254,16 @@ export default function ProductionManagementPage() {
             </section>
 
             {/* PRODUCT FEATURES */}
-            <ProductFeatures excludeHref="/product/production-management" />
+            <ProductFeatures excludeHref="/product/quality-management" />
 
             {/* FOOTER CTA */}
             <CallToActionSection
                 data={{
-                    badgeText: "Ready to optimize your production?",
-                    title: "Start Optimizing Your Shop Floor",
-                    highlightedTitle: "Today",
+                    badgeText: "Ready for Quality 4.0?",
+                    title: "Achieve Zero Defect Manufacturing",
+                    highlightedTitle: "Now",
                     titleSuffix: "",
-                    description: "Discover how Railes MES can transform your production management with real-time visibility and control.",
+                    description: "Join leading manufacturers using Railes MES to ensure the highest quality standards.",
                     primaryButtonText: "Get a Live Demo",
                     primaryButtonLink: "/demo",
                     secondaryButtonText: "Contact Sales",

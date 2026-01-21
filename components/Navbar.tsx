@@ -294,7 +294,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/product/quality-management"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
                                             >
@@ -307,7 +307,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/product/digital-record"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
                                             >
@@ -320,7 +320,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/product/monitoring"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
                                             >
@@ -333,7 +333,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/product/automation-integration"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
                                             >
@@ -505,19 +505,19 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <Settings className="w-4 h-4 text-blue-600" />
                                                     Production Management
                                                 </Link>
-                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                <Link href="/product/quality-management" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <ClipboardList className="w-4 h-4 text-purple-600" />
                                                     Quality Management
                                                 </Link>
-                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                <Link href="/product/digital-record" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Code2 className="w-4 h-4 text-green-600" />
                                                     Digital Record
                                                 </Link>
-                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                <Link href="/product/monitoring" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <TrendingUp className="w-4 h-4 text-orange-600" />
                                                     Monitoring
                                                 </Link>
-                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                <Link href="/product/automation-integration" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Hammer className="w-4 h-4 text-cyan-600" />
                                                     Automation & Integration
                                                 </Link>

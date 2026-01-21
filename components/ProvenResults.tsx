@@ -14,7 +14,7 @@ export function ProvenResults() {
                             Proven Results
                         </h2>
                         <p className="text-gray-500 text-lg max-w-2xl leading-relaxed">
-                            The numbers don't lie.<br />
+                            The  don't lie.<br />
                             We tackle inefficiency, enhance quality, and deliver solutions tailored<br className="hidden md:block" />
                             to your operations all backed by guaranteed ROI.
                         </p>

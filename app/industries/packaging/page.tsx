@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { IndustryPills } from '@/components/IndustryPills';
 import { CallToActionSection } from '@/components/CallToActionSection';
 
-export default function AutomotivePage() {
+export default function PackagingPage() {
     return (
         <main className="min-h-screen bg-white pt-32">
             {/* 
@@ -21,18 +21,18 @@ export default function AutomotivePage() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                             </span>
-                            Automotive Excellence
+                            Packaging Excellence
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-blue-900 mb-8 leading-[1.1] tracking-tight">
-                            Railes MES for Automotive:<br />
+                            Railes MES for Packaging:<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                                Performance & Precision
+                                Efficiency & Quality
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Master Just-In-Time manufacturing, ensure zero-defect quality, and synchronize your supply chain with the assembly line.
+                            Achieve full compliance, manage complex assembly lines, and ensure digital traceability from material to finished package.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -50,8 +50,8 @@ export default function AutomotivePage() {
                     {/* 2. The Image */}
                     <div className="relative w-full max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 aspect-[21/9]">
                         <Image
-                            src="/images/Fotos_Industries-Automotive.jpg"
-                            alt="Automotive Manufacturing Line"
+                            src="/images/Aerospace.png"
+                            alt="Packaging Manufacturing"
                             fill
                             priority
                             className="object-cover"
@@ -63,12 +63,12 @@ export default function AutomotivePage() {
 
             {/* 
               BLOCK 2: WHY RAILES (4 CARDS GRID)
-              Automotive Focus
+              Packaging Focus
             */}
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        Why Automotive Leaders Choose Railes MES
+                        Why Packaging Leaders Choose Railes MES
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
@@ -82,10 +82,10 @@ export default function AutomotivePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Just-In-Time Sequencing
+                                Integrated Quality Control
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Synchronize material flow with production schedules perfectly. Eliminate line stoppages due to part shortages.
+                                Ensure zero defects with inline quality checks and automated validation processes.
                             </p>
                         </div>
 
@@ -95,10 +95,10 @@ export default function AutomotivePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Zero-Defect Quality
+                                High-Speed Line Management
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Implement automated Poka-Yoke and inline inspections to catch defects before they leave the station.
+                                Optimize throughput on high-speed packaging lines with real-time monitoring and OEE tracking.
                             </p>
                         </div>
 
@@ -108,10 +108,10 @@ export default function AutomotivePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Genealogy & Traceability
+                                Traceability & Serialisation
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Track every critical component by VIN. Maintain a full digital history for warranty and safety recalls.
+                                Track every package from raw material to pallet. Manage serialization for compliance and logistics.
                             </p>
                         </div>
 
@@ -121,10 +121,10 @@ export default function AutomotivePage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Connected Workforce
+                                Supply Chain Integration
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Empower associates with intuitive digital instructions, reducing training time and assembly errors.
+                                Connect seamlessly with ERP and WMS systems for synchronized operations and inventory visibility.
                             </p>
                         </div>
 
@@ -138,7 +138,7 @@ export default function AutomotivePage() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        The Railes Advantage in Automotive
+                        The Railes Advantage in Packaging
                     </h2>
 
                     <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
@@ -147,41 +147,41 @@ export default function AutomotivePage() {
                                 <thead>
                                     <tr className="bg-gradient-to-r from-[#1e40af] via-[#3b82f6] to-[#ec4899]">
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/4 border-r border-white/10">Feature</th>
-                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Legacy MES</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Traditional Systems</th>
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/3">Railes MES</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-600">
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Architecture</td>
-                                        <td className="py-6 px-8">Monolithic & Slow</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Deployment Speed</td>
+                                        <td className="py-6 px-8">Months/Years</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Composable Microservices</div>
-                                            <div className="text-sm text-gray-500">Update without downtime</div>
+                                            <div className="font-semibold text-gray-900">Weeks</div>
+                                            <div className="text-sm text-gray-500">Modular & Cloud-native</div>
                                         </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Machine Connectivity</td>
-                                        <td className="py-6 px-8">Proprietary / costly</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">User Experience</td>
+                                        <td className="py-6 px-8">Complex Legacy UI</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Open IIoT Standard</div>
-                                            <div className="text-sm text-gray-500">Plug & Play (OPC UA, MQTT)</div>
+                                            <div className="font-semibold text-gray-900">Modern & Intuitive</div>
+                                            <div className="text-sm text-gray-500">Designed for operators</div>
                                         </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">UX / UI</td>
-                                        <td className="py-6 px-8">Outdated "Windows 95"</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Connectivity</td>
+                                        <td className="py-6 px-8">Siloed Data</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Consumer-Grade UX</div>
-                                            <div className="text-sm text-gray-500">Loved by operators</div>
+                                            <div className="font-semibold text-gray-900">Integrated Ecosystem</div>
+                                            <div className="text-sm text-gray-500">ERP, PLM, Machine IOT</div>
                                         </td>
                                     </tr>
                                     <tr className="hover:bg-gray-50/50 transition-colors">
-                                        <td className="py-6 px-8 font-semibold text-blue-900">Analytics</td>
-                                        <td className="py-6 px-8">Historical only</td>
+                                        <td className="py-6 px-8 font-semibold text-blue-900">Flexibility</td>
+                                        <td className="py-6 px-8">Rigid Processes</td>
                                         <td className="py-6 px-8">
-                                            <div className="font-semibold text-gray-900">Predictive AI</div>
-                                            <div className="text-sm text-gray-500">Prevent stops before they happen</div>
+                                            <div className="font-semibold text-gray-900">Agile Workflows</div>
+                                            <div className="text-sm text-gray-500">Easily adaptable</div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -200,7 +200,7 @@ export default function AutomotivePage() {
                         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
                             6 Key Benefits
                             <br />
-                            <span className="text-blue-500">for Automotive Manufacturers</span>
+                            <span className="text-blue-500">for Packaging Manufacturers</span>
                         </h2>
                     </div>
 
@@ -210,9 +210,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">1</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Maximized OEE</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Increase OEE</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Increase availability, performance, and quality to drive maximum throughput.
+                                    Maximize equipment uptime and performance with real-time monitoring and analytics.
                                 </p>
                             </div>
                         </div>
@@ -221,9 +221,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">2</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Reduced Warranty Costs</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Reduce Waste</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Ensure every part meets spec, reducing costly recalls and field failures.
+                                    Minimize material waste and rework through precise control and error proofing.
                                 </p>
                             </div>
                         </div>
@@ -232,9 +232,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">3</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Agile Production</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Ensure Compliance</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Switch models and variants seamlessly on the same line without downtime.
+                                    Meet regulatory requirements effortlessly with automated documentation and reporting.
                                 </p>
                             </div>
                         </div>
@@ -243,9 +243,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">4</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Total Visibility</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Real-time Visibility</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    From top floor to shop floor, see production status in real-time.
+                                    Empower decision-making with live data from every corner of your packaging line.
                                 </p>
                             </div>
                         </div>
@@ -254,9 +254,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">5</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Paperless Factory</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Paperless Operations</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Eliminate manual data entry and paper travel tickets with digital workflows.
+                                    Digitize workflows, instructions, and records for a cleaner, more efficient floor.
                                 </p>
                             </div>
                         </div>
@@ -265,9 +265,9 @@ export default function AutomotivePage() {
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
                             <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">6</div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-900 mb-2">Rapid ROI</h4>
+                                <h4 className="font-bold text-lg text-gray-900 mb-2">Scalable Solution</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Quick deployment and modular scaling mean faster time to value.
+                                    Grow your operations seamlessly. Railes MES adapts to your changing needs.
                                 </p>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ export default function AutomotivePage() {
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                    Ready to accelerate automotive production?
+                                    Ready to optimize your packaging?
                                 </h2>
                                 <h3 className="text-xl font-semibold mb-6">
                                     Railes MES empowers you to:
@@ -298,19 +298,19 @@ export default function AutomotivePage() {
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Synchronize JIT/JIS supply chains perfectly.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Achieve total traceability and compliance.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Achieve zero-defect quality with automated checks.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Maximize line efficiency and reduce downtime.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Support mixed-model lines with flexible workflows.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Eliminate paper and manual errors.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                        <span className="text-blue-100/90 leading-relaxed">Trace every VIN component for full genealogy.</span>
+                                        <span className="text-blue-100/90 leading-relaxed">Integrate your entire shop floor ecosystem.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -320,7 +320,7 @@ export default function AutomotivePage() {
                         <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/Aerospace.png"
-                                alt="Automotive Production Dashboard"
+                                alt="Packaging Production Dashboard"
                                 width={600}
                                 height={400}
                                 className="object-contain drop-shadow-2xl"
@@ -333,40 +333,14 @@ export default function AutomotivePage() {
             {/* INDUSTRY SOLUTIONS */}
             <IndustryPills />
 
-            {/* 
-              BLOCK 6: E-BOOK DOWNLOAD (HIDDEN)
-            
-            <section className="pb-24 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="bg-gray-50 rounded-[2rem] p-10 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto border border-gray-100">
-                        <div className="md:w-1/3">
-                            <div className="aspect-[3/4] bg-white shadow-xl rounded-xl -rotate-3 border border-gray-200 flex items-center justify-center">
-                                <span className="text-gray-400 font-medium">Whitepaper</span>
-                            </div>
-                        </div>
-                        <div className="md:w-2/3">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">The Digital Future of Aerospace</h3>
-                            <p className="text-gray-600 mb-8 leading-relaxed">
-                                Download our comprehensive guide on how Industry 4.0 is reshaping aerospace manufacturing and quality control.
-                            </p>
-                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-8 rounded-xl w-full md:w-auto shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all flex items-center justify-center gap-2">
-                                <span>Download Whitepaper</span>
-                                <ArrowRight className="w-5 h-5" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            */}
-
             {/* FOOTER CTA */}
             <CallToActionSection
                 data={{
-                    badgeText: "Ready for Automotive 4.0?",
+                    badgeText: "Ready for Packaging 4.0?",
                     title: "Achieve Manufacturing Excellence",
                     highlightedTitle: "Now",
                     titleSuffix: "",
-                    description: "Join leading automotive OEMs and suppliers using Railes MES to drive performance and precision.",
+                    description: "Join leading packaging companies using Railes MES to ensure efficiency, quality, and traceability.",
                     primaryButtonText: "Request a Demo",
                     primaryButtonLink: "/demo",
                     secondaryButtonText: "Contact Sales",

@@ -1,78 +1,63 @@
 import Link from 'next/link';
-import { ChevronRight, Check, ArrowRight } from 'lucide-react';
+import { ChevronRight, Check, ArrowRight, Play } from 'lucide-react';
 import Image from 'next/image';
+import { IndustryPills } from '@/components/IndustryPills';
+import { CallToActionSection } from '@/components/CallToActionSection';
 
 export default function AerospacePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-white pt-32">
             {/* 
-              BLOCK 1: HERO SECTION
-              Aerospace focus: Precision, Scale, Compliance
+              BLOCK 1: HERO SECTION V2
+              Design: Clean White Background -> Text Heading -> Large Image below
             */}
-            <section className="relative pt-32 pb-20 overflow-hidden bg-white">
+            <section className="relative px-4 pb-20">
+                <div className="container mx-auto">
 
-                {/* Background Decor: Subtle technical grids or blues */}
-                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-50/40 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+                    {/* 1. The Phrase (Heading) */}
+                    <div className="text-center max-w-5xl mx-auto mb-16">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-6">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                            </span>
+                            Aerospace & Defense Excellence
+                        </div>
 
-                <div className="container mx-auto px-4 relative z-10 text-center">
+                        <h1 className="text-5xl md:text-7xl font-bold text-blue-900 mb-8 leading-[1.1] tracking-tight">
+                            Railes MES for Aerospace & Defense:<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                                Precision & Compliance
+                            </span>
+                        </h1>
 
-                    {/* Breadcrumbs */}
-                    <div className="flex items-center justify-center gap-2 text-sm font-medium text-gray-500 mb-8">
-                        <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-gray-900">Industries</span>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-blue-600">Aerospace & Defense</span>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                            Achieve AS9100 compliance, manage complex discrete assemblies, and ensure full digital thread traceability from design to flight.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                                <span>Schedule a Demo</span>
+                                <ArrowRight className="w-5 h-5" />
+                            </button>
+                            <button className="bg-white text-gray-700 border border-gray-200 font-bold py-4 px-10 rounded-full hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
+                                <Play className="w-4 h-4 fill-current" />
+                                <span>Watch Video</span>
+                            </button>
+                        </div>
                     </div>
 
-                    {/* Headlines */}
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 max-w-5xl mx-auto leading-tight">
-                        Railes MES for Aerospace & Defense<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Precision & Compliance at Altitude</span>
-                    </h1>
-
-                    <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Achieve AS9100 compliance, manage complex discrete assemblies, and ensure full digital thread traceability from design to flight.
-                    </p>
-
-                    {/* Dashboard/Visual Mockup */}
-                    <div className="relative max-w-5xl mx-auto">
-                        {/* Main Dashboard Image Placeholder */}
-                        <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden relative z-10 aspect-[16/9] flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
-                            <div className="text-gray-400 font-medium text-center">
-                                <span className="block mb-2 text-lg font-bold text-gray-300">Aerospace Dashboard</span>
-                                <span className="text-sm">Complex Assembly View Placeholder</span>
-                            </div>
-                            {/* Central Placeholder Box */}
-                            <div className="absolute inset-8 border-2 border-dashed border-gray-200 rounded-xl flex items-center justify-center">
-                                <span className="text-xs text-gray-400">Insert Dashboard Screenshot Here</span>
-                            </div>
-                        </div>
-
-                        {/* Floating Element: Quality Check Card */}
-                        <div className="absolute -bottom-8 -right-4 md:right-10 bg-white p-5 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 max-w-xs z-20 hidden md:block animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-                            <div className="flex items-center gap-3 mb-2">
-                                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
-                                    <Check className="w-5 h-5" />
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="text-sm font-bold text-gray-900">AS9100 Compliant</span>
-                                    <span className="text-xs text-gray-500">Audit Trail Verified</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Floating Element: Efficiency Metric */}
-                        <div className="absolute top-10 -left-10 bg-white p-4 rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100 z-20 hidden lg:block animate-in fade-in slide-in-from-left-4 duration-700 delay-500">
-                            <span className="text-xs font-bold text-gray-400 tracking-wider uppercase mb-1 block">OEE Score</span>
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-2xl font-bold text-blue-900">94.2%</span>
-                                <span className="text-xs text-green-500 font-medium">↑ 1.8%</span>
-                            </div>
-                        </div>
-
+                    {/* 2. The Image */}
+                    <div className="relative w-full max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 aspect-[21/9]">
+                        <Image
+                            src="/images/Aerospace.png"
+                            alt="Aerospace & Defense Manufacturing"
+                            fill
+                            priority
+                            className="object-cover"
+                        />
                     </div>
+
                 </div>
             </section>
 
@@ -151,42 +136,58 @@ export default function AerospacePage() {
               BLOCK 3: COMPARISON TABLE
               "What sets RAILES MES apart"
             */}
-            <section className="py-24 bg-blue-50/30">
+            {/* 
+              BLOCK 3: COMPARISON TABLE
+              "What sets RAILES MES apart"
+            */}
+            <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
                         The Railes Advantage in Aerospace
                     </h2>
 
-                    <div className="bg-white rounded-[2rem] shadow-sm border border-gray-100 overflow-hidden max-w-5xl mx-auto">
+                    <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse">
                                 <thead>
-                                    <tr className="border-b border-gray-100">
-                                        <th className="py-6 px-8 text-blue-900 font-bold text-lg w-1/4">Feature</th>
-                                        <th className="py-6 px-8 text-gray-500 font-bold text-lg w-1/3">Legacy Aerospace MES</th>
-                                        <th className="py-6 px-8 text-blue-600 font-bold text-lg w-1/3 bg-blue-50/30">Railes MES</th>
+                                    <tr className="bg-gradient-to-r from-[#1e40af] via-[#3b82f6] to-[#ec4899]">
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/4 border-r border-white/10">Feature</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Legacy Aerospace MES</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3">Railes MES</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-600">
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">AS9100 Compliance</td>
                                         <td className="py-6 px-8">Costly Add-ons / Paper</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Native & Automated<br /><span className="text-sm font-normal text-gray-500">Built-in validation checks</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Native & Automated</div>
+                                            <div className="text-sm text-gray-500">Built-in validation checks</div>
+                                        </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Traceability</td>
                                         <td className="py-6 px-8">Siloed Data</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Digital Thread<br /><span className="text-sm font-normal text-gray-500">End-to-end genealogy</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Digital Thread</div>
+                                            <div className="text-sm text-gray-500">End-to-end genealogy</div>
+                                        </td>
                                     </tr>
                                     <tr className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Complex Assembly</td>
                                         <td className="py-6 px-8">Tribal Knowledge</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Guided Workflows<br /><span className="text-sm font-normal text-gray-500">Interactive work instructions</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Guided Workflows</div>
+                                            <div className="text-sm text-gray-500">Interactive work instructions</div>
+                                        </td>
                                     </tr>
                                     <tr className="hover:bg-gray-50/50 transition-colors">
                                         <td className="py-6 px-8 font-semibold text-blue-900">Change Management</td>
                                         <td className="py-6 px-8">Slow & Disconnected</td>
-                                        <td className="py-6 px-8 font-bold text-blue-900 bg-blue-50/30">Integrated ECO/ECR<br /><span className="text-sm font-normal text-gray-500">Instant shop floor updates</span></td>
+                                        <td className="py-6 px-8">
+                                            <div className="font-semibold text-gray-900">Integrated ECO/ECR</div>
+                                            <div className="text-sm text-gray-500">Instant shop floor updates</div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -213,7 +214,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 1 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">1</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">1</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Zero Deviations</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -224,7 +225,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 2 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-bold text-lg shadow-md">2</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">2</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Accelerate NPI</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -235,7 +236,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 3 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center text-white font-bold text-lg shadow-md">3</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">3</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Total Visibility</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -246,7 +247,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 4 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-md">4</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">4</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Cost Control</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -257,7 +258,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 5 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">5</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">5</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Paperless Shop Floor</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -268,7 +269,7 @@ export default function AerospacePage() {
 
                         {/* Benefit 6 */}
                         <div className="bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col gap-4 hover:shadow-lg transition-shadow">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-white font-bold text-lg shadow-md">6</div>
+                            <div className="w-12 h-12 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm bg-gradient-to-br from-[#3b82f6] to-[#ec4899] flex items-center justify-center text-white font-bold text-xl shadow-md">6</div>
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Audit Readiness</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -285,58 +286,67 @@ export default function AerospacePage() {
               BLOCK 5: TRANSFORM CTA
               Dark blue rounded container
             */}
-            <section className="py-20 bg-white">
+            {/* 
+              BLOCK 5: TRANSFORM CTA
+              Dark blue rounded container
+            */}
+            <section className="py-20 bg-white overflow-visible">
                 <div className="container mx-auto px-4">
-                    <div className="bg-[#1e3a8a] rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div className="relative">
+                        {/* Blue Card Content */}
+                        <div className="bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
+                            {/* Background Splashes */}
+                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-                        {/* Background Splashes */}
-                        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-
-                        <div className="relative z-10 md:w-1/2 text-white">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
-                                Ready to scale your aerospace production?
-                            </h2>
-                            <h3 className="text-xl font-semibold mb-6">
-                                Railes MES empowers you to:
-                            </h3>
-                            <ul className="space-y-4">
-                                <li className="flex items-start gap-3">
-                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                    <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished part.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                    <span className="text-blue-100/90 leading-relaxed">Reduce scrap and rework by up to 30% with guided workflows.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                    <span className="text-blue-100/90 leading-relaxed">Pass AS9100 and ISO audits with zero findings.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                                    <span className="text-blue-100/90 leading-relaxed">Integrate seamless with PLM, ERP, and machine data.</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="relative z-10 md:w-5/12">
-                            <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10 shadow-2xl">
-                                {/* Placeholder for Aerospace Image */}
-                                <div className="aspect-[4/5] bg-gray-800 rounded-2xl flex items-center justify-center relative overflow-hidden group">
-                                    <div className="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-colors duration-500"></div>
-                                    <span className="text-gray-400 font-bold px-8 text-center text-sm">Aerospace Engineer Image Placeholder</span>
-                                </div>
+                            <div className="relative z-10 md:w-2/3 text-white">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                                    Ready to scale your aerospace production?
+                                </h2>
+                                <h3 className="text-xl font-semibold mb-6">
+                                    Railes MES empowers you to:
+                                </h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Achieve 100% digital traceability from raw material to finished part.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Reduce scrap and rework by up to 30% with guided workflows.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Pass AS9100 and ISO audits with zero findings.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                                        <span className="text-blue-100/90 leading-relaxed">Integrate seamless with PLM, ERP, and machine data.</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
+                        {/* Overlapping Image - Positioned Absolute Bottom Right */}
+                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
+                            <Image
+                                src="/images/.png"
+                                alt="Aerospace Production Dashboard"
+                                width={600}
+                                height={400}
+                                className="object-contain drop-shadow-2xl"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
 
+            {/* INDUSTRY SOLUTIONS */}
+            <IndustryPills />
+
             {/* 
-              BLOCK 6: E-BOOK DOWNLOAD
-            */}
+              BLOCK 6: E-BOOK DOWNLOAD (HIDDEN)
+            
             <section className="pb-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="bg-gray-50 rounded-[2rem] p-10 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto border border-gray-100">
@@ -361,6 +371,22 @@ export default function AerospacePage() {
                     </div>
                 </div>
             </section>
+            */}
+
+            {/* FOOTER CTA */}
+            <CallToActionSection
+                data={{
+                    badgeText: "Ready for Aerospace 4.0?",
+                    title: "Achieve Manufacturing Excellence",
+                    highlightedTitle: "Now",
+                    titleSuffix: "",
+                    description: "Join leading aerospace & defense companies using Railes MES to ensure AS9100 compliance, traceability, and efficiency.",
+                    primaryButtonText: "Request a Demo",
+                    primaryButtonLink: "/demo",
+                    secondaryButtonText: "Contact Sales",
+                    secondaryButtonLink: "/contact"
+                }}
+            />
 
         </main>
     );

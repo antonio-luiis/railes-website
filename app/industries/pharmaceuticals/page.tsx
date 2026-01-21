@@ -1,83 +1,64 @@
 import Link from 'next/link';
-import { ArrowRight, ChevronRight, Check } from 'lucide-react';
+import { ArrowRight, ChevronRight, Check, Play } from 'lucide-react';
 import Image from 'next/image';
 import { IndustryPills } from '@/components/IndustryPills';
 import { CallToActionSection } from '@/components/CallToActionSection';
 
 export default function PharmaPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-white pt-32">
             {/* 
-              BLOCK 1: HERO SECTION
-              White background with 3D elements and dashboard mockup
+              BLOCK 1: HERO SECTION V2
+              Design: Clean White Background -> Text Heading -> Large Image below
             */}
-            <section className="relative pt-32 pb-20 overflow-hidden bg-white">
+            <section className="relative px-4 pb-20">
+                <div className="container mx-auto">
 
-                {/* Background Blobs/Decorations */}
-                <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                <div className="absolute top-40 left-0 w-[400px] h-[400px] bg-purple-50/50 rounded-full blur-3xl pointer-events-none"></div>
-
-                <div className="container mx-auto px-4 relative z-10 text-center">
-
-                    {/* Breadcrumbs */}
-                    <div className="flex items-center justify-center gap-2 text-sm font-medium text-gray-500 mb-8">
-                        <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-gray-900">Industries</span>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-blue-600">The Pharmaceutical</span>
-                    </div>
-
-                    {/* Headlines */}
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 max-w-4xl mx-auto leading-tight">
-                        Railes MES for Pharmaceuticals<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Manufacturing Excellence</span>
-                    </h1>
-
-                    <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Better compliance, built-in quality processes, and full batch record traceability from start to finish.
-                        Optimize your pharma operations with our module-based solution.
-                    </p>
-
-                    {/* Dashboard Mockup (Visual) */}
-                    <div className="relative max-w-5xl mx-auto">
-                        {/* Main Dashboard Image Placeholder */}
-                        <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden relative z-10 aspect-[16/9] flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
-                            <div className="text-gray-400 font-medium">Dashboard Mockup Area</div>
-                            {/* 
-                                This is where the actual dashboard screenshot will go.
-                                For now, we simulate the structure:
-                                - Goods issue
-                                - Stock info
-                                - Checklists
-                             */}
-                            <div className="absolute inset-4 border-2 border-dashed border-gray-200 rounded-xl flex items-center justify-center">
-                                <span className="text-sm text-gray-400">Dashboard UI Image Placeholder</span>
-                            </div>
+                    {/* 1. The Phrase (Heading) */}
+                    <div className="text-center max-w-5xl mx-auto mb-16">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-6">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                            </span>
+                            Pharmaceutical Excellence
                         </div>
 
-                        {/* Floating Element: Pharma Workflow Card */}
-                        <div className="absolute -bottom-10 -right-4 md:right-10 bg-white p-6 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 max-w-xs z-20 hidden md:block animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-                            <div className="flex items-center gap-3 mb-3">
-                                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                                <span className="text-xs font-bold uppercase text-gray-400 tracking-wider">Pharma Workflow</span>
-                            </div>
-                            <div className="flex justify-between items-center mb-2">
-                                <div className="flex flex-col">
-                                    <span className="text-2xl font-bold text-gray-900">98.5%</span>
-                                    <span className="text-xs text-green-500 font-medium">+2.4% vs last batch</span>
-                                </div>
-                            </div>
-                            <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
-                                <div className="h-full bg-blue-500 w-[98.5%] rounded-full"></div>
-                            </div>
+                        <h1 className="text-5xl md:text-7xl font-bold text-blue-900 mb-8 leading-[1.1] tracking-tight">
+                            Railes MES for Pharmaceuticals:<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                                Compliance & Quality
+                            </span>
+                        </h1>
+
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                            Better compliance, built-in quality processes, and full batch record traceability from start to finish.
+                            Optimize your pharma operations with our module-based solution.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                                <span>Schedule a Demo</span>
+                                <ArrowRight className="w-5 h-5" />
+                            </button>
+                            <button className="bg-white text-gray-700 border border-gray-200 font-bold py-4 px-10 rounded-full hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
+                                <Play className="w-4 h-4 fill-current" />
+                                <span>Watch Video</span>
+                            </button>
                         </div>
-
-                        {/* Decorative 3D Pills (Abstract shapes for now) */}
-                        <div className="absolute -top-10 -left-10 w-24 h-24 bg-purple-100 rounded-full blur-xl opacity-60 animate-pulse"></div>
-                        <div className="absolute bottom-20 -right-20 w-32 h-32 bg-blue-100 rounded-full blur-xl opacity-60 animate-pulse delay-700"></div>
-
                     </div>
+
+                    {/* 2. The Image */}
+                    <div className="relative w-full max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 aspect-[21/9]">
+                        <Image
+                            src="/images/Pharma.png"
+                            alt="Pharmaceutical Manufacturing"
+                            fill
+                            priority
+                            className="object-cover"
+                        />
+                    </div>
+
                 </div>
             </section>
 
@@ -162,13 +143,13 @@ export default function PharmaPage() {
 
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* 
               BLOCK 3: COMPARISON TABLE
               "What sets RAILES MES apart"
             */}
-            <section className="py-24 bg-gray-50">
+            < section className="py-24 bg-gray-50" >
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
                         What sets RAILES MES apart in pharma manufacturing
@@ -230,13 +211,13 @@ export default function PharmaPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* 
               BLOCK 4: 6 KEY BENEFITS
               Grid of small cards with numbers
             */}
-            <section className="py-24 bg-white">
+            < section className="py-24 bg-white" >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -316,13 +297,13 @@ export default function PharmaPage() {
 
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* 
               BLOCK 5: TRANSFORM CTA
               Dark blue rounded container
             */}
-            <section className="py-20 bg-white overflow-visible">
+            < section className="py-20 bg-white overflow-visible" >
                 <div className="container mx-auto px-4">
                     <div className="relative">
                         {/* Blue Card Content */}
@@ -371,15 +352,15 @@ export default function PharmaPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* INDUSTRY SOLUTIONS */}
             <IndustryPills />
 
             {/* 
-              BLOCK 6: E-BOOK DOWNLOAD
+              BLOCK 6: E-BOOK DOWNLOAD (HIDDEN)
               White section with download CTA
-            */}
+            
             <section className="pb-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="bg-gray-50 rounded-[2rem] p-10 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto border border-gray-100">
@@ -405,9 +386,10 @@ export default function PharmaPage() {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* FOOTER CTA */}
-            <CallToActionSection
+            < CallToActionSection
                 data={{
                     badgeText: "Ready for Pharma 4.0?",
                     title: "Achieve Manufacturing Excellence",
@@ -418,9 +400,10 @@ export default function PharmaPage() {
                     primaryButtonLink: "/demo",
                     secondaryButtonText: "Contact Sales",
                     secondaryButtonLink: "/contact"
-                }}
+                }
+                }
             />
 
-        </main>
+        </main >
     );
 }
