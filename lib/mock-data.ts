@@ -28,7 +28,7 @@ export const heroData = {
         },
         alt: "Factory Automation"
     },
-    // videoUrl: "https://www.youtube.com/embed/ScMzIvxBSi4"
+    videoUrl: "https://www.youtube.com/embed/PaO7YiBeNFE"
 };
 
 export const featureBlocks = [
