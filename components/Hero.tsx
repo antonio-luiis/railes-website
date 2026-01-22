@@ -60,20 +60,33 @@ export function Hero({ data }: HeroProps) {
                     {/* Right Image/Video */}
                     <div className="relative">
                         <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-video bg-gray-900 group cursor-pointer">
-                            {/* Gradient overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50 z-10" />
-                            <img
-                                src={imageUrl}
-                                alt={imageAlt}
-                                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
-                            />
+                            {/* Gradient overlay - Optional, adds tint if needed, usually removed for video clarity */}
+                            {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10 z-10 pointer-events-none" /> */}
 
-                            {/* Play/Pause UI */}
-                            <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 z-20 flex items-center gap-2 text-white/80 text-xs md:text-sm font-medium">
-                                <button className="flex items-center gap-2 hover:text-white transition-colors">
-                                    Pause <div className="w-4 h-4 border border-current rounded-full flex items-center justify-center text-[10px]">||</div>
-                                </button>
-                            </div>
+                            {data?.videoUrl ? (
+                                <iframe
+                                    className="w-full h-full object-cover"
+                                    src={`${data.videoUrl}?autoplay=1&mute=1&controls=0&loop=1&playlist=${data.videoUrl.split('/').pop()}&rel=0&showinfo=0&modestbranding=1`}
+                                    title="Hero Video"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            ) : (
+                                <>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50 z-10" />
+                                    <img
+                                        src={imageUrl}
+                                        alt={imageAlt}
+                                        className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                    {/* Play/Pause UI - Only for image fallback */}
+                                    <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 z-20 flex items-center gap-2 text-white/80 text-xs md:text-sm font-medium">
+                                        <button className="flex items-center gap-2 hover:text-white transition-colors">
+                                            Play Video <div className="w-4 h-4 border border-current rounded-full flex items-center justify-center text-[10px]">▶</div>
+                                        </button>
+                                    </div>
+                                </>
+                            )}
                         </div>
 
                         {/* Decorative blurred blobs */}

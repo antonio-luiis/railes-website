@@ -27,7 +27,8 @@ export const heroData = {
             url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80"
         },
         alt: "Factory Automation"
-    }
+    },
+    // videoUrl: "https://www.youtube.com/embed/ScMzIvxBSi4"
 };
 
 export const featureBlocks = [

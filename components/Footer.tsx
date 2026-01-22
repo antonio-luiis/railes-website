@@ -45,6 +45,7 @@ export function Footer() {
                             <li><Link href="/product/monitoring" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Monitoring</Link></li>
                             <li><Link href="/product/artificial-intelligence" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Artificial Intelligence</Link></li>
                             <li><Link href="/product/automation-integration" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Automation & Integration</Link></li>
+                            <li><Link href="/product/digital-twin" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Digital Twin</Link></li>
                         </ul>
                     </div>
 
