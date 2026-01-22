@@ -12,17 +12,17 @@ export default function DigitalTwinPage() {
             */}
             <section className="relative pt-32 pb-20 px-4 overflow-hidden">
                 {/* Background decorative elements */}
-                <div className="absolute top-20 right-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
 
                 <div className="relative max-w-5xl mx-auto text-center">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-8 shadow-lg">
+                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-8 shadow-lg">
                         <Monitor className="w-4 h-4" />
                         Virtual Representation
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-slate-900 via-blue-800 to-cyan-600 bg-clip-text text-transparent leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent leading-tight">
                         Digital Twin
                     </h1>
 
@@ -44,19 +44,19 @@ export default function DigitalTwinPage() {
             */}
             <section className="py-16 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl border border-cyan-100">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100">
                         {/* Header */}
                         <div className="flex flex-col md:flex-row gap-8 mb-10">
                             {/* Icon */}
                             <div className="shrink-0">
-                                <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
                                     <Activity className="w-12 h-12 text-white" />
                                 </div>
                             </div>
 
                             {/* Title & Description */}
                             <div className="flex-1">
-                                <h3 className="text-3xl md:text-4xl font-bold text-cyan-900 mb-4">
+                                <h3 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
                                     Real-Time Synchronization
                                 </h3>
                                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -68,17 +68,17 @@ export default function DigitalTwinPage() {
 
                         {/* Benefits Grid */}
                         <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-cyan-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Live shop floor visualization
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-cyan-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Instant state updates and monitoring
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-cyan-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Seamless data integration across systems
                                 </p>
@@ -86,7 +86,7 @@ export default function DigitalTwinPage() {
                         </div>
 
                         {/* Bottom Note */}
-                        <div className="mt-8 flex items-center gap-2 text-cyan-700 font-medium">
+                        <div className="mt-8 flex items-center gap-2 text-blue-700 font-medium">
                             <Zap className="w-5 h-5" />
                             <p className="text-sm">
                                 Full visibility into your operations, mirrored perfectly in the digital space.
@@ -102,19 +102,19 @@ export default function DigitalTwinPage() {
             */}
             <section className="py-16 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8 md:p-12 shadow-xl border border-purple-100">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100">
                         {/* Header */}
                         <div className="flex flex-col md:flex-row gap-8 mb-10">
                             {/* Icon */}
                             <div className="shrink-0">
-                                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
                                     <Layers className="w-12 h-12 text-white" />
                                 </div>
                             </div>
 
                             {/* Title & Description */}
                             <div className="flex-1">
-                                <h3 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
+                                <h3 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
                                     Scenario Simulation
                                 </h3>
                                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -126,17 +126,17 @@ export default function DigitalTwinPage() {
 
                         {/* Benefits Grid */}
                         <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Risk-free testing environment
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Validate critical production changes
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Forecast impact of strategic decisions
                                 </p>
@@ -144,7 +144,7 @@ export default function DigitalTwinPage() {
                         </div>
 
                         {/* Bottom Note */}
-                        <div className="mt-8 flex items-center gap-2 text-purple-700 font-medium">
+                        <div className="mt-8 flex items-center gap-2 text-blue-700 font-medium">
                             <Sparkles className="w-5 h-5" />
                             <p className="text-sm">
                                 Make confident decisions backed by accurate simulation data.
@@ -160,19 +160,19 @@ export default function DigitalTwinPage() {
             */}
             <section className="py-16 px-4 pb-24">
                 <div className="max-w-6xl mx-auto">
-                    <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 md:p-12 shadow-xl border border-emerald-100">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100">
                         {/* Header */}
                         <div className="flex flex-col md:flex-row gap-8 mb-10">
                             {/* Icon */}
                             <div className="shrink-0">
-                                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
                                     <Monitor className="w-12 h-12 text-white" />
                                 </div>
                             </div>
 
                             {/* Title & Description */}
                             <div className="flex-1">
-                                <h3 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
+                                <h3 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
                                     Process Optimization
                                 </h3>
                                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -184,17 +184,17 @@ export default function DigitalTwinPage() {
 
                         {/* Benefits Grid */}
                         <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Identify hidden bottlenecks
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Optimize resource allocation
                                 </p>
                             </div>
-                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                                 <p className="text-lg font-bold text-slate-900">
                                     Data-driven continuous improvement
                                 </p>
@@ -202,7 +202,7 @@ export default function DigitalTwinPage() {
                         </div>
 
                         {/* Bottom Note */}
-                        <div className="mt-8 flex items-center gap-2 text-emerald-700 font-medium">
+                        <div className="mt-8 flex items-center gap-2 text-blue-700 font-medium">
                             <Activity className="w-5 h-5" />
                             <p className="text-sm">
                                 Optimize your factory's performance throughout its entire lifecycle.
@@ -219,10 +219,10 @@ export default function DigitalTwinPage() {
                 <div className="container mx-auto px-4">
                     <div className="relative">
                         {/* Blue Card Content */}
-                        <div className="bg-[linear-gradient(-60deg,#00695c,#00897b)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
+                        <div className="bg-[linear-gradient(-60deg,#1e40af,#2563eb)] rounded-[2.5rem] p-10 md:p-16 relative overflow-visible">
                             {/* Background Splashes */}
-                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-teal-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-emerald-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+                            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
                             <div className="relative z-10 md:w-2/3 text-white">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
@@ -233,24 +233,24 @@ export default function DigitalTwinPage() {
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-300 shrink-0" />
-                                        <span className="text-teal-50/90 leading-relaxed">Complete real-time visibility of operations.</span>
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300 shrink-0" />
+                                        <span className="text-blue-50/90 leading-relaxed">Complete real-time visibility of operations.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-300 shrink-0" />
-                                        <span className="text-teal-50/90 leading-relaxed">Risk-free simulation of production changes.</span>
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300 shrink-0" />
+                                        <span className="text-blue-50/90 leading-relaxed">Risk-free simulation of production changes.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-300 shrink-0" />
-                                        <span className="text-teal-50/90 leading-relaxed">Faster identification and resolution of bottlenecks.</span>
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300 shrink-0" />
+                                        <span className="text-blue-50/90 leading-relaxed">Faster identification and resolution of bottlenecks.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-300 shrink-0" />
-                                        <span className="text-teal-50/90 leading-relaxed">Reduced downtime through predictive insights.</span>
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300 shrink-0" />
+                                        <span className="text-blue-50/90 leading-relaxed">Reduced downtime through predictive insights.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-300 shrink-0" />
-                                        <span className="text-teal-50/90 leading-relaxed">Enhanced collaboration through a single source of truth.</span>
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300 shrink-0" />
+                                        <span className="text-blue-50/90 leading-relaxed">Enhanced collaboration through a single source of truth.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -297,7 +297,7 @@ export default function DigitalTwinPage() {
                                     Link your physical machinery and systems to the RAILES platform.
                                 </p>
                                 {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-500"></div>
                             </div>
                             {/* Connector Line (Desktop) */}
                             <div className="hidden md:block absolute top-[85%] left-1/2 w-full h-[2px] bg-slate-200 -z-0"></div>
@@ -313,7 +313,7 @@ export default function DigitalTwinPage() {
                                     Configure your virtual factory layout, flows, and constraints.
                                 </p>
                                 {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-500"></div>
                             </div>
                             {/* Connector Line (Desktop) */}
                             <div className="hidden md:block absolute top-[85%] left-1/2 w-full h-[2px] bg-slate-200 -z-0"></div>
@@ -329,7 +329,7 @@ export default function DigitalTwinPage() {
                                     Run simulations, analyze results, and implement improvements.
                                 </p>
                                 {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-500"></div>
                             </div>
                         </div>
 
@@ -347,7 +347,7 @@ export default function DigitalTwinPage() {
                     </h2>
 
                     <a href="/demo" className="inline-block w-full max-w-4xl mx-auto group">
-                        <div className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl p-6 md:p-8 shadow-xl transform transition-transform group-hover:scale-[1.02]">
+                        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl p-6 md:p-8 shadow-xl transform transition-transform group-hover:scale-[1.02]">
                             <span className="block text-white text-xl md:text-3xl font-medium">
                                 Book a demo today and experience the power
                             </span>

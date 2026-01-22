@@ -18,7 +18,7 @@ export function Footer() {
                             </Link>
 
                             <p className="text-gray-500 text-sm mb-6 max-w-xs">
-                                Empowering manufacturing with next-generation MES solutions.
+                                Manufacturing Execution System. Built for Smart Factories.
                             </p>
 
                             <div className="flex items-center gap-3">
