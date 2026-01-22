@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { ArrowRight, Sparkles, Network, Activity, Zap, ShieldCheck, Globe } from 'lucide-react';
-import { siteSettings } from "@/lib/mock-data";
+
+import { siteSettings, ctaSection } from "@/lib/mock-data";
 import { Logo } from '@/components/Logo';
+import { CallToActionSection } from "@/components/CallToActionSection";
 
 export default function DemoPage() {
     return (
@@ -452,31 +454,10 @@ export default function DemoPage() {
               BLOCK 5: BOTTOM CTA SECTION
               Blue background with final call to action
             */}
-            <section className="relative py-24 overflow-hidden bg-gradient-to-br from-blue-900 to-indigo-900">
-                {/* Background Decorations */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-
-                {/* Decorative X Shape (Bottom Right) */}
-                <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none translate-y-1/3 translate-x-1/4">
-                    <svg width="400" height="400" viewBox="0 0 100 100" className="w-[400px] h-[400px] md:w-[600px] md:h-[600px] text-white fill-current">
-                        <path d="M45,0 L55,0 L55,45 L100,45 L100,55 L55,55 L55,100 L45,100 L45,55 L0,55 L0,45 L45,45 Z" transform="rotate(15 50 50)" />
-                    </svg>
-                </div>
-
-                <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                        Let's get started
-                    </h2>
-                    <p className="text-xl text-blue-100/80 mb-10 max-w-2xl mx-auto">
-                        Fill out the form and we'll be in touch within one business day.
-                    </p>
-
-                    {/* Optional: Add button here if the form isn't immediately visible, 
-                        or just rely on scrolling back up. Since the design shows this as a closing statement,
-                        we'll keep it simple as per the visual. */}
-                </div>
-            </section>
+            {/* 
+              BLOCK 5: BOTTOM CTA SECTION (Replaced with Global CTA)
+            */}
+            <CallToActionSection data={ctaSection} />
 
         </main>
     );

@@ -31,11 +31,11 @@ export default function PartnersPage() {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight animate-in fade-in slide-in-from-bottom-3 duration-500 delay-100">
-                        Better Operations are Powered by an <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">Ecosystem</span>
+                        Better Operations are Powered by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">RAILES MES</span>
                     </h1>
 
                     <p className="text-xl text-blue-100/80 mb-10 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-                        Join the Railes network. Whether you are a consultant, integrator, or technology provider, let's modernize factory floors together.
+                        We’re building a global network of partners who share our mission: making manufacturing smarter, faster, and more connected with RAILES MES. Whether you’re here to connect opportunities or to deliver implementations, there’s a path for you.
                     </p>
 
                     <div className="flex justify-center gap-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-300">
@@ -65,7 +65,7 @@ export default function PartnersPage() {
                                 )}
                             >
                                 <Handshake className="w-4 h-4" />
-                                Affiliate Partner
+                                Business Partner
                             </button>
                             <button
                                 onClick={() => setActiveTab('technology')}
@@ -89,7 +89,7 @@ export default function PartnersPage() {
                         {activeTab === 'affiliate' && (
                             <div className="animate-in fade-in zoom-in-95 duration-300">
                                 <div className="text-center mb-12">
-                                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Affiliate Partner Program</h2>
+                                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Business Partner Program</h2>
                                     <p className="text-gray-600 max-w-2xl mx-auto">
                                         Perfect for professionals or consultants who want to refer qualified leads without handling the technical implementation.
                                     </p>
@@ -104,7 +104,7 @@ export default function PartnersPage() {
                                         </div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-3">Profile</h3>
                                         <p className="text-gray-600 leading-relaxed text-sm">
-                                            Professionals or companies that do not implement the MES, but have a strong network within the industry. Focused on referring qualified leads and generating new business opportunities.
+                                            You’re a professional or organization with strong connections in the manufacturing industry. You don’t implement MES yourself, but you’re great at opening doors and connecting opportunities.
                                         </p>
                                     </div>
 
@@ -117,15 +117,15 @@ export default function PartnersPage() {
                                         <ul className="space-y-3 text-sm text-gray-600">
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Identify and recommend potential clients.</span>
+                                                <span>Identify and refer manufacturers, factories, or industrial groups that can benefit from RAILES.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Facilitate introductions between RAILES and the target organization.</span>
+                                                <span>Facilitate introductions between RAILES and potential clients.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Follow best practices in brand communication.</span>
+                                                <span>Represent RAILES with professionalism and consistency.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -139,7 +139,7 @@ export default function PartnersPage() {
                                         <ul className="space-y-3 text-sm text-gray-600">
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                                                <span>Financial commission for each closed contract.</span>
+                                                <span>Financial commissions for every closed contract (with rewards growing from Connector → Accelerator → Leader).</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
@@ -147,7 +147,11 @@ export default function PartnersPage() {
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                                                <span>Access to marketing materials and presentations.</span>
+                                                <span>Access to ready-to-use marketing materials and presentations.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                                                <span>Possibility of regional or industry exclusivity at the Leader level.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -158,13 +162,20 @@ export default function PartnersPage() {
                                             <GraduationCap className="w-6 h-6" />
                                         </div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-3">Requirements</h3>
-                                        <p className="text-gray-600 leading-relaxed text-sm mb-4">
-                                            No technical requirements. Participation in basic RAILES introduction training is optional but recommended.
-                                        </p>
-                                        <div className="bg-orange-50 p-4 rounded-lg">
-                                            <span className="text-xs font-semibold text-orange-700 uppercase tracking-wide">Target</span>
-                                            <p className="text-sm text-orange-900 mt-1">Meet minimum lead or closed contract targets according to level.</p>
-                                        </div>
+                                        <ul className="space-y-3 text-sm text-gray-600">
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                                                <span>No technical skills required.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                                                <span>Meet minimum targets for leads or closed contracts based on your level.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                                                <span>Optional participation in a short RAILES introduction training.</span>
+                                            </li>
+                                        </ul>
                                     </div>
 
                                 </div>
@@ -190,7 +201,7 @@ export default function PartnersPage() {
                                         </div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-3">Profile</h3>
                                         <p className="text-gray-600 leading-relaxed text-sm">
-                                            Consulting firms, system integrators, IT/automation companies. Have the technical expertise to implement and support RAILES MES for clients.
+                                            You’re a consulting firm, system integrator, or IT/automation company with the technical know-how to deliver RAILES MES projects.
                                         </p>
                                     </div>
 
@@ -203,15 +214,19 @@ export default function PartnersPage() {
                                         <ul className="space-y-3 text-sm text-gray-600">
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Carry out the implementation of RAILES MES at client sites.</span>
+                                                <span>Implement RAILES MES at client sites.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Configure integrations with ERP, SCADA, LIMS.</span>
+                                                <span>Configure integrations with ERP, SCADA, LIMS, and other systems.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
-                                                <span>Provide support during go-live and operational phases.</span>
+                                                <span>Support clients through go-live and ongoing operations.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-indigo-500 shrink-0 mt-0.5" />
+                                                <span>SuBuild certified expertise within your team as you advance in levels.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -225,15 +240,31 @@ export default function PartnersPage() {
                                         <ul className="space-y-3 text-sm text-gray-600">
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                                                <span>Margin on licenses and subscriptions sold.</span>
+                                                <span>Attractive margins on licenses and subscriptions.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                                                <span>Additional revenue from implementation services.</span>
+                                                <span>Additional revenue from implementation and support services.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                                                <span>Access to leads generated by RAILES (Accelerator+).</span>
+                                                <span>Access to official training and certification.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                                                <span>Priority technical support.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                                                <span>Leads generated by RAILES (starting at Accelerator level).</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                                                <span>Co-marketing opportunities (events, case studies, international fairs).</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                                                <span>Possibility of territorial or industry exclusivity at the Leader level.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -247,15 +278,19 @@ export default function PartnersPage() {
                                         <ul className="space-y-3 text-sm text-gray-600 mb-4">
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-                                                <span>At least one certified consultant.</span>
+                                                <span>At least one certified consultant (Connector level).</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-                                                <span>Meet quality metrics in project delivery.</span>
+                                                <span>More certified consultants and successful projects unlock higher levels.</span>
                                             </li>
                                             <li className="flex gap-2.5">
                                                 <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-                                                <span>Participate in annual partner events.</span>
+                                                <span>Consistently meet quality metrics in project delivery.</span>
+                                            </li>
+                                            <li className="flex gap-2.5">
+                                                <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                                                <span>Participate in annual RAILES partner events and training.</span>
                                             </li>
                                         </ul>
                                     </div>

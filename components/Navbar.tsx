@@ -380,7 +380,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <div className="text-xs text-gray-500 mt-0.5">Virtual replication</div>
                                                 </div>
                                             </Link>
-                                            <Link
+                                            {/* <Link
                                                 href="#"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
@@ -392,8 +392,8 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <div className="font-medium text-gray-900 group-hover:text-teal-600 text-sm">Edge Computing</div>
                                                     <div className="text-xs text-gray-500 mt-0.5">Low latency processing</div>
                                                 </div>
-                                            </Link>
-                                            <Link
+                                            </Link> */}
+                                            {/* <Link
                                                 href="#"
                                                 className="flex items-start gap-3 group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors"
                                                 onClick={() => setActiveDropdown(null)}
@@ -405,7 +405,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     <div className="font-medium text-gray-900 group-hover:text-sky-600 text-sm">Cloud</div>
                                                     <div className="text-xs text-gray-500 mt-0.5">Scalable infrastructure</div>
                                                 </div>
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                     {/* Use Cases Column (4 cols) */}
@@ -524,6 +524,10 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 <Link href="/product/artificial-intelligence" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                     <Sparkles className="w-4 h-4 text-indigo-600" />
                                                     Artificial Intelligence
+                                                </Link>
+                                                <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                    <Box className="w-4 h-4 text-pink-600" />
+                                                    Digital Twin
                                                 </Link>
                                             </div>
                                         )}

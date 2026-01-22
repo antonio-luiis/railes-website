@@ -27,13 +27,12 @@ export default function PharmaPage() {
                         <h1 className="text-5xl md:text-7xl font-bold text-blue-900 mb-8 leading-[1.1] tracking-tight">
                             Railes MES for Pharmaceuticals:<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                                Compliance & Quality
+                                Manufacturing Excellence
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Better compliance, built-in quality processes, and full batch record traceability from start to finish.
-                            Optimize your pharma operations with our module-based solution.
+                            Railes MES is purpose-built for the pharmaceutical industry, offering a modular, compliant, and flexible Manufacturing Execution System that empowers quality, traceability, and accelerated batch release. Built by experts in pharma digitalization, Railes MES joins industry best practices with modern automation to give your manufacturing operations a competitive edge.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -98,7 +97,7 @@ export default function PharmaPage() {
                                 Pharma-Ready Compliance & Quality Control
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Built-in requirements for FDA 21 CFR Part 11 and EU GMP Annex 11. Ensure data integrity, electronic signatures, and audit trails out of the box.
+                                Enforces electronic batch records (EBR) and master batch records, eliminating manual paperwork.
                             </p>
                         </div>
 
@@ -152,7 +151,7 @@ export default function PharmaPage() {
             < section className="py-24 bg-gray-50" >
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
-                        What sets RAILES MES apart in pharma manufacturing
+                        Railes MES vs Traditional Pharma MES
                     </h2>
 
                     <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden max-w-5xl mx-auto">
@@ -161,7 +160,7 @@ export default function PharmaPage() {
                                 <thead>
                                     <tr className="bg-gradient-to-r from-[#1e40af] via-[#3b82f6] to-[#ec4899]">
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/4 border-r border-white/10">Feature</th>
-                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Traditional MES</th>
+                                        <th className="py-6 px-8 text-white font-bold text-lg w-1/3 border-r border-white/10">Legacy MES</th>
                                         <th className="py-6 px-8 text-white font-bold text-lg w-1/3">Railes MES</th>
                                     </tr>
                                 </thead>
@@ -235,7 +234,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Ensure Compliance & Quality</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Built-in adherence to FDA 21 CFR Part 11 and EU GMP Annex 11 ensures you meet regulatory standards.
+                                    Consistent enforcement of SOPs, full audit trails, and validated digital records build trust.
                                 </p>
                             </div>
                         </div>
@@ -246,7 +245,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Boost Efficiency & Throughput</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Optimize batch release times and minimize downtime with digital workflows and real-time monitoring.
+                                    Track performance in real time, reduce deviations, and optimize scheduling and operations.
                                 </p>
                             </div>
                         </div>
@@ -257,7 +256,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Minimize Risk</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Protect brand reputation and avoid costly quality deviations with fail-safe guided execution.
+                                    Immediately detect non-conformances, reduce downtime, and ensure product integrity.
                                 </p>
                             </div>
                         </div>
@@ -268,7 +267,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Scale with Confidence</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Deploy standardized processes across multiple sites seamlessly with our cloud-native architecture.
+                                    Adapt quickly to new drug launches or biotech manufacturing.
                                 </p>
                             </div>
                         </div>
@@ -279,7 +278,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Reduce Costs</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Eliminate paper costs, improve data integrity, and reduce manual errors throughout production.
+                                    Eliminate paper, manual checks, lengthy reviews, and under-utilized equipment.
                                 </p>
                             </div>
                         </div>
@@ -290,7 +289,7 @@ export default function PharmaPage() {
                             <div>
                                 <h4 className="font-bold text-lg text-gray-900 mb-2">Speed to Value</h4>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Rapid modular implementation lets you see ROI in weeks, not years, unlike legacy systems.
+                                    Rapid ROI through simplified implementation and QA overhead reduction, faster documentation review and batch release cycles.
                                 </p>
                             </div>
                         </div>

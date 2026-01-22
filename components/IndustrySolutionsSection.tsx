@@ -1,4 +1,4 @@
-import { ChevronRight, ClipboardList, Users, Megaphone, Clock, ShieldCheck, Pencil, RefreshCw, SquareArrowOutUpRight, BrainCircuit, FastForward } from 'lucide-react';
+import { ChevronRight, ClipboardList, Users, Megaphone, Clock, ShieldCheck, Pencil, RefreshCw, SquareArrowOutUpRight, BrainCircuit, FastForward, FileText, Cog, BarChart3, Route } from 'lucide-react';
 import Image from 'next/image';
 import { urlForImage } from '@/sanity/lib/image';
 
@@ -24,6 +24,13 @@ const visibilityItems = [
     { icon: Users, label: "Operators" },
     { icon: Megaphone, label: "Work Centers" },
     { icon: Clock, label: "Downtimes" }
+];
+
+const executionItems = [
+    { icon: FileText, label: "Instructions" },
+    { icon: Cog, label: "Operations" },
+    { icon: BarChart3, label: "Reporting" },
+    { icon: Route, label: "Routing" }
 ];
 
 export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps) {
@@ -132,18 +139,24 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                                 {content.executionDescription}
                             </p>
 
-                            {/* Execution Workflow Image */}
-                            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-                                <div className="relative w-full h-[150px]">
-                                    {content.executionImage && (
-                                        <Image
-                                            src={content.executionImage.asset?.url || urlForImage(content.executionImage).url()}
-                                            alt={content.executionImage.alt || "Execution Workflow"}
-                                            fill
-                                            className="object-contain"
-                                        />
-                                    )}
-                                </div>
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                                {executionItems.map((item, idx) => {
+                                    // Colors matching global design (Blue, Purple, Pink, Indigo)
+                                    const styles = [
+                                        { bg: "bg-blue-50", icon: "text-blue-600" }, // Instructions
+                                        { bg: "bg-purple-50", icon: "text-purple-600" }, // Operations
+                                        { bg: "bg-pink-50", icon: "text-pink-600" }, // Reporting
+                                        { bg: "bg-indigo-50", icon: "text-indigo-600" }, // Routing
+                                    ];
+                                    const style = styles[idx % styles.length];
+
+                                    return (
+                                        <div key={idx} className={`flex items-center gap-4 ${style.bg} p-6 rounded-2xl hover:shadow-md transition-all cursor-pointer group`}>
+                                            <item.icon className={`w-5 h-5 ${style.icon} group-hover:scale-110 transition-transform`} />
+                                            <span className="text-sm font-bold text-gray-900 leading-tight">{item.label}</span>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
 
