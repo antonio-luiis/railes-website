@@ -13,8 +13,7 @@ const initialState = {
 
 export function DemoForm() {
     // @ts-ignore
-    const [state, formAction] = useActionState(submitForm, initialState);
-    const [pending, setPending] = useState(false);
+    const [state, formAction, isPending] = useActionState(submitForm, initialState);
 
     useEffect(() => {
         if (state.success) {
@@ -39,7 +38,7 @@ export function DemoForm() {
     }
 
     return (
-        <form action={formAction} onSubmit={() => setPending(true)} className="flex flex-col gap-5">
+        <form action={formAction} className="flex flex-col gap-5">
             <input type="hidden" name="formType" value="demo" />
 
             {/* Name Field */}
@@ -92,10 +91,10 @@ export function DemoForm() {
 
             <button
                 type="submit"
-                disabled={pending}
+                disabled={isPending}
                 className="mt-4 w-full bg-gradient-to-r from-[#0099ff] to-[#ff5ac8] text-white text-xl font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:opacity-95 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
             >
-                {pending ? 'Submitting...' : 'Submit'}
+                {isPending ? 'Submitting...' : 'Submit'}
             </button>
 
         </form>

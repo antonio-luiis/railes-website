@@ -12,8 +12,7 @@ const initialState = {
 
 export function ContactForm() {
     // @ts-ignore
-    const [state, formAction] = useActionState(submitForm, initialState);
-    const [pending, setPending] = useState(false);
+    const [state, formAction, isPending] = useActionState(submitForm, initialState);
 
     useEffect(() => {
         if (state.success) {
@@ -22,7 +21,7 @@ export function ContactForm() {
     }, [state.success]);
 
     return (
-        <form action={formAction} onSubmit={() => setPending(true)} className="space-y-6">
+        <form action={formAction} className="space-y-6">
             <input type="hidden" name="formType" value="contact" />
 
             {state.success ? (
@@ -69,10 +68,10 @@ export function ContactForm() {
                     <div>
                         <button
                             type="submit"
-                            disabled={pending}
+                            disabled={isPending}
                             className="w-full bg-[#0066eb] hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-colors shadow-lg shadow-blue-500/30 text-lg disabled:opacity-70 disabled:cursor-not-allowed"
                         >
-                            {pending ? 'Sending...' : 'Send message'}
+                            {isPending ? 'Sending...' : 'Send message'}
                         </button>
                     </div>
                 </>
