@@ -410,10 +410,10 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                     </div>
                                     {/* Use Cases Column (4 cols) */}
                                     <div className="col-span-4">
-                                        <h3 className="text-base font-semibold text-gray-900 mb-6">
+                                        {/* <h3 className="text-base font-semibold text-gray-900 mb-6">
                                             Use Cases
-                                        </h3>
-                                        <div className="flex flex-col gap-3">
+                                        </h3> */}
+                                        {/* <div className="flex flex-col gap-3">
                                             <Link
                                                 href="#"
                                                 className="flex items-center gap-3 p-2 -ml-2 hover:bg-gray-50 rounded-lg group transition-colors"
@@ -426,7 +426,7 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                     Framework for digital records: <br />from log books to eBR
                                                 </span>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         <div className="mt-8 bg-blue-50 rounded-xl p-5">
                                             <h4 className="font-bold text-blue-900 text-sm mb-2">Ready to explore?</h4>
                                             <p className="text-xs text-blue-700 mb-3">See how Railes adapts to your specific needs.</p>
