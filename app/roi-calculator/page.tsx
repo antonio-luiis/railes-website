@@ -322,9 +322,9 @@ export default function ROICalculatorPage() {
                             <p className="text-gray-600 mb-6">
                                 Get a personalized ROI analysis from our experts
                             </p>
-                            <button className="w-full bg-gradient-to-r from-blue-600 to-pink-600 text-white font-bold py-4 px-8 rounded-xl hover:shadow-lg transition-all hover:scale-105">
+                            <a href="/demo" className="block w-full bg-gradient-to-r from-blue-600 to-pink-600 text-white font-bold py-4 px-8 rounded-xl hover:shadow-lg transition-all hover:scale-105 text-center">
                                 Book a Demo
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
