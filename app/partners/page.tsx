@@ -39,11 +39,13 @@ export default function PartnersPage() {
                     </p>
 
                     <div className="flex justify-center gap-4 animate-in fade-in slide-in-from-bottom-5 duration-500 delay-300">
-                        <Button
-                            className="bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
-                        >
-                            Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
-                        </Button>
+                        <Link href="/contact">
+                            <Button
+                                className="bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
+                            >
+                                Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -317,16 +319,20 @@ export default function PartnersPage() {
                                 Whether you're looking to refer business or implement solutions, there's a place for you in our ecosystem.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
-                                <Button
-                                    className="w-full sm:w-[280px] bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
-                                >
-                                    Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
-                                </Button>
-                                <Button
-                                    className="w-full sm:w-[280px] bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white rounded-full px-8 py-6 h-auto text-lg font-bold transition-all hover:-translate-y-0.5"
-                                >
-                                    Contact Partner Team
-                                </Button>
+                                <Link href="/contact">
+                                    <Button
+                                        className="w-full sm:w-[280px] bg-white text-blue-900 hover:bg-blue-50 rounded-full px-8 py-6 h-auto text-lg font-bold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 hover:-translate-y-0.5"
+                                    >
+                                        Become a Partner <ChevronDown className="w-5 h-5 ml-2 rotate-[-90deg]" />
+                                    </Button>
+                                </Link>
+                                <Link href="/contact">
+                                    <Button
+                                        className="w-full sm:w-[280px] bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white rounded-full px-8 py-6 h-auto text-lg font-bold transition-all hover:-translate-y-0.5"
+                                    >
+                                        Contact Partner Team
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>

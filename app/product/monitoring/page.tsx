@@ -30,7 +30,7 @@ export default function MonitoringPage() {
                         {/* Monitoring Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/Monitoring.png"
+                                src="/images/Monitoring_New.png"
                                 alt="Real-time Monitoring Dashboard"
                                 fill
                             />

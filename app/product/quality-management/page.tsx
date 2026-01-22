@@ -31,7 +31,7 @@ export default function QualityManagementPage() {
                         {/* Quality Management Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/Quality_Page.png"
+                                src="/images/Quality_New.png"
                                 alt="Quality Management Dashboard"
                                 fill
                             />
