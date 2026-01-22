@@ -22,13 +22,13 @@ export function Footer() {
                             </p>
 
                             <div className="flex items-center gap-3">
-                                <Link href="https://www.linkedin.com/company/railes" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-600 hover:text-white transition-all">
+                                <Link href="https://pt.linkedin.com/company/muvutechnologies" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-600 hover:text-white transition-all">
                                     <Linkedin className="w-4 h-4" />
                                 </Link>
-                                <Link href="#" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-pink-600 hover:text-white transition-all">
+                                <Link href="https://www.instagram.com/muvu.tech/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-pink-600 hover:text-white transition-all">
                                     <Instagram className="w-4 h-4" />
                                 </Link>
-                                <Link href="#" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-800 hover:text-white transition-all">
+                                <Link href="https://www.facebook.com/muvutechnologies/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-800 hover:text-white transition-all">
                                     <Facebook className="w-4 h-4" />
                                 </Link>
                             </div>
