@@ -31,7 +31,7 @@ export default function QualityManagementPage() {
                         {/* Quality Management Image */}
                         <div className="relative mx-auto max-w-6xl aspect-[21/9]">
                             <Image
-                                src="/images/Quality.png"
+                                src="/images/quality_page.png"
                                 alt="Quality Management Dashboard"
                                 fill
                             />
@@ -248,7 +248,7 @@ export default function QualityManagementPage() {
                         </div>
 
                         {/* Overlapping Image - Positioned Absolute Bottom Right */}
-                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[-10%] w-[350px] lg:w-[450px] z-20">
+                        <div className="hidden absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[15%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/Extra1.png"
                                 alt="Quality Dashboard"

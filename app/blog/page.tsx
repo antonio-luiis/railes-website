@@ -33,7 +33,7 @@ export default function BlogPage() {
                             Thinking about the future of manufacturing.
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            Expert perspectives on MES, digital transformation, and the technologies shaping the factory floor.
+                            Expert perspectives and actionable knowledge on innovation, digital transformation, and operational efficiency
                         </p>
                     </div>
                 </div>

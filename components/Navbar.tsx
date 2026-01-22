@@ -600,10 +600,12 @@ export function Navbar({ siteSettings }: NavbarProps) {
 
                         {/* Mobile CTAs */}
                         <div className="pt-4 space-y-3">
+                            {/* TODO: Fix Contact us button styling
                             <Link href="/contact" className="block">
-                                <Button variant="outline" className="w-full">Contact us</Button>
+                                <Button variant="outline" className="w-full text-gray-900">Contact us</Button>
                             </Link>
-                            <Link href="/demo" className="block">
+                            */}
+                            <Link href="/demo" className="block" onClick={closeMobileMenu}>
                                 <Button className="w-full bg-railes-blue hover:bg-blue-800">Book a Demo</Button>
                             </Link>
                         </div>

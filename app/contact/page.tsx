@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { ctaSection } from "@/lib/mock-data";
 import { CallToActionSection } from "@/components/CallToActionSection";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
     title: 'Contact Us | Railes',
@@ -60,46 +61,7 @@ export default function ContactPage() {
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-2xl mx-auto">
-                        <form className="space-y-6">
-
-                            {/* Name */}
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="Name"
-                                    className="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium"
-                                />
-                            </div>
-
-                            {/* Email */}
-                            <div>
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    className="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium"
-                                />
-                            </div>
-
-                            {/* Message */}
-                            <div>
-                                <textarea
-                                    placeholder="Message"
-                                    rows={4}
-                                    className="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none font-medium"
-                                ></textarea>
-                            </div>
-
-                            {/* Submit Button */}
-                            <div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#0066eb] hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-colors shadow-lg shadow-blue-500/30 text-lg"
-                                >
-                                    Send message
-                                </button>
-                            </div>
-
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </section>

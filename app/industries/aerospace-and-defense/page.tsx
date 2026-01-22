@@ -36,10 +36,12 @@ export default function AerospacePage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
-                                <span>Schedule a Demo</span>
-                                <ArrowRight className="w-5 h-5" />
-                            </button>
+                            <Link href="/demo">
+                                <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                                    <span>Schedule a Demo</span>
+                                    <ArrowRight className="w-5 h-5" />
+                                </button>
+                            </Link>
                             <button className="bg-white text-gray-700 border border-gray-200 font-bold py-4 px-10 rounded-full hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
                                 <Play className="w-4 h-4 fill-current" />
                                 <span>Watch Video</span>
@@ -351,7 +353,7 @@ export default function AerospacePage() {
                         </div>
 
                         {/* Overlapping Image - Positioned Absolute Bottom Right */}
-                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
+                        <div className="hidden absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/.png"
                                 alt="Aerospace Production Dashboard"

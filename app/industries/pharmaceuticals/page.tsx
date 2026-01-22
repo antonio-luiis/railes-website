@@ -36,10 +36,12 @@ export default function PharmaPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
-                                <span>Schedule a Demo</span>
-                                <ArrowRight className="w-5 h-5" />
-                            </button>
+                            <Link href="/demo">
+                                <button className="bg-[#1e3a8a] text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                                    <span>Schedule a Demo</span>
+                                    <ArrowRight className="w-5 h-5" />
+                                </button>
+                            </Link>
                             <button className="bg-white text-gray-700 border border-gray-200 font-bold py-4 px-10 rounded-full hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
                                 <Play className="w-4 h-4 fill-current" />
                                 <span>Watch Video</span>
@@ -97,8 +99,7 @@ export default function PharmaPage() {
                                 Pharma-Ready Compliance & Quality Control
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Enforces electronic batch records (EBR) and master batch records, eliminating manual paperwork.
-                            </p>
+                                Aligns with GAMP 5 best practices for validated computerized systems</p>
                         </div>
 
                         {/* Card 2 */}
@@ -110,7 +111,7 @@ export default function PharmaPage() {
                                 Right-First-Time Workflows
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Avoid deviations directly by validating data input in real-time. Guide operators with precise, step-by-step instructions.
+                                Guides operators with step-by-step instructions to prevent deviations and boost compliance accuracy.
                             </p>
                         </div>
 
@@ -120,10 +121,10 @@ export default function PharmaPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Composable & Scalable Platform
+                                Modular Architecture for Pharma Needs
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Start fast with standard apps and scale as you grow. Seamlessly integrate with ERPs, LIMS, and existing equipment.
+                                Each module is pre‑configured with pharma-specific workflows: Electronic Batch Records (EBR) and Digital Logbook for complete paperless compliance
                             </p>
                         </div>
 
@@ -133,10 +134,10 @@ export default function PharmaPage() {
                                 <Check className="w-6 h-6" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4 pr-12 leading-tight">
-                                Modular Architecture for Pharma Needs
+                                Smart & Connected Pharma 4.0
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Designed purely for pharma complexities. Handle weighing, dispensing, and packaging with dedicated modules without custom code.
+                                Seamless shop-floor integration through OPC UA, MQTT, and Modbus connectivity to PLCs and equipment.
                             </p>
                         </div>
 
@@ -340,7 +341,7 @@ export default function PharmaPage() {
                         </div>
 
                         {/* Overlapping Image - Positioned Absolute Bottom Right */}
-                        <div className="hidden md:block absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
+                        <div className="hidden absolute bottom-0 right-0 translate-y-1/2 md:translate-x-[10%] w-[350px] lg:w-[450px] z-20">
                             <Image
                                 src="/images/Person_Pharma.png"
                                 alt="Production Dashboard"

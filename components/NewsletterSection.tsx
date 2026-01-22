@@ -1,4 +1,9 @@
+"use client";
+
 import { Mail, ArrowRight } from 'lucide-react';
+import { useActionState } from 'react';
+import { submitForm } from '@/app/actions';
+import { useState, useEffect } from 'react';
 
 interface NewsletterSectionProps {
     data?: {
@@ -10,7 +15,16 @@ interface NewsletterSectionProps {
     }
 }
 
+const initialState = {
+    success: false,
+    message: '',
+};
+
 export function NewsletterSection({ data }: NewsletterSectionProps) {
+    // @ts-ignore
+    const [state, formAction] = useActionState(submitForm, initialState);
+    const [pending, setPending] = useState(false);
+
     const fallback = {
         title: "Stay ahead in manufacturing",
         description: "Join our newsletter to receive the latest insights, news and trends in the manufacturing industry.",
@@ -20,6 +34,12 @@ export function NewsletterSection({ data }: NewsletterSectionProps) {
     };
 
     const content = { ...fallback, ...data };
+
+    useEffect(() => {
+        if (state.success) {
+            setPending(false);
+        }
+    }, [state.success]);
 
     return (
         <section className="py-24 bg-white border-t border-gray-100">
@@ -48,21 +68,41 @@ export function NewsletterSection({ data }: NewsletterSectionProps) {
 
                         {/* Form */}
                         <div className="lg:w-1/2 w-full max-w-md">
-                            <form className="flex flex-col sm:flex-row gap-3">
-                                <input
-                                    type="email"
-                                    placeholder={content.placeholder}
-                                    className="flex-1 bg-white/10 border border-white/20 text-white placeholder-blue-200/70 rounded-xl px-5 py-4 outline-none focus:bg-white/20 focus:border-white/40 transition-all backdrop-blur-sm"
-                                    required
-                                />
-                                <button type="button" className="bg-white text-blue-900 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 group whitespace-nowrap shadow-lg">
-                                    {content.buttonText}
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </button>
-                            </form>
-                            <p className="text-blue-200/60 text-xs mt-4 text-center lg:text-left pl-2">
-                                {content.footerText}
-                            </p>
+                            {state.success ? (
+                                <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center border border-white/20">
+                                    <div className="w-10 h-10 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white">Subscribed!</h3>
+                                    <p className="text-blue-100 mt-1">Thank you for joining our newsletter.</p>
+                                </div>
+                            ) : (
+                                <form action={formAction} onSubmit={() => setPending(true)} className="flex flex-col sm:flex-row gap-3">
+                                    <input type="hidden" name="formType" value="newsletter" />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder={content.placeholder}
+                                        className="flex-1 bg-white/10 border border-white/20 text-white placeholder-blue-200/70 rounded-xl px-5 py-4 outline-none focus:bg-white/20 focus:border-white/40 transition-all backdrop-blur-sm"
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        disabled={pending}
+                                        className="bg-white text-blue-900 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 group whitespace-nowrap shadow-lg disabled:opacity-80 disabled:cursor-not-allowed"
+                                    >
+                                        {pending ? '...' : content.buttonText}
+                                        {!pending && <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}
+                                    </button>
+                                </form>
+                            )}
+                            {!state.success && (
+                                <p className="text-blue-200/60 text-xs mt-4 text-center lg:text-left pl-2">
+                                    {content.footerText}
+                                </p>
+                            )}
                         </div>
 
                     </div>

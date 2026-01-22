@@ -28,22 +28,22 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
     return (
         <section className="pb-20 bg-gray-50">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-end">
+                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-start">
 
                     {/* Card 1: Customization and Flexibility */}
-                    <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
-                        <div className="mb-8 relative z-10 max-w-md">
-                            <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                    <div className="bg-white rounded-[32px] p-6 md:p-10 shadow-sm flex flex-col relative overflow-hidden">
+                        <div className="mb-6 relative z-10 max-w-md">
+                            <h3 className="text-3xl font-bold text-gray-900 mb-2 leading-tight">
                                 {content.customizationTitle}
                             </h3>
-                            <p className="text-gray-600 leading-relaxed mb-6">
+                            <p className="text-gray-600 leading-relaxed">
                                 {content.customizationDescription}
                             </p>
                         </div>
 
                         {/* Visual: Gradient Bar with Icons Image */}
-                        <div className="mt-auto relative min-h-[200px] flex items-center justify-center">
-                            <div className="relative w-full h-[180px]">
+                        <div className="relative h-[250px] md:h-[300px] flex items-center justify-center">
+                            <div className="relative w-full h-full">
                                 {content.customizationImage && (
                                     <Image
                                         src={content.customizationImage.asset?.url || urlForImage(content.customizationImage).url()}
@@ -65,19 +65,19 @@ export function CustomizationAISection({ data }: CustomizationAISectionProps) {
                         </div>
 
                         {/* Card 2: Advanced Data Analytics and AI */}
-                        <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col h-full relative overflow-hidden">
-                            <div className="mb-8 relative z-10">
-                                <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                        <div className="bg-white rounded-[32px] p-6 md:p-10 shadow-sm flex flex-col relative overflow-hidden">
+                            <div className="mb-6 relative z-10">
+                                <h3 className="text-3xl font-bold text-gray-900 mb-2 leading-tight">
                                     {content.aiTitle}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed mb-6">
+                                <p className="text-gray-600 leading-relaxed">
                                     {content.aiDescription}
                                 </p>
                             </div>
 
                             {/* Visual: Chat Interface Image */}
-                            <div className="mt-auto relative min-h-[220px]">
-                                <div className="relative w-full h-[250px] -mb-10">
+                            <div className="relative h-[250px] md:h-[300px]">
+                                <div className="relative w-full h-full">
                                     {content.aiImage && (
                                         <Image
                                             src={content.aiImage.asset?.url || urlForImage(content.aiImage).url()}
