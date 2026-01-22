@@ -25,10 +25,10 @@ export function Footer() {
                                 <Link href="https://pt.linkedin.com/company/muvutechnologies" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-600 hover:text-white transition-all">
                                     <Linkedin className="w-4 h-4" />
                                 </Link>
-                                <Link href="https://www.instagram.com/muvu.tech/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-pink-600 hover:text-white transition-all">
+                                <Link href="https://www.instagram.com/railes.mes/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-pink-600 hover:text-white transition-all">
                                     <Instagram className="w-4 h-4" />
                                 </Link>
-                                <Link href="https://www.facebook.com/muvutechnologies/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-800 hover:text-white transition-all">
+                                <Link href="https://www.facebook.com/railesmes/" target="_blank" className="w-9 h-9 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-blue-800 hover:text-white transition-all">
                                     <Facebook className="w-4 h-4" />
                                 </Link>
                             </div>
@@ -86,7 +86,7 @@ export function Footer() {
                                 Lisbon, Portugal
                             </span>
                             <span className="text-gray-500 text-xs">
-                                Madrid, Spain
+                                Guarda, Portugal
                             </span>
                         </div>
                     </div>
