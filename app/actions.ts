@@ -33,7 +33,7 @@ async function saveToJSON(data: any) {
 
 export async function submitForm(prevState: any, formData: FormData) {
     const rawData = {
-        name: formData.get('name') as string,
+        name: (formData.get('name') as string) || (formData.get('formType') === 'newsletter' ? 'Newsletter Subscriber' : ''),
         email: formData.get('email') as string,
         message: formData.get('message') as string,
         phone: (formData.get('phone') as string) || '',
