@@ -20,7 +20,7 @@ export default function ArtificialIntelligencePageV3() {
                         <span>Next-Gen Industrial Intelligence</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-8 bg-gradient-to-b from-white via-white to-slate-400 bg-clip-text text-transparent">
+                    <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-8 bg-gradient-to-b from-white via-white to-slate-400 bg-clip-text text-transparent py-2">
                         INDUSTRIAL <br className="hidden md:block" />
                         INTELLIGENCE
                     </h1>

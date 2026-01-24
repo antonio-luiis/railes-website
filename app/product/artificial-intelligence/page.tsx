@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Brain, Zap } from 'lucide-react';
 import { CallToActionSection } from '@/components/CallToActionSection';
+import { TechnologiesSection } from '@/components/TechnologiesSection';
 
 export default function ArtificialIntelligencePageV2() {
     return (
@@ -22,7 +23,7 @@ export default function ArtificialIntelligencePageV2() {
                         Powered by AI
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-900 via-blue-700 to-purple-600 bg-clip-text text-transparent leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-900 via-blue-700 to-purple-600 bg-clip-text text-transparent leading-tight py-2">
                         Artificial Intelligence
                     </h1>
 
@@ -283,74 +284,115 @@ export default function ArtificialIntelligencePageV2() {
             {/* 
                 SECTION: HOW IT WORKS
             */}
-            <section className="py-24 bg-[#F9FAFB] relative overflow-hidden">
+            <section className="py-32 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="text-center max-w-4xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                            How It Works
+                    <div className="text-center max-w-4xl mx-auto mb-20">
+                        <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-3 block">
+                            Process Overview
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+                            Deploying AI with RAILES
                         </h2>
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
-
-                            <strong>Deploying AI with RAILES in 3 Steps:</strong>
+                        <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto">
+                            Three simple steps to transform your manufacturing data into intelligent, actionable insights.
                         </p>
                     </div>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 max-w-6xl mx-auto">
+                    <div className="relative max-w-6xl mx-auto">
+                        {/* Connecting Line (Background) */}
+                        <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-blue-100 via-purple-200 to-blue-100 -z-10"></div>
 
-                        {/* Step 1 */}
-                        <div className="relative w-full md:flex-1">
-                            <div className="bg-white rounded-[3rem] p-10 text-center shadow-lg border border-slate-100 h-full relative z-10">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                                    Connect<br />your data
-                                </h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
-                                    Integrate inputs from machines, sensors, MES, ERP, and operators.
-                                </p>
-                                {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                            {/* Step 1 */}
+                            <div className="relative group">
+                                <div className="flex flex-col items-center text-center">
+                                    <div className="w-24 h-24 bg-white border-4 border-blue-50 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all duration-300 relative">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white">
+                                            <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
+                                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                                            </svg>
+                                        </div>
+                                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border border-blue-100 rounded-full flex items-center justify-center text-sm font-bold text-blue-600 shadow-sm">
+                                            1
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                                        Connect Your Data
+                                    </h3>
+                                    <p className="text-slate-500 leading-relaxed">
+                                        Integrate inputs from machines, sensors, MES, ERP, and operators.
+                                    </p>
+                                </div>
                             </div>
-                            {/* Connector Line (Desktop) */}
-                            <div className="hidden md:block absolute top-[85%] left-1/2 w-full h-[2px] bg-slate-200 -z-0"></div>
-                        </div>
 
-                        {/* Step 2 */}
-                        <div className="relative w-full md:flex-1">
-                            <div className="bg-white rounded-[3rem] p-10 text-center shadow-lg border border-slate-100 h-full relative z-10">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                                    Activate<br />your AI modules
-                                </h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
-                                    Choose from Predictive Quality, AI Planning, or GenAI Insights.
-                                </p>
-                                {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                            {/* Step 2 */}
+                            <div className="relative group">
+                                <div className="flex flex-col items-center text-center">
+                                    <div className="w-24 h-24 bg-white border-4 border-blue-50 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all duration-300 relative">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white">
+                                            <Brain className="w-8 h-8" />
+                                        </div>
+                                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border border-blue-100 rounded-full flex items-center justify-center text-sm font-bold text-blue-600 shadow-sm">
+                                            2
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                                        Activate Your AI Modules
+                                    </h3>
+                                    <p className="text-slate-500 leading-relaxed">
+                                        Choose from Predictive Quality, AI Planning, or GenAI Insights.
+                                    </p>
+                                </div>
                             </div>
-                            {/* Connector Line (Desktop) */}
-                            <div className="hidden md:block absolute top-[85%] left-1/2 w-full h-[2px] bg-slate-200 -z-0"></div>
-                        </div>
 
-                        {/* Step 3 */}
-                        <div className="relative w-full md:flex-1">
-                            <div className="bg-white rounded-[3rem] p-10 text-center shadow-lg border border-slate-100 h-full relative z-10">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                                    Begin<br />optimization
-                                </h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
-                                    Detect issues in real time, improve production schedules, and extract actionable insights automatically.
-                                </p>
-                                {/* Dot */}
-                                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                            {/* Step 3 */}
+                            <div className="relative group">
+                                <div className="flex flex-col items-center text-center">
+                                    <div className="w-24 h-24 bg-white border-4 border-blue-50 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all duration-300 relative">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white">
+                                            <Zap className="w-8 h-8" />
+                                        </div>
+                                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border border-blue-100 rounded-full flex items-center justify-center text-sm font-bold text-blue-600 shadow-sm">
+                                            3
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                                        Begin Optimization
+                                    </h3>
+                                    <p className="text-slate-500 leading-relaxed">
+                                        Detect issues in real time, improve production schedules, and extract actionable insights automatically.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* 
-                SECTION: FINAL CTA (Gradient Button)
+                SECTION: TECHNOLOGIES
             */}
-            <section className="py-24 bg-white">
+            <TechnologiesSection
+                data={{
+                    title: "Know more about RAILES Technologies",
+                    technologies: [
+                        { label: "Digital Twin", href: "/product/digital-twin" },
+                        { label: "Artificial Intelligence", href: "/product/artificial-intelligence" }
+                    ]
+                }}
+            />
+
+            {/* 
+                SECTION: FINAL CTA (Gradient Button) - COMMENTED OUT
+            */}
+            {/* <section className="py-24 bg-white">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12">
                         Ready to see it in action?
@@ -367,7 +409,7 @@ export default function ArtificialIntelligencePageV2() {
                         </div>
                     </a>
                 </div>
-            </section>
+            </section> */}
 
             {/* FOOTER CTA */}
             <CallToActionSection

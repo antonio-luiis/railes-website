@@ -51,7 +51,7 @@ export function Footer() {
 
                     {/* Column 3: Solutions */}
                     <div>
-                        <h4 className="font-bold text-gray-900 mb-6 text-sm">Solutions</h4>
+                        <h4 className="font-bold text-gray-900 mb-6 text-sm">Industries</h4>
                         <ul className="space-y-3">
                             <li><Link href="/industries/automotive" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Automotive</Link></li>
                             <li><Link href="/industries/aerospace-and-defense" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Aerospace & Defense</Link></li>

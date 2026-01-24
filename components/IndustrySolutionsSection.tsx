@@ -61,7 +61,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
             <div className="container mx-auto px-4 relative">
 
                 {/* Header and Industry Pills */}
-                <div className="text-center mb-16 relative z-10">
+                <div className="text-center mb-40 relative z-10">
                     <h2 className="text-3xl font-bold text-gray-900 mb-10">{content.title}</h2>
 
                     <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
@@ -83,8 +83,8 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                 <div className="flex flex-col gap-0 items-center relative z-10">
 
                     {/* Top: Person Image */}
-                    <div className="relative w-full h-[550px] -mb-32 z-0 pointer-events-none">
-                        {/* Background Blobs (Decoration) */}
+                    {/* <div className="relative w-full h-[550px] -translate-x-52 -translate-y-20 -mb-64 z-0 pointer-events-none">
+                        {/* Background Blobs (Decoration) *\/}
                         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                         <div className="absolute top-20 right-10 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
 
@@ -98,7 +98,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                                 />
                             )}
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Bottom: Content Card (Full Width) */}
                     <div className="w-full bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-gray-100 relative z-10">
