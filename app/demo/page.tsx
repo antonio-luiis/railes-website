@@ -71,9 +71,9 @@ export default function DemoPage() {
                     </div>
 
                     {/* Logo Grid */}
-                    <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 px-4">
                         {logos.map((num) => (
-                            <div key={num} className="relative w-48 h-20 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
+                            <div key={num} className="relative w-32 h-12 md:w-48 md:h-20 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
                                 <Image
                                     src={`/images/${num}.png`}
                                     alt={`Client Logo ${num}`}

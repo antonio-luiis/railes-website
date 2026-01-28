@@ -507,36 +507,48 @@ export function Navbar({ siteSettings }: NavbarProps) {
 
                                             {/* Product Dropdown */}
                                             {link.label === 'Product' && activeDropdown === 'Product' && (
-                                                <div className="pl-4 py-2 space-y-2 bg-gray-50">
-                                                    <div className="text-sm font-semibold text-gray-500 mb-2">Features</div>
-                                                    <Link href="/product/production-management" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <Settings className="w-4 h-4 text-blue-600" />
-                                                        Production Management
-                                                    </Link>
-                                                    <Link href="/product/quality-management" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <ClipboardList className="w-4 h-4 text-purple-600" />
-                                                        Quality Management
-                                                    </Link>
-                                                    <Link href="/product/digital-record" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <Code2 className="w-4 h-4 text-green-600" />
-                                                        Digital Record
-                                                    </Link>
-                                                    <Link href="/product/monitoring" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <TrendingUp className="w-4 h-4 text-orange-600" />
-                                                        Monitoring
-                                                    </Link>
-                                                    <Link href="/product/automation-integration" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <Hammer className="w-4 h-4 text-cyan-600" />
-                                                        Automation & Integration
-                                                    </Link>
-                                                    <Link href="/product/artificial-intelligence" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <Sparkles className="w-4 h-4 text-indigo-600" />
-                                                        Artificial Intelligence
-                                                    </Link>
-                                                    <Link href="/product/digital-twin" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
-                                                        <Box className="w-4 h-4 text-pink-600" />
-                                                        Digital Twin
-                                                    </Link>
+                                                <div className="pl-4 py-4 bg-gray-50 flex flex-col gap-6">
+                                                    {/* Features Group */}
+                                                    <div>
+                                                        <div className="text-xs uppercase tracking-wider font-bold text-gray-400 mb-3 px-2">Features</div>
+                                                        <div className="space-y-1">
+                                                            <Link href="/product/production-management" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-blue-100/50 rounded-md"><Settings className="w-4 h-4 text-blue-600" /></div>
+                                                                <span className="font-medium">Production Management</span>
+                                                            </Link>
+                                                            <Link href="/product/quality-management" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-purple-100/50 rounded-md"><ClipboardList className="w-4 h-4 text-purple-600" /></div>
+                                                                <span className="font-medium">Quality Management</span>
+                                                            </Link>
+                                                            <Link href="/product/digital-record" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-green-100/50 rounded-md"><Code2 className="w-4 h-4 text-green-600" /></div>
+                                                                <span className="font-medium">Digital Record</span>
+                                                            </Link>
+                                                            <Link href="/product/monitoring" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-orange-100/50 rounded-md"><TrendingUp className="w-4 h-4 text-orange-600" /></div>
+                                                                <span className="font-medium">Monitoring</span>
+                                                            </Link>
+                                                            <Link href="/product/automation-integration" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-cyan-100/50 rounded-md"><Hammer className="w-4 h-4 text-cyan-600" /></div>
+                                                                <span className="font-medium">Automation & Integration</span>
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+
+                                                    {/* Technology Group */}
+                                                    <div>
+                                                        <div className="text-xs uppercase tracking-wider font-bold text-gray-400 mb-3 px-2">Technology</div>
+                                                        <div className="space-y-1">
+                                                            <Link href="/product/artificial-intelligence" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-indigo-100/50 rounded-md"><Sparkles className="w-4 h-4 text-indigo-600" /></div>
+                                                                <span className="font-medium">Artificial Intelligence</span>
+                                                            </Link>
+                                                            <Link href="/product/digital-twin" className="flex items-center gap-3 py-2 px-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" onClick={closeMobileMenu}>
+                                                                <div className="p-1 bg-pink-100/50 rounded-md"><Box className="w-4 h-4 text-pink-600" /></div>
+                                                                <span className="font-medium">Digital Twin</span>
+                                                            </Link>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             )}
 
