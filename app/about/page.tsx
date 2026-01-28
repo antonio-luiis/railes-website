@@ -117,16 +117,16 @@ function StoryCarousel() {
             bottom: 0,
             margin: 'auto',
             width: '100%',
-            maxWidth: '380px',
+            maxWidth: 'min(90%, 380px)',
             height: 'fit-content',
             transition: 'all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1)'
         };
     };
 
     return (
-        <section className="py-20 bg-white overflow-hidden">
+        <section className="py-12 md:py-20 bg-white overflow-hidden">
             <div className="container mx-auto max-w-7xl px-4">
-                <h2 className="text-4xl md:text-5xl font-black text-center text-gray-900 mb-20">
+                <h2 className="text-3xl md:text-5xl font-black text-center text-gray-900 mb-12 md:mb-20">
                     Our story
                 </h2>
 
@@ -209,7 +209,7 @@ export default function AboutPage() {
 
                 {/* Content */}
                 <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
-                    <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                    <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tight">
                         We are building the <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">
                             future of manufacturing
@@ -225,10 +225,10 @@ export default function AboutPage() {
               TEAM INTRO SECTION
               Bento-style layout with text
             */}
-            <section className="py-24 px-4">
-                <div className="container mx-auto max-w-7xl space-y-24">
+            <section className="py-12 md:py-24 px-4">
+                <div className="container mx-auto max-w-7xl space-y-12 md:space-y-24">
                     {/* Row 1: Text Left, Images Right */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                         {/* Left: Text */}
                         <div className="space-y-6">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
@@ -253,7 +253,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Row 2: Image Left, Text Right */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                         {/* Left: Large Landscape Image */}
                         <div className="aspect-video bg-gray-200 rounded-3xl overflow-hidden relative shadow-xl">
                             <div className="w-full h-full bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center">
@@ -282,9 +282,9 @@ export default function AboutPage() {
               VALUES SECTION
               3x2 Grid with light purple cards
             */}
-            <section className="pt-20 pb-0 bg-white">
+            <section className="pt-12 md:pt-20 pb-0 bg-white">
                 <div className="container mx-auto max-w-7xl px-4">
-                    <h2 className="text-4xl md:text-5xl font-black text-center text-gray-900 mb-16">
+                    <h2 className="text-3xl md:text-5xl font-black text-center text-gray-900 mb-12 md:mb-16">
                         Our culture and values
                     </h2>
 
@@ -350,10 +350,10 @@ export default function AboutPage() {
               GET TO KNOW US BETTER
               Social Media Links
             */}
-            <section className="pt-12 pb-20 bg-white">
+            <section className="pt-8 md:pt-12 pb-12 md:pb-20 bg-white">
                 <div className="container mx-auto max-w-7xl px-4">
                     {/* CTA Banner */}
-                    <div className="relative mb-24 bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-3xl p-12 overflow-hidden text-center">
+                    <div className="relative mb-16 md:mb-24 bg-[linear-gradient(-60deg,#004eab,#038efd)] rounded-3xl p-8 md:p-12 overflow-hidden text-center">
                         {/* Decorative circles */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl opacity-10 translate-x-1/3 -translate-y-1/3"></div>
                         <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-blue-400 rounded-full blur-2xl opacity-20"></div>
@@ -371,7 +371,7 @@ export default function AboutPage() {
                         </div>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-black text-center text-gray-900 mb-16">
+                    <h2 className="text-3xl md:text-5xl font-black text-center text-gray-900 mb-12 md:mb-16">
                         Get to know us better
                     </h2>
 

@@ -49,7 +49,7 @@ export function FeatureBlock({ features }: FeatureBlockProps) {
                                 </div>
 
                                 {/* Right Content - Dashboard with Charts */}
-                                <div className="relative mt-6 lg:mt-0 min-h-[450px]">
+                                <div className="relative mt-6 lg:mt-0 min-h-0 lg:min-h-[450px]">
 
                                     {/* Grafico_2 - Main Performance Chart (Background/Right) */}
                                     <div className="relative w-full -mt-8">
