@@ -17,72 +17,151 @@ interface Job {
 
 const jobsData: Job[] = [
     {
-        slug: 'senior-full-stack-engineer',
-        title: 'Senior Full Stack Engineer',
+        slug: 'mes-functional-consultant-lisbon',
+        title: 'MES Functional Consultant',
+        category: 'Consulting',
+        location: 'Lisbon, PT (Hybrid)',
+        type: 'Full-time',
+        description: 'About the Role\n\nWe are looking for a MES Functional Consultant to join our team and support innovative projects in the manufacturing and Industry 4.0 space. You will act as the link between production processes and technology, ensuring seamless implementation of MES solutions aligned with business needs.',
+        responsibilities: [
+            'Gather and analyze requirements with production and quality teams.',
+            'Perform functional configuration of the MES: process modelling, rule parametrization, and ERP integration.',
+            'Support operations and planning: order sequencing, real-time monitoring, and full traceability.',
+            'Ensure quality and compliance: support QA workflows and align processes with standards.',
+            'Conduct testing and validation to ensure solutions meet functional requirements.',
+            'Provide training and user support to guarantee proper adoption of RAILES MES.'
+        ],
+        requirements: [
+            'Background in Industrial Engineering or a similar degree.',
+            'Experience with MES or other manufacturing digital systems (ERP, QMS, SCADA/PLC).',
+            'Understanding of production workflows and quality processes.',
+            'Strong analytical and communication skills.',
+            'Ability to translate operational needs into functional configurations.',
+            'Fluent in English and Portuguese.'
+        ]
+    },
+    {
+        slug: 'mes-functional-consultant-guarda',
+        title: 'MES Functional Consultant',
+        category: 'Consulting',
+        location: 'Guarda, PT (Hybrid)',
+        type: 'Full-time',
+        description: 'About the Role\n\nWe are looking for a MES Functional Consultant to join our team and support innovative projects in the manufacturing and Industry 4.0 space. You will act as the link between production processes and technology, ensuring seamless implementation of MES solutions aligned with business needs.',
+        responsibilities: [
+            'Gather and analyze requirements with production and quality teams.',
+            'Perform functional configuration of the MES: process modelling, rule parametrization, and ERP integration.',
+            'Support operations and planning: order sequencing, real-time monitoring, and full traceability.',
+            'Ensure quality and compliance: support QA workflows and align processes with standards.',
+            'Conduct testing and validation to ensure solutions meet functional requirements.',
+            'Provide training and user support to guarantee proper adoption of RAILES MES.'
+        ],
+        requirements: [
+            'Background in Industrial Engineering or a similar degree.',
+            'Experience with MES or other manufacturing digital systems (ERP, QMS, SCADA/PLC).',
+            'Understanding of production workflows and quality processes.',
+            'Strong analytical and communication skills.',
+            'Ability to translate operational needs into functional configurations.',
+            'Fluent in English and Portuguese.'
+        ]
+    },
+    {
+        slug: 'frontend-engineer-lisbon',
+        title: 'Frontend Engineer',
         category: 'Engineering',
-        location: 'Remote (EU)',
+        location: 'Lisbon, PT (Hybrid)',
         type: 'Full-time',
-        description: 'We are looking for a Senior Full Stack Engineer to join our team and help build the next generation of manufacturing execution systems. You will work on challenging problems at the intersection of industrial operations and modern software development.',
+        description: 'About the Role\n\nWe are looking for a Frontend Engineer to join our team and develop software solutions tailored to the manufacturing industry. You will help create user-friendly, efficient, and high-performing applications that make the day-to-day work of manufacturing professionals easier and more effective.',
         responsibilities: [
-            'Design and implement scalable features for our MES platform',
-            'Collaborate with product managers and designers to deliver high-quality solutions',
-            'Write clean, maintainable code with comprehensive tests',
-            'Mentor junior engineers and contribute to technical decisions',
-            'Participate in code reviews and help maintain engineering standards'
+            'Design, develop, and maintain software solutions for the manufacturing industry.',
+            'Collaborate with cross-functional teams to identify user needs and translate them into technical requirements.',
+            'Write clean, efficient, and maintainable code, following best practices and standards.',
+            'Continuously improve system performance and user experience.',
+            'Solve technical challenges faced by manufacturing professionals in their daily operations.'
         ],
         requirements: [
-            '5+ years of experience in full-stack development',
-            'Strong proficiency in React, Node.js, and TypeScript',
-            'Experience with relational databases (PostgreSQL preferred)',
-            'Familiarity with cloud platforms (AWS, Azure, or GCP)',
-            'Excellent communication skills and ability to work in a team',
-            'Experience with manufacturing or industrial software is a plus'
+            'Degree in Computer Science or related field.',
+            'Proficiency in JavaScript, TypeScript, and frameworks like Angular.',
+            'Advanced knowledge of HTML5, CSS3, and CSS preprocessors (SASS, SCSS, LESS).',
+            'Strong understanding of Object-Oriented Programming and algorithms.',
+            'Experience with source control tools (Git).',
+            'Self-critical mindset with creativity and a collaborative approach to teamwork.',
+            'Ability to interpret business needs and deliver effective technical solutions.',
+            'Excellent communication skills and fluency in English.'
         ]
     },
     {
-        slug: 'product-designer-ui-ux',
-        title: 'Product Designer (UI/UX)',
-        category: 'Design',
-        location: 'Lisbon, PT',
+        slug: 'frontend-engineer-guarda',
+        title: 'Frontend Engineer',
+        category: 'Engineering',
+        location: 'Guarda, PT (Hybrid)',
         type: 'Full-time',
-        description: 'Join our design team to create intuitive and powerful interfaces for manufacturing professionals. You will shape the user experience of software used in factories worldwide.',
+        description: 'About the Role\n\nWe are looking for a Frontend Engineer to join our team and develop software solutions tailored to the manufacturing industry. You will help create user-friendly, efficient, and high-performing applications that make the day-to-day work of manufacturing professionals easier and more effective.',
         responsibilities: [
-            'Design user interfaces for complex industrial workflows',
-            'Conduct user research and usability testing',
-            'Create wireframes, prototypes, and high-fidelity designs',
-            'Collaborate closely with engineers and product managers',
-            'Maintain and evolve our design system'
+            'Design, develop, and maintain software solutions for the manufacturing industry.',
+            'Collaborate with cross-functional teams to identify user needs and translate them into technical requirements.',
+            'Write clean, efficient, and maintainable code, following best practices and standards.',
+            'Continuously improve system performance and user experience.',
+            'Solve technical challenges faced by manufacturing professionals in their daily operations.'
         ],
         requirements: [
-            '3+ years of experience in product design',
-            'Strong portfolio demonstrating UX/UI skills',
-            'Proficiency in Figma or similar design tools',
-            'Understanding of front-end development constraints',
-            'Excellent communication and presentation skills',
-            'Experience with B2B or enterprise software is a plus'
+            'Degree in Computer Science or related field.',
+            'Proficiency in JavaScript, TypeScript, and frameworks like Angular.',
+            'Advanced knowledge of HTML5, CSS3, and CSS preprocessors (SASS, SCSS, LESS).',
+            'Strong understanding of Object-Oriented Programming and algorithms.',
+            'Experience with source control tools (Git).',
+            'Self-critical mindset with creativity and a collaborative approach to teamwork.',
+            'Ability to interpret business needs and deliver effective technical solutions.',
+            'Excellent communication skills and fluency in English.'
         ]
     },
     {
-        slug: 'enterprise-sales-executive',
-        title: 'Enterprise Sales Executive',
-        category: 'Sales',
-        location: 'London, UK',
+        slug: 'backend-engineer-lisbon',
+        title: 'Backend Engineer',
+        category: 'Engineering',
+        location: 'Lisbon, PT (Hybrid)',
         type: 'Full-time',
-        description: 'Drive growth by bringing RAILES MES solutions to manufacturing companies across Europe. You will manage the full sales cycle for enterprise clients.',
+        description: 'About the Role\n\nWe are looking for a Backend Engineer to design and develop the server-side logic and database systems that power our manufacturing software. You will create scalable, reliable, and efficient backend solutions that support production teams, integrate with other systems, and ensure the smooth operation of critical manufacturing processes.',
         responsibilities: [
-            'Identify and qualify new business opportunities',
-            'Manage complex sales cycles with multiple stakeholders',
-            'Deliver compelling product demonstrations',
-            'Negotiate contracts and close deals',
-            'Build long-term relationships with key accounts'
+            'Design, develop, and maintain backend software solutions for the manufacturing industry.',
+            'Collaborate with cross-functional teams to identify user needs and translate them into technical requirements.',
+            'Write clean, efficient, and maintainable code, following best practices and standards.',
+            'Ensure system scalability, reliability, and performance.',
+            'Solve technical challenges faced by manufacturing professionals in their daily operations.'
         ],
         requirements: [
-            '5+ years of B2B enterprise sales experience',
-            'Proven track record of meeting or exceeding quotas',
-            'Experience selling software to manufacturing or industrial companies',
-            'Strong presentation and negotiation skills',
-            'Ability to understand technical products',
-            'Willingness to travel within Europe'
+            'Degree in Computer Science or a related field.',
+            'Solid knowledge of backend technologies, particularly Node.js.',
+            'Understanding of relational and non-relational database concepts.',
+            'Knowledge of Object-Oriented Programming and algorithms.',
+            'Experience with source control tools (Git).',
+            'Strong self-critical mindset, complemented by creativity and a collaborative approach to teamwork.',
+            'Ability to interpret business needs and deliver effective technical solutions.',
+            'Excellent communication skills and fluency in English.'
+        ]
+    },
+    {
+        slug: 'backend-engineer-guarda',
+        title: 'Backend Engineer',
+        category: 'Engineering',
+        location: 'Guarda, PT (Hybrid)',
+        type: 'Full-time',
+        description: 'About the Role\n\nWe are looking for a Backend Engineer to design and develop the server-side logic and database systems that power our manufacturing software. You will create scalable, reliable, and efficient backend solutions that support production teams, integrate with other systems, and ensure the smooth operation of critical manufacturing processes.',
+        responsibilities: [
+            'Design, develop, and maintain backend software solutions for the manufacturing industry.',
+            'Collaborate with cross-functional teams to identify user needs and translate them into technical requirements.',
+            'Write clean, efficient, and maintainable code, following best practices and standards.',
+            'Ensure system scalability, reliability, and performance.',
+            'Solve technical challenges faced by manufacturing professionals in their daily operations.'
+        ],
+        requirements: [
+            'Degree in Computer Science or a related field.',
+            'Solid knowledge of backend technologies, particularly Node.js.',
+            'Understanding of relational and non-relational database concepts.',
+            'Knowledge of Object-Oriented Programming and algorithms.',
+            'Experience with source control tools (Git).',
+            'Strong self-critical mindset, complemented by creativity and a collaborative approach to teamwork.',
+            'Ability to interpret business needs and deliver effective technical solutions.',
+            'Excellent communication skills and fluency in English.'
         ]
     }
 ];

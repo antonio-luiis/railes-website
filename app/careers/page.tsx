@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, MapPin, Clock, Briefcase, Send, CheckCircle2, Globe, Users, Zap } from 'lucide-react';
 import { useState } from 'react';
 
-type JobCategory = 'All' | 'Engineering' | 'Design' | 'Sales';
+type JobCategory = 'All' | 'Engineering' | 'Design' | 'Sales' | 'Consulting';
 
 interface Job {
     id: number;
@@ -18,26 +18,50 @@ interface Job {
 const jobs: Job[] = [
     {
         id: 1,
-        slug: 'senior-full-stack-engineer',
-        title: 'Senior Full Stack Engineer',
-        category: 'Engineering',
-        location: 'Remote (EU)',
+        slug: 'mes-functional-consultant-lisbon',
+        title: 'MES Functional Consultant',
+        category: 'Consulting',
+        location: 'Lisbon, PT (Hybrid)',
         type: 'Full-time'
     },
     {
         id: 2,
-        slug: 'product-designer-ui-ux',
-        title: 'Product Designer (UI/UX)',
-        category: 'Design',
-        location: 'Lisbon, PT',
+        slug: 'mes-functional-consultant-guarda',
+        title: 'MES Functional Consultant',
+        category: 'Consulting',
+        location: 'Guarda, PT (Hybrid)',
         type: 'Full-time'
     },
     {
         id: 3,
-        slug: 'enterprise-sales-executive',
-        title: 'Enterprise Sales Executive',
-        category: 'Sales',
-        location: 'London, UK',
+        slug: 'frontend-engineer-lisbon',
+        title: 'Frontend Engineer',
+        category: 'Engineering',
+        location: 'Lisbon, PT (Hybrid)',
+        type: 'Full-time'
+    },
+    {
+        id: 4,
+        slug: 'frontend-engineer-guarda',
+        title: 'Frontend Engineer',
+        category: 'Engineering',
+        location: 'Guarda, PT (Hybrid)',
+        type: 'Full-time'
+    },
+    {
+        id: 5,
+        slug: 'backend-engineer-lisbon',
+        title: 'Backend Engineer',
+        category: 'Engineering',
+        location: 'Lisbon, PT (Hybrid)',
+        type: 'Full-time'
+    },
+    {
+        id: 6,
+        slug: 'backend-engineer-guarda',
+        title: 'Backend Engineer',
+        category: 'Engineering',
+        location: 'Guarda, PT (Hybrid)',
         type: 'Full-time'
     }
 ];
@@ -49,7 +73,7 @@ export default function CareersPage() {
         ? jobs
         : jobs.filter(job => job.category === selectedCategory);
 
-    const categories: JobCategory[] = ['All', 'Engineering', 'Design', 'Sales'];
+    const categories: JobCategory[] = ['All', 'Consulting', 'Engineering'];
 
     return (
         <main className="min-h-screen bg-white">
@@ -78,9 +102,6 @@ export default function CareersPage() {
                         </span>
                     </h1>
 
-                    <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        We build MES software that helps manufacturers plan, track, and improve production in real time. Join a team focused on creating reliable, intuitive tools for complex industrial environments.
-                    </p>
 
                     <button className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2 mx-auto"
                         onClick={() => {
@@ -104,9 +125,7 @@ export default function CareersPage() {
                         <p className="text-slate-500 max-w-3xl mx-auto leading-relaxed">
                             Building MES software means solving real operational problems. You'll work closely with product, engineering, and customers to turn complex processes into clear, usable solutions, and see the impact of your work on the factory floor.
                         </p>
-                        <p className="text-slate-600 max-w-3xl mx-auto mt-6 leading-relaxed font-medium">
-                            Are you looking for an opportunity in a growing and tech-driven company? You're in the right place. Check the opportunities below.
-                        </p>
+
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
