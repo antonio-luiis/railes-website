@@ -76,10 +76,11 @@ export default function PharmaPage() {
 
                         {/* Decorative Pill Background */}
                         {/* Decorative Pill Background - User Asset Placeholder */}
+                        {/* 
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[120%] pointer-events-none z-0 flex items-center justify-center opacity-60">
-                            {/* 
+                             
                                 COMPANION: Please upload the vector image as 'pharma-bg-shape.svg' (or png) to public/images/
-                             */}
+                             
                             <Image
                                 src="/images/pharma-bg-shape.svg"
                                 alt="Decorative Background"
@@ -88,6 +89,7 @@ export default function PharmaPage() {
                                 className="w-full h-auto object-contain rotate-[-45deg]"
                             />
                         </div>
+                        */}
 
 
                         {/* Card 1 */}
