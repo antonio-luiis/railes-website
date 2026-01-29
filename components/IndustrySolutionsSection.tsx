@@ -106,7 +106,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         {/* Visibility Section */}
                         <div className="mb-12">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.visibilityTitle}</h3>
-                            <p className="text-gray-600 mb-8 max-w-2xl">
+                            <p className="text-gray-600 mb-8 w-full">
                                 {content.visibilityDescription}
                             </p>
 
@@ -135,7 +135,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         {/* Execution Section */}
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.executionTitle}</h3>
-                            <p className="text-gray-600 mb-8 max-w-2xl">
+                            <p className="text-gray-600 mb-8 w-full">
                                 {content.executionDescription}
                             </p>
 
@@ -163,7 +163,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         {/* Quality Section */}
                         <div className="mt-12">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.qualityTitle}</h3>
-                            <p className="text-gray-600 mb-8 max-w-2xl">
+                            <p className="text-gray-600 mb-8 w-full">
                                 {content.qualityDescription}
                             </p>
 
@@ -186,7 +186,7 @@ export function IndustrySolutionsSection({ data }: IndustrySolutionsSectionProps
                         {/* Improvement Section */}
                         <div className="mt-12">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">{content.improvementTitle}</h3>
-                            <p className="text-gray-600 mb-8 max-w-2xl">
+                            <p className="text-gray-600 mb-8 w-full">
                                 {content.improvementDescription}
                             </p>
 

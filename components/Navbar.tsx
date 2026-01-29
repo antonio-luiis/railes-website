@@ -35,7 +35,7 @@ const navItems = [
     { label: "Industries", url: "#", hasDropdown: true },
     { label: "Partner", url: "/partners" },
     { label: "Resources", url: "#", hasDropdown: true },
-    // { label: "About us", url: "#", hasDropdown: true },
+    { label: "Company", url: "#", hasDropdown: true },
 ];
 
 import { SearchModal } from "./SearchModal";
@@ -228,16 +228,16 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                 )}
 
                                 {/* Specific Dropdown for About us (Simple Dropdown) */}
-                                {link.label === 'About us' && activeDropdown === 'About us' && (
+                                {link.label === 'Company' && activeDropdown === 'Company' && (
                                     <div
                                         className="absolute top-full left-0 pt-2 w-60 z-50"
-                                        onMouseEnter={() => handleMouseEnter('About us')}
+                                        onMouseEnter={() => handleMouseEnter('Company')}
                                         onMouseLeave={handleMouseLeave}
                                     >
                                         <div className="bg-white border border-gray-100 shadow-xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-1 duration-200">
                                             <div className="p-2 flex flex-col gap-1">
                                                 <Link
-                                                    href="#"
+                                                    href="/our-company"
                                                     className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg group transition-colors"
                                                     onClick={() => setActiveDropdown(null)}
                                                 >
@@ -592,10 +592,10 @@ export function Navbar({ siteSettings }: NavbarProps) {
                                                 </div>
                                             )}
 
-                                            {/* About us Dropdown */}
-                                            {link.label === 'About us' && activeDropdown === 'About us' && (
+                                            {/* Company Dropdown */}
+                                            {link.label === 'Company' && activeDropdown === 'Company' && (
                                                 <div className="pl-4 py-2 space-y-2 bg-gray-50">
-                                                    <Link href="#" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
+                                                    <Link href="/our-company" className="flex items-center gap-2 py-2 text-gray-700" onClick={closeMobileMenu}>
                                                         <Building2 className="w-4 h-4 text-blue-600" />
                                                         Our Company
                                                     </Link>

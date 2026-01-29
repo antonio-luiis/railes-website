@@ -274,7 +274,7 @@ export default function ROICalculatorPage() {
                                         <span className="font-semibold text-gray-700">Production Increase</span>
                                     </div>
                                     <span className="text-xl font-bold text-blue-600">
-                                        €{results.productionIncrease.toLocaleString()}
+                                        €{results.productionIncrease.toLocaleString('en-US')}
                                     </span>
                                 </div>
 
@@ -286,7 +286,7 @@ export default function ROICalculatorPage() {
                                         <span className="font-semibold text-gray-700">Downtime Reduction</span>
                                     </div>
                                     <span className="text-xl font-bold text-purple-600">
-                                        €{results.downtimeSavings.toLocaleString()}
+                                        €{results.downtimeSavings.toLocaleString('en-US')}
                                     </span>
                                 </div>
 
@@ -298,7 +298,7 @@ export default function ROICalculatorPage() {
                                         <span className="font-bold text-gray-900">Total Annual Savings</span>
                                     </div>
                                     <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
-                                        €{results.totalSavings.toLocaleString()}
+                                        €{results.totalSavings.toLocaleString('en-US')}
                                     </span>
                                 </div>
                             </div>

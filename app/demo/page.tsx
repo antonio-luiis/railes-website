@@ -8,7 +8,13 @@ import { DemoForm } from '@/components/DemoForm';
 export default function DemoPage() {
 
     // Logos to display (5 logos for single row)
-    const logos = [1, 2, 4, 5, 6];
+    const logos = [
+        "Cliente01.png",
+        "Cliente02.png",
+        "Cliente03.png",
+        "Cliente04.png",
+        "Cliente05.png"
+    ];
 
     return (
         <main className="min-h-screen bg-white">
@@ -72,11 +78,11 @@ export default function DemoPage() {
 
                     {/* Logo Grid */}
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 px-4">
-                        {logos.map((num) => (
-                            <div key={num} className="relative w-32 h-12 md:w-48 md:h-20 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
+                        {logos.map((logo, index) => (
+                            <div key={index} className="relative w-48 h-24 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
                                 <Image
-                                    src={`/images/${num}.png`}
-                                    alt={`Client Logo ${num}`}
+                                    src={`/images/${logo}`}
+                                    alt={`Client Logo ${index + 1}`}
                                     fill
                                     className="object-contain"
                                 />

@@ -4,16 +4,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const clientLogos = [
-    "/images/1.png",
-    "/images/2.png",
-    "/images/3.png",
-    "/images/4.png",
-    "/images/5.png",
-    "/images/6.png",
-    "/images/7.png",
-    "/images/8.png",
-    "/images/9.png",
-    "/images/10.png",
+    "/images/Cliente01.png",
+    "/images/Cliente02.png",
+    "/images/Cliente03.png",
+    "/images/Cliente04.png",
+    "/images/Cliente05.png",
+    "/images/Cliente06.png",
+    "/images/Cliente07.png",
+    "/images/Cliente08.png",
+    "/images/Cliente09.png",
+    "/images/Cliente10.png",
+    "/images/Cliente11.png",
+    "/images/Cliente12.png",
 ];
 
 export function LogoMarquee() {

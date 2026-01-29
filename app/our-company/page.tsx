@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Shield, Users, Zap, Leaf, CheckCircle, FileText, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { ArrowRight, Shield, Users, Zap, Leaf, CheckCircle, FileText, Linkedin, Instagram, Facebook, Lock, Briefcase } from 'lucide-react';
 
 import { useState } from 'react';
 
@@ -189,7 +189,7 @@ function StoryCarousel() {
     );
 }
 
-export default function AboutPage() {
+export default function OurCompanyPage() {
     return (
         <main className="min-h-screen bg-white">
             {/* HERO BANNER */}
@@ -288,7 +288,7 @@ export default function AboutPage() {
                         Our culture and values
                     </h2>
 
-                    <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    <div className="grid md:grid-cols-2 gap-6 mb-8">
                         {[
                             {
                                 icon: <Shield className="w-8 h-8 text-indigo-600" />,
@@ -296,32 +296,22 @@ export default function AboutPage() {
                                 description: "We believe that great partnerships are built on clarity and openness. By being transparent in everything we do, we foster trust, strengthen collaboration, and create long-term relationships with our customers."
                             },
                             {
-                                icon: <Users className="w-8 h-8 text-indigo-600" />,
-                                title: "Ownership and Impact",
-                                description: "We don't just work here; we own our work. Every team member has the autonomy to take initiative and the responsibility to deliver real results."
+                                icon: <Lock className="w-8 h-8 text-indigo-600" />,
+                                title: "Confidentiality & Integrity",
+                                description: "Your information is handled with the highest level of care and responsibility. We protect data, respect privacy, and act with integrity at all times, trust is the foundation of meaningful collaboration."
                             },
                             {
-                                icon: <CheckCircle className="w-8 h-8 text-indigo-600" />,
-                                title: "Speed and Execution",
-                                description: "We prioritize action over analysis paralysis. In a fast-moving world, we believe that moving quickly and iterating is the key to meaningful innovation."
-                            },
-                            {
-                                icon: <FileText className="w-8 h-8 text-indigo-600" />,
-                                title: "Product-first",
-                                description: "We are obsessed with our craft. We sweat the details to build a product that is not just functional, but intuitive, beautiful, and a joy to use."
-                            },
-                            {
-                                icon: <Zap className="w-8 h-8 text-indigo-600" />,
-                                title: "Inclusivity",
-                                description: "We celebrate what makes us different. We strive to create an environment where everyone feels welcome, heard, and valued for who they are."
+                                icon: <Briefcase className="w-8 h-8 text-indigo-600" />,
+                                title: "Professionalism",
+                                description: "Professionalism goes beyond quality delivery. It reflects our commitment, accountability, and dedication to doing things right, every project, every decision, every time."
                             },
                             {
                                 icon: <Leaf className="w-8 h-8 text-indigo-600" />,
-                                title: "Customer-Centricity",
-                                description: "Our customers' success is our success. We listen deeply, advocate for their needs, and work tirelessly to help them achieve their goals."
+                                title: "Social Responsibility & Sustainability",
+                                description: "We are committed to making a positive impact. Sustainability matters not only to the planet, but also to the long-term success of businesses and communities. Responsible growth is the only growth we believe in."
                             }
                         ].map((value, index) => (
-                            <div key={index} className="group relative bg-indigo-50/50 rounded-3xl p-10 text-center hover:bg-indigo-50 transition-all duration-300 h-80 flex flex-col items-center justify-center overflow-hidden cursor-default">
+                            <div key={index} className="group relative bg-indigo-50/50 rounded-3xl p-6 md:p-10 text-center hover:bg-indigo-50 transition-all duration-300 h-80 flex flex-col items-center justify-center overflow-hidden cursor-default">
                                 {/* Default State: Icon & Title */}
                                 <div className="absolute inset-0 flex flex-col items-center justify-center p-10 transition-all duration-300 group-hover:opacity-0 group-hover:scale-95 group-hover:translate-y-4">
                                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
@@ -333,7 +323,7 @@ export default function AboutPage() {
                                 </div>
 
                                 {/* Hover State: Description */}
-                                <div className="absolute inset-0 flex items-center justify-center p-8 opacity-0 transition-all duration-300 transform translate-y-4 scale-95 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
+                                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-8 opacity-0 transition-all duration-300 transform translate-y-4 scale-95 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
                                     <p className="text-indigo-900 font-medium leading-relaxed">
                                         {value.description}
                                     </p>
