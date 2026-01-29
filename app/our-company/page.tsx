@@ -16,8 +16,8 @@ function StoryCarousel() {
                 </svg>
             ),
             title: "The Beginning",
-            description: "As we connected factory-floor operations, structured production workflows, and turned complex manufacturing processes into clear, executable systems, our vision expanded beyond our initial scope.",
-            year: "2012"
+            description: "In 2015, three friends came together with a simple but ambitious idea: to build technology that could truly make a difference in the manufacturing industry. That idea was the start of MUVU Technologies.",
+            year: "2015"
         },
         {
             icon: (
@@ -26,8 +26,8 @@ function StoryCarousel() {
                 </svg>
             ),
             title: "Railes is founded",
-            description: "What began as a solution for visibility and control evolved into a full Manufacturing Execution System designed to bridge planning and execution. This journey led to the creation of Railes.",
-            year: "2015"
+            description: "As time went on, MUVU Technologies began creating real impact on the factory floor. That’s when RAILES, our Manufacturing Execution System, was born, designed to solve real manufacturing challenges.",
+            year: "2017"
         },
         {
             icon: (
@@ -36,18 +36,28 @@ function StoryCarousel() {
                 </svg>
             ),
             title: "Growth & Evolution",
-            description: "At the beginning of 2026, backed by over a decade of experience in manufacturing software, we embraced a new identity with a clear focus on our core MES product.",
-            year: "2026"
+            description: "Over the years, RAILES evolved in scope, scale, and technological maturity. With data-driven decision-making and artificial intelligence at its core, it grew beyond software into a connected industrial ecosystem.",
+            year: "2020"
         },
         {
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
             ),
-            title: "Stay tuned...",
-            description: "Today, Railes empowers manufacturers with real-time visibility, traceability, and operational control that keep production moving efficiently into smart factories. There's so much more to come!",
-            year: "The Future"
+            title: "Manufacturing Tech Summit",
+            description: "Along the journey, we created the Manufacturing Tech Summit, an industry event that brings together manufacturers, technology leaders, and innovators to talk about the future of industrial digitalization.",
+            year: "Community"
+        },
+        {
+            icon: (
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+            ),
+            title: "A New Identity",
+            description: "In 2026, the story reaches an important milestone. RAILES is no longer just the platform. RAILES becomes the brand.",
+            year: "2026"
         }
     ];
 
@@ -197,27 +207,21 @@ export default function OurCompanyPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/about-hero.jpg"
-                        alt="Railes Team"
+                        src="/images/OurCompany_Banner.png"
+                        alt="Railes Factory"
                         fill
                         className="object-cover"
                         priority
                     />
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
-                    <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tight">
-                        We are building the <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">
-                            future of manufacturing
-                        </span>
+                    <h1 className="text-4xl md:text-7xl font-black tracking-tight drop-shadow-lg">
+                        Our Company
                     </h1>
-                    <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto leading-relaxed font-light">
-                        Railes is the operating system that empowers factories to achieve operational excellence through real-time visibility and control.
-                    </p>
                 </div>
             </section>
 
@@ -240,14 +244,20 @@ export default function OurCompanyPage() {
                         {/* Right: Two Portrait Images */}
                         <div className="grid grid-cols-2 gap-6">
                             <div className="aspect-[3/4] bg-gray-200 rounded-3xl overflow-hidden relative shadow-lg transform translate-y-8">
-                                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center">
-                                    <Users className="w-12 h-12 text-blue-300" />
-                                </div>
+                                <Image
+                                    src="/images/OurCompany1.png"
+                                    alt="Railes Team moment 1"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                             <div className="aspect-[3/4] bg-gray-200 rounded-3xl overflow-hidden relative shadow-lg">
-                                <div className="w-full h-full bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
-                                    <Users className="w-12 h-12 text-purple-300" />
-                                </div>
+                                <Image
+                                    src="/images/OurCompany2.png"
+                                    alt="Railes Team moment 2"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                     </div>
@@ -256,9 +266,12 @@ export default function OurCompanyPage() {
                     <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                         {/* Left: Large Landscape Image */}
                         <div className="aspect-video bg-gray-200 rounded-3xl overflow-hidden relative shadow-xl">
-                            <div className="w-full h-full bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center">
-                                <Users className="w-20 h-20 text-green-300" />
-                            </div>
+                            <Image
+                                src="/images/OurCompany3.jpg"
+                                alt="Railes Team wide shot"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
 
                         {/* Right: Text */}
@@ -350,7 +363,7 @@ export default function OurCompanyPage() {
 
                         <div className="relative z-10">
                             <h3 className="text-3xl md:text-4xl font-black text-white mb-6">
-                                Together we can impact <span className="font-normal opacity-90">how teams work across the globe</span>
+                                Think you’d fit into this story? <span className="block font-normal opacity-90 mt-4">Check out our open roles and join the team.</span>
                             </h3>
                             <Link href="/careers" className="inline-block">
                                 <button className="bg-white text-[#004eab] font-bold py-4 px-10 rounded-full hover:bg-white/90 transition-colors inline-flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
